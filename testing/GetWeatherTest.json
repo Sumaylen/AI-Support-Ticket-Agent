@@ -1,0 +1,34 @@
+{
+  "model": "Qwen_Qwen3.5-4B-Q4_K_M.gguf",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a chatbot that uses tools/functions. Dont overthink things."
+    },
+    {
+      "role": "user",
+      "content": "What is the weather in Istanbul?"
+    }
+  ],
+  "tools": [
+    {
+      "type": "function",
+      "function": {
+        "name": "get_current_weather",
+        "description": "Get the current weather in a given location",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "location": {
+              "type": "string",
+              "description": "The city and country/state, e.g. San Francisco, CA, or Paris, France"
+            }
+          },
+          "required": [
+            "location"
+          ]
+        }
+      }
+    }
+  ]
+}

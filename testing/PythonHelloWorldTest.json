@@ -1,0 +1,28 @@
+{
+  "model": "Qwen_Qwen3.5-4B-Q4_K_M.gguf",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Print a hello world message with python."
+    }
+  ],
+  "tools": [
+    {
+      "type": "function",
+      "function": {
+        "name": "python",
+        "description": "Runs code in an ipython interpreter and returns the result of the execution after 60 seconds.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "code": {
+              "type": "string",
+              "description": "The code to run in the ipython interpreter."
+            }
+          },
+          "required": ["code"]
+        }
+      }
+    }
+  ]
+}
