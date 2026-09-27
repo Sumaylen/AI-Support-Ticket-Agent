@@ -1,8 +1,17 @@
 venv/
 .venv/
 .env
+.pdf
 __pycache__/
 *.pyc
 llama/
 model/*
 !model/.gitkeep
+chroma_db/
+*.sqlite3
+/.cache/
+transformers/
+sentence_transformers/
+.vscode/
+*.log
+AI_Portfolio_Project_Plan(4).md

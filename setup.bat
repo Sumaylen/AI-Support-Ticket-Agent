@@ -29,4 +29,15 @@ if not exist ".env" if exist ".env.example" (
 if not exist "model" mkdir "model"
 if not exist "model\.gitkeep" type NUL > "model\.gitkeep"
 
+if exist "chroma_db\chroma.sqlite3" (
+    echo Chroma database already exists. Skipping policy knowledge base rebuild.
+) else (
+    echo Building the policy knowledge base...
+    python build_knowledge_base.py
+    if errorlevel 1 (
+        echo Knowledge base build failed.
+        exit /b 1
+    )
+)
+
 exit /b 0
