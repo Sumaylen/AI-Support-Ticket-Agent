@@ -11,8 +11,8 @@ model = SentenceTransformer('all-MiniLM-L6-v2')
 client = chromadb.PersistentClient(path="./chroma_db")
 collection = client.get_or_create_collection(name="company_policies")
 
-data_dir = os.path.abspath("data/policies")
-files = os.listdir(data_dir)
+DATA_DIR = os.path.abspath("data/policies")
+files = os.listdir(DATA_DIR)
 
 ids = []
 documents = []
@@ -22,13 +22,13 @@ count = 1
     
 for file in files:
     #Read each file in folder and call chunk_text from retrieval.py for each
-    f = open(os.path.join(data_dir,file))
+    f = open(os.path.join(DATA_DIR,file))
     text = f.read()
     #chunk_text(text, word count , overlap)
     chunk = chunk_text(text, 10, 3)
 
-    filePath = os.path.join(data_dir, file)
-    stats = os.stat(filePath)
+    FILE_PATH = os.path.join(DATA_DIR, file)
+    stats = os.stat(FILE_PATH)
     
     #loop through each chunk an array and store them in documents with corresponding id
     for chunks in chunk:
@@ -40,12 +40,12 @@ for file in files:
 
         #savae metadata for each chunk
         metadatas.append({
-            "filename": os.path.basename(filePath),
+            "filename": os.path.basename(FILE_PATH),
             "size_bytes": stats.st_size
             } )
 
         count += 1
            
 
-
+f.close()
 collection.add(ids = ids ,embeddings = embeds, documents = documents, metadatas = metadatas)

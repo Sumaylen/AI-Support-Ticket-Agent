@@ -2,8 +2,8 @@ import chromadb
 import math
 import os
 
-db_path = os.path.abspath("chroma_db")
-client = chromadb.PersistentClient(path=db_path)
+DB_PATH = os.path.abspath("chroma_db")
+client = chromadb.PersistentClient(path=DB_PATH)
 collection = client.get_or_create_collection(name="company_policies")
 
 #splits up text strings into chunks of words based on chunk size including some overlap to preserve context
