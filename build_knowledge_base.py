@@ -8,7 +8,16 @@ from sentence_transformers import SentenceTransformer
 
 model = SentenceTransformer('all-MiniLM-L6-v2')
 
+
+
 client = chromadb.PersistentClient(path="./chroma_db")
+
+# If company_policies exists then delete it
+try:
+    client.delete_collection(name="company_policies")
+except Exception:
+    pass
+
 collection = client.get_or_create_collection(name="company_policies")
 
 DATA_DIR = os.path.abspath("data/policies")
@@ -25,7 +34,7 @@ for file in files:
     f = open(os.path.join(DATA_DIR,file))
     text = f.read()
     #chunk_text(text, word count , overlap)
-    chunk = chunk_text(text, 10, 3)
+    chunk = chunk_text(text, 32 , 8)
 
     FILE_PATH = os.path.join(DATA_DIR, file)
     stats = os.stat(FILE_PATH)

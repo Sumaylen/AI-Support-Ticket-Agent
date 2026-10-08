@@ -58,7 +58,5 @@ def retrieve(question, k):
         }
         combined.append(entry)
 
-    print(combined)
     return combined
 
-retrieve("How are international orders handled?", 3)

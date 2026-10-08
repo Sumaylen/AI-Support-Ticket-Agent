@@ -23,7 +23,7 @@ URGENCY_LEVELS = ["low", "medium", "high"]
 client, model, thinking = get_llm_client()
    
 #chat request helper that takes in instructions and user message and outputs a JSON response
-def _ask_json(system_prompt, message, schema_name, field, allowed_values):
+def _classify_json(system_prompt, message, schema_name, field, allowed_values):
     
     chat_params = {
         "model": model,
@@ -68,14 +68,15 @@ def _ask_json(system_prompt, message, schema_name, field, allowed_values):
 
 
 def classify_ticket(message):
-    return _ask_json(CLASSIFY_PROMPT, message, "ticket_category", "category", category_list)
+    return _classify_json(CLASSIFY_PROMPT, message, "ticket_category", "category", category_list)
 
 
 def detect_urgency(message):
-    return _ask_json(URGENCY_PROMPT, message, "ticket_urgency", "urgency", URGENCY_LEVELS)
+    return _classify_json(URGENCY_PROMPT, message, "ticket_urgency", "urgency", URGENCY_LEVELS)
 
 def user_inquiry(message):
     category = classify_ticket(message)
     urgency = detect_urgency(message) 
     return {"category": category, "urgency": urgency}
 
+print(user_inquiry("I need a refund"))

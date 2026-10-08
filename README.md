@@ -15,14 +15,20 @@
 2. This creates a local `.env` if needed.
 3. Edit `.env` and set your API key. If you do not already have one, get one here: https://console.groq.com/
 
+### Use the Groq model
+
+Model: `qwen/qwen3.8-27b`
+
 ```env
 GROQ_API_KEY=your_key_here
 LLM_BACKEND=groq
 ```
 
+> Warning: this setup was validated with the tested model above. Other models may require different configuration, tuning, or prompt adjustments and are not guaranteed to work correctly.
+
 ## Optional: run locally with llama.cpp
 
-If you want to use a local model instead:
+Model: `Qwen_Qwen3.5-4B-Q4_K_M`
 
 1. Install llama.cpp into the root directory from the official repo: https://github.com/ggml-org/llama.cpp/releases
 2. Put your GGUF model in `model\`.
@@ -37,6 +43,8 @@ LLM_BACKEND=local
 ```bat
 run.bat
 ```
+
+> Warning: this setup was validated with the tested model above. Other models may require different configuration, tuning, or prompt adjustments and are not guaranteed to work correctly.
 
 ## Evaluation
 
