@@ -70,27 +70,51 @@ The Groq API model performed better during the evaluation of ticket classificati
 - Local model log: [logs/myfile174823.txt](logs/myfile174823.txt)
 
 ```mermaid
-%%{init: {'flowchart': {'curve': 'linear'}}}%%
+%%{init: {
+  'theme': 'base',
+  'themeVariables': {
+    'fontFamily': 'Segoe UI, Arial, sans-serif',
+    'fontSize': '16px',
+    'primaryTextColor': '#f8fafc',
+    'secondaryTextColor': '#e2e8f0',
+    'tertiaryTextColor': '#f8fafc',
+    'lineColor': '#a78bfa',
+    'primaryColor': '#1f2937',
+    'primaryBorderColor': '#c4b5fd',
+    'secondaryColor': '#312e81',
+    'tertiaryColor': '#1e1b4b',
+    'clusterBkg': '#0f172a',
+    'clusterBorder': '#a78bfa'
+  },
+  'flowchart': {
+    'curve': 'linear',
+    'nodeSpacing': 35,
+    'rankSpacing': 45,
+    'padding': 18
+  }
+}}%%
 flowchart TD
-   __start__([<p>__start__</p>]):::first
-        prompt_guard(prompt_guard)
-        blocked(blocked)
-        classify(classify)
-        requires_lookup(requires_lookup)
-        lookup(lookup)
-        retrieve(retrieve)
-        response(response)
-        __end__([<p>__end__</p>]):::last
-        __start__ --> prompt_guard;
-        classify --> requires_lookup;
-        lookup --> retrieve;
-        prompt_guard -. &nbsp;blocked_route&nbsp; .-> blocked;
-        prompt_guard -. &nbsp;continue_route&nbsp; .-> classify;
-        requires_lookup -. &nbsp;lookup_route&nbsp; .-> lookup;
-        requires_lookup -. &nbsp;retrieve_route&nbsp; .-> retrieve;
-        retrieve --> response;
-        blocked --> __end__;
-        response --> __end__;
-        classDef default fill:#f2f0ff,line-height:1.2
-        classDef first fill-opacity:0
-        classDef last fill:#bfb6fc
+    __start__([__start__]):::first
+    prompt_guard["prompt_guard"]
+    blocked["blocked"]
+    classify["classify"]
+    requires_lookup{"requires_lookup"}
+    lookup["lookup"]
+    retrieve["retrieve"]
+    response["response"]
+    __end__([__end__]):::last
+
+    __start__ --> prompt_guard
+    prompt_guard -. blocked route .-> blocked
+    prompt_guard -. continue route .-> classify
+    classify --> requires_lookup
+    requires_lookup -. lookup route .-> lookup
+    requires_lookup -. retrieve route .-> retrieve
+    lookup --> retrieve
+    retrieve --> response
+    blocked --> __end__
+    response --> __end__
+
+    classDef default fill:#1f2937,stroke:#c4b5fd,stroke-width:2.5px,color:#f8fafc,rx:12,ry:12;
+    classDef first fill:#0f172a,stroke:#c4b5fd,stroke-width:2.5px,color:#f8fafc;
+    classDef last fill:#312e81,stroke:#c4b5fd,stroke-width:2.5px,color:#f8fafc;
