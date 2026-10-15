@@ -42,9 +42,7 @@ def detect_urgency(message):
         URGENCY_LEVELS
     )
 
-def user_inquiry(message):
+def classify_inquiry(message):
     category = classify_ticket(message)
     urgency = detect_urgency(message) 
     return {"category": category, "urgency": urgency}
-
-print(user_inquiry("what payment options do you offer?"))

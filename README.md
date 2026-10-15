@@ -68,3 +68,23 @@ The Groq API model performed better during the evaluation of ticket classificati
 
 - Groq API model log: [logs/myfile163734.txt](logs/myfile163734.txt)
 - Local model log: [logs/myfile174823.txt](logs/myfile174823.txt)
+
+```mermaid
+%%{init: {'flowchart': {'curve': 'linear'}}}%%
+flowchart TD
+    __start__([__start__]):::first
+    classify(classify)
+    lookup(lookup)
+    retrieve(retrieve)
+    response(response)
+    __end__([__end__]):::last
+
+    __start__ --> classify
+    classify --> lookup
+    lookup --> retrieve
+    retrieve --> response
+    response --> __end__
+
+    classDef default fill:#f2f0ff,line-height:1.2
+    classDef first fill-opacity:0
+    classDef last fill:#bfb6fc

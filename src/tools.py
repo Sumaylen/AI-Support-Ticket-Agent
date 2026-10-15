@@ -43,7 +43,17 @@ def get_order_status(order_id, account_id=None):
 
     result = cursor.fetchone()
     conn.close()
-    return result
+
+    if result is None:
+        return None
+
+    return {
+        "order_id": order_id,
+        "account_id": account_id,
+        "status": result[0],
+        "item": result[1],
+        "expected_delivery": result[2],
+    }
 
 #Tool to get account plan
 def get_account_info(account_id):
@@ -55,5 +65,12 @@ def get_account_info(account_id):
             )
      result = cursor.fetchone()
      conn.close()
-     return result
+
+     if result is None:
+         return None
+
+     return {
+        "account_id": account_id,
+        "plan": result[0],
+    }
 

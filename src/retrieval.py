@@ -59,4 +59,3 @@ def retrieve(question, k):
         combined.append(entry)
 
     return combined
-
