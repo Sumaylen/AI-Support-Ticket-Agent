@@ -6,7 +6,6 @@ from llm_client import chat_with_model
 from tools import TOOLS
 from datetime import datetime
 
-LOG_PATH = os.path.abspath("logs/flagged_query.json")
 
 AGENT_SYSTEM_PROMPT = (
     "You are a lookup assistant for a customer support system. "
@@ -20,15 +19,6 @@ AGENT_SYSTEM_PROMPT = (
     "Return only the facts found; do not speculate or answer unrelated questions. "
 )
 
-PROMPT_INJECTION_KEYWORDS = [
-    "ignore previous instructions",
-    "ignore all system prompts",
-    "you are now",
-    "override the rules",
-    "system prompt",
-    "bypass",
-    "act as",
-]
 
 def run_tool_call(tool_call):
     #get the correct paramaters from the tool
@@ -49,16 +39,6 @@ def run_tool_call(tool_call):
 
 # agent loop that keeps calling tools until it retruns a non tool answer or reaches the tool call limit
 def run_agent_loop(message, max_tries):
-    #if suspicious keywords detected flag and return
-    if detect_prompt_injection(message):
-        log_prompt_injection_attempt(message)
-        print(f"[LOG] Prompt injection attempt blocked: {message}")
-        return {
-            "status": "blocked", 
-            "data": [], 
-            "answer": "Prompt injection detected"
-            }
-
     tries = 0
     messages =  [{"role": "user", "content": message}]
     status = "no_lookup"
@@ -130,26 +110,27 @@ def run_agent_loop(message, max_tries):
         "answer": "Tool call limit reached, self destructing in 3 seconds."
     }
 
-#helper to compare words in message to ROMPT_INJECTION_KEYWORDS
-def detect_prompt_injection(message):
+# returns true if a tool call is necessary by checking for keywords and ids
+def requires_tool_call(message):
     text = message.lower()
-    for keyword in PROMPT_INJECTION_KEYWORDS:
-        if keyword in text:
+    has_id = check_digit(message)
+    keywords = False
+    if "order" in text or "account" in text:
+        keywords = True
+    if keywords and has_id == True:
+        return True
+    else:
+        return False
+
+# helper functio nthat checks if there is a 4 digit number in the ticket message
+def check_digit(message):
+    counter = 0
+    for letter in message:
+        if letter.isdigit() == True:
+            counter += 1
+        else:
+            counter = 0
+        if counter > 3:
             return True
     return False
 
-
-# log to a JSON file when a prompt-injection attempt is detected
-def log_prompt_injection_attempt(message):
-    with open(LOG_PATH, "r") as log_file:
-            entries = json.load(log_file)
-
-    entries.append({
-        "timestamp": datetime.now().strftime("%d-%m-%Y %H:%M:%S"),
-        "question": message,
-        "flagged": True,
-        "reason": "prompt_injection_keyword_detected",
-    })
-
-    with open(LOG_PATH, "w") as log_file:
-        json.dump(entries, log_file, indent=2)

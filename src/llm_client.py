@@ -7,7 +7,6 @@ from openai import OpenAI
 
 load_dotenv()  
 
-
 def get_llm_client():
 
     #Get the backend from environment variable or default to "local"

@@ -72,19 +72,25 @@ The Groq API model performed better during the evaluation of ticket classificati
 ```mermaid
 %%{init: {'flowchart': {'curve': 'linear'}}}%%
 flowchart TD
-    __start__([__start__]):::first
-    classify(classify)
-    lookup(lookup)
-    retrieve(retrieve)
-    response(response)
-    __end__([__end__]):::last
-
-    __start__ --> classify
-    classify --> lookup
-    lookup --> retrieve
-    retrieve --> response
-    response --> __end__
-
-    classDef default fill:#f2f0ff,line-height:1.2
-    classDef first fill-opacity:0
-    classDef last fill:#bfb6fc
+   __start__([<p>__start__</p>]):::first
+        prompt_guard(prompt_guard)
+        blocked(blocked)
+        classify(classify)
+        requires_lookup(requires_lookup)
+        lookup(lookup)
+        retrieve(retrieve)
+        response(response)
+        __end__([<p>__end__</p>]):::last
+        __start__ --> prompt_guard;
+        classify --> requires_lookup;
+        lookup --> retrieve;
+        prompt_guard -. &nbsp;blocked_route&nbsp; .-> blocked;
+        prompt_guard -. &nbsp;continue_route&nbsp; .-> classify;
+        requires_lookup -. &nbsp;lookup_route&nbsp; .-> lookup;
+        requires_lookup -. &nbsp;retrieve_route&nbsp; .-> retrieve;
+        retrieve --> response;
+        blocked --> __end__;
+        response --> __end__;
+        classDef default fill:#f2f0ff,line-height:1.2
+        classDef first fill-opacity:0
+        classDef last fill:#bfb6fc
