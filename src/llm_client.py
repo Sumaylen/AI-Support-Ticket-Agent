@@ -19,7 +19,9 @@ def get_llm_client():
             base_url = "http://localhost:8000/v1",
             api_key = "None needed" # No API key needed for local backend
         )
-        model="Qwen_Qwen3.5-4B-Q4_K_M"
+        primary_model="Qwen_Qwen3.5-4B-Q4_K_M"
+        guardrail_model="Qwen_Qwen3.5-4B-Q4_K_M"
+
     elif backend == "groq":
         print("Running with groq backend") 
         thinking = "disabled"
@@ -27,20 +29,26 @@ def get_llm_client():
             base_url = "https://api.groq.com/openai/v1",
             api_key = os.environ.get("GROQ_API_KEY")
         )
-        model="qwen/qwen3.8-27b"
+        primary_model="openai/gpt-oss-120b"
+        guardrail_model="meta-llama/llama-prompt-guard-2-86m"
     else:
         raise ValueError(f"Unsupported backend: {backend}")
 
-    return client, model, thinking
+    return client, primary_model, guardrail_model, thinking
 
 
-client, model, thinking = get_llm_client()
+client, primary_model,guardrail_model, thinking = get_llm_client()
 
 
-def chat_with_model(messages, response_format=None, tools=None):
-
+def chat_with_model(messages,model = "primary_model", response_format=None, tools=None):
+    
+    if model == "primary_model":
+        llm_model = primary_model
+    else:
+        llm_model = guardrail_model
+    print("Current Model: " + llm_model)
     chat_params = {
-        "model": model,
+        "model": llm_model,
         "messages": messages,
         "temperature": 0,
     }
@@ -65,27 +73,35 @@ def chat_with_model(messages, response_format=None, tools=None):
     return msg
 
 
-def classify_json(message, schema_name, field, allowed_values):
-    response = chat_with_model(
-        message,
-        response_format={
-            "type": "json_schema",
-            "json_schema": {
-                "name": schema_name,
-                "strict": False,
-                "schema": {
-                    "type": "object",
-                    "properties": {
-                        field: {"type": "string", "enum": allowed_values}
-                    },
-                    "required": [field],
-                    "additionalProperties": False,
-                },
-            },
-        },
-    )
+def classify_json(message, schema_name, field, allowed_values, model = "primary_model"):
+    
+    if model == "primary_model":
+        llm_model = "primary_model"
+    else:
+        llm_model = "guardrail_model"
 
     try:
+        response = chat_with_model(
+                message,
+                model = llm_model,
+                response_format={
+                    "type": "json_schema",
+                    "json_schema": {
+                        "name": schema_name,
+                        "strict": True,
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                field: {"type": "string", "enum": allowed_values}
+                            },
+                            "required": [field],
+                            "additionalProperties": False,
+                        },
+                    },
+                },
+            )
+
+
         formatted_response = json.loads(response.content)
         return formatted_response[field]
     except Exception:

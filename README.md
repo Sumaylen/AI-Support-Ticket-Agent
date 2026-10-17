@@ -4,8 +4,8 @@
 ## Progress
 - Phase 0 - Set up local LLM + Groq ✅
 - Phase 1 - Database setup ✅
-- Phase 2 - Retrieval + RAG pipeline ⚠️ (partially complete)
-- Phase 3 - Ticket workflow + agent logic
+- Phase 2 - Retrieval + RAG pipeline ✅
+- Phase 3 - Ticket workflow + agent logic ✅
 - Phase 4 - UI/UX + testing
 - Phase 5 - Deployment + polish
 
@@ -96,6 +96,7 @@ The Groq API model performed better during the evaluation of ticket classificati
 flowchart TD
     __start__([__start__]):::first
     prompt_guard["prompt_guard"]
+    llm_prompt_guard["llm_prompt_guard"]
     blocked["blocked"]
     classify["classify"]
     requires_lookup{"requires_lookup"}
@@ -105,12 +106,15 @@ flowchart TD
     __end__([__end__]):::last
 
     __start__ --> prompt_guard
-    prompt_guard -. blocked route .-> blocked
-    prompt_guard -. continue route .-> classify
-    classify --> requires_lookup
-    requires_lookup -. lookup route .-> lookup
-    requires_lookup -. retrieve route .-> retrieve
+    classify -. blocked_route .-> blocked
+    classify -. continue_route .-> requires_lookup
+    llm_prompt_guard -. blocked_route .-> blocked
+    llm_prompt_guard -. continue_route .-> classify
     lookup --> retrieve
+    prompt_guard -. blocked_route .-> blocked
+    prompt_guard -. continue_route .-> llm_prompt_guard
+    requires_lookup -. lookup_route .-> lookup
+    requires_lookup -. retrieve_route .-> retrieve
     retrieve --> response
     blocked --> __end__
     response --> __end__
