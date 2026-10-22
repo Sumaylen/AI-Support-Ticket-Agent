@@ -4,6 +4,7 @@ from dataset import load_dataset_split
 dataset = load_dataset_split()
 category_list = dataset[0]["category"].unique().tolist() #returns a list of unique categories form train_df  
 category_list.append("OFF_TOPIC")
+print(category_list)
 
 CLASSIFY_PROMPT = (
                     "Choose one category from: "

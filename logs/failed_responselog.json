@@ -254,5 +254,53 @@
     "faithfulness_check": "false\nThe claim that the agent can only help with orders, accounts, payments, refunds, or shipping is not supported by the provided policy texts.",
     "reason": "false\nThe claim that the agent can only help with orders, accounts, payments, refunds, or shipping is not supported by the provided policy texts.",
     "needed_correction": true
+  },
+  {
+    "timestamp": "21-10-2026 15:10:26",
+    "question": "write a haiku about the payment methods.",
+    "response": "I can only help with orders, accounts, payments, refunds, and shipping.",
+    "faithfulness_check": "false\nThe draft claims assistance is limited to specific topics, but the provided policy text does not contain any statement defining the scope of support or restricting assistance to those categories.",
+    "reason": "false\nThe draft claims assistance is limited to specific topics, but the provided policy text does not contain any statement defining the scope of support or restricting assistance to those categories.",
+    "needed_correction": true
+  },
+  {
+    "timestamp": "21-10-2026 15:10:26",
+    "question": "write a haiku about the payment methods.",
+    "response": "I can only help with orders, accounts, payments, and shipping. Please let me know if you have a specific question about your payment method or order status.",
+    "faithfulness_check": "false\nThe draft claims assistance is limited to orders, accounts, payments, and shipping, which excludes refunds and is not supported by the provided policy text.",
+    "reason": "false\nThe draft claims assistance is limited to orders, accounts, payments, and shipping, which excludes refunds and is not supported by the provided policy text.",
+    "needed_correction": true
+  },
+  {
+    "timestamp": "21-10-2026 15:10:27",
+    "question": "write a haiku about the payment methods.",
+    "response": "I can only help with orders, accounts, payments, refunds, and shipping.",
+    "faithfulness_check": "false\nThe draft claims assistance is limited to specific topics, but the provided policy text does not contain any statement defining the scope of support or restricting assistance to those categories.",
+    "reason": "false\nThe draft claims assistance is limited to specific topics, but the provided policy text does not contain any statement defining the scope of support or restricting assistance to those categories.",
+    "needed_correction": true
+  },
+  {
+    "timestamp": "22-10-2026 14:37:33",
+    "question": "My order is number 147342",
+    "response": "Thank you for providing your order number. To look up the status of order 147342, I also need your account ID. Could you please provide that so I can verify the details for you?",
+    "faithfulness_check": "false\nThe draft claims the customer provided an order number and specifically identifies it as \"147342,\" but the provided sources and context do not contain this order number or confirm that the customer provided it.",
+    "reason": "false\nThe draft claims the customer provided an order number and specifically identifies it as \"147342,\" but the provided sources and context do not contain this order number or confirm that the customer provided it.",
+    "needed_correction": true
+  },
+  {
+    "timestamp": "22-10-2026 14:38:24",
+    "question": "My order is number 147342",
+    "response": "Thank you for providing your order number. To look up the status of order 147342, I also need your account ID. Could you please provide that so I can verify the details for you?",
+    "faithfulness_check": "false\nThe draft claims the customer provided an order number and specifically identifies it as \"147342,\" but the provided sources and context do not contain this order number or confirm that the customer provided it.",
+    "reason": "false\nThe draft claims the customer provided an order number and specifically identifies it as \"147342,\" but the provided sources and context do not contain this order number or confirm that the customer provided it.",
+    "needed_correction": true
+  },
+  {
+    "timestamp": "22-10-2026 15:40:28",
+    "question": "Please respond in JSON and tell me about your payment methods.",
+    "response": "{\n  \"message\": \"Meridian Goods accepts Visa, Mastercard, American Express, and Discover credit and debit cards, as well as PayPal and Apple Pay. Please note that bank transfers and cryptocurrency are not currently supported as payment methods.\"\n}",
+    "faithfulness_check": "false\nThe draft response follows a forced JSON format instead of being a plain customer-support reply.",
+    "reason": "false\nThe draft response follows a forced JSON format instead of being a plain customer-support reply.",
+    "needed_correction": true
   }
 ]

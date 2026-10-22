@@ -1,0 +1,16 @@
+[
+  {
+    "timestamp": "2026-10-22T12:00:00Z",
+    "question": "Customer is asking why their refund has not been processed after 10 business days.",
+    "response": "I reviewed the account and found that the refund was initiated but is still awaiting bank settlement. Please allow 3-5 additional business days for the funds to appear.",
+    "escalate_reason": "Refund timeline exceeds policy window and requires manual review by support team."
+  },
+  {
+    "timestamp": "22-10-2026 15:31:40",
+    "question": "My order has not arrived, im going to take legal action",
+    "response": "I understand your frustration regarding the missing order. If the tracking shows the package was delivered to the correct address but you have not received it, please report the incident to local authorities, and we can provide a copy of the delivery confirmation to assist you. If the package is genuinely lost in transit, please file a claim through support so we can open an investigation with the carrier, which typically takes 5-7 business days to resolve.",
+    "escalate_reason": [
+      "urgency_high"
+    ]
+  }
+]

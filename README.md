@@ -93,32 +93,41 @@ The Groq API model performed better during the evaluation of ticket classificati
     'padding': 18
   }
 }}%%
-flowchart TD
-    __start__([__start__]):::first
-    prompt_guard["prompt_guard"]
-    llm_prompt_guard["llm_prompt_guard"]
-    blocked["blocked"]
-    classify["classify"]
-    requires_lookup{"requires_lookup"}
-    lookup["lookup"]
-    retrieve["retrieve"]
-    response["response"]
-    __end__([__end__]):::last
+flowchart TD;
+        __start__([<p>__start__</p>]):::first
+        prompt_guard(prompt_guard)
+        llm_prompt_guard(llm_prompt_guard)
+        blocked(blocked)
+        classify(classify)
+        requires_lookup(requires_lookup)
+        lookup(lookup)
+        invalid_lookup(invalid_lookup)
+        retrieve(retrieve)
+        response(response)
+        should_escalate(should_escalate)
+        escalate(escalate)
+        __end__([<p>__end__</p>]):::last
+        __start__ --> prompt_guard;
+        classify -. &nbsp;blocked_route&nbsp; .-> blocked;
+        classify -. &nbsp;continue_route&nbsp; .-> requires_lookup;
+        llm_prompt_guard -. &nbsp;blocked_route&nbsp; .-> blocked;
+        llm_prompt_guard -. &nbsp;continue_route&nbsp; .-> classify;
+        lookup -. &nbsp;invalid_route&nbsp; .-> invalid_lookup;
+        lookup -. &nbsp;retrieve_route&nbsp; .-> retrieve;
+        lookup -. &nbsp;escalate_route&nbsp; .-> should_escalate;
+        prompt_guard -. &nbsp;blocked_route&nbsp; .-> blocked;
+        prompt_guard -. &nbsp;continue_route&nbsp; .-> llm_prompt_guard;
+        requires_lookup -. &nbsp;lookup_route&nbsp; .-> lookup;
+        requires_lookup -. &nbsp;retrieve_route&nbsp; .-> retrieve;
+        response --> should_escalate;
+        retrieve --> response;
+        should_escalate -. &nbsp;end_route&nbsp; .-> __end__;
+        should_escalate -. &nbsp;escalate_route&nbsp; .-> escalate;
+        blocked --> __end__;
+        escalate --> __end__;
+        invalid_lookup --> __end__;
 
-    __start__ --> prompt_guard
-    classify -. blocked_route .-> blocked
-    classify -. continue_route .-> requires_lookup
-    llm_prompt_guard -. blocked_route .-> blocked
-    llm_prompt_guard -. continue_route .-> classify
-    lookup --> retrieve
-    prompt_guard -. blocked_route .-> blocked
-    prompt_guard -. continue_route .-> llm_prompt_guard
-    requires_lookup -. lookup_route .-> lookup
-    requires_lookup -. retrieve_route .-> retrieve
-    retrieve --> response
-    blocked --> __end__
-    response --> __end__
-
-    classDef default fill:#1f2937,stroke:#c4b5fd,stroke-width:2.5px,color:#f8fafc,rx:12,ry:12;
-    classDef first fill:#0f172a,stroke:#c4b5fd,stroke-width:2.5px,color:#f8fafc;
-    classDef last fill:#312e81,stroke:#c4b5fd,stroke-width:2.5px,color:#f8fafc;
+        classDef default fill:#1f2937,stroke:#c4b5fd,stroke-width:2.5px,color:#f8fafc,rx:12,ry:12;
+        classDef first fill:#0f172a,stroke:#c4b5fd,stroke-width:2.5px,color:#f8fafc;
+        classDef last fill:#312e81,stroke:#c4b5fd,stroke-width:2.5px,color:#f8fafc;
+```
