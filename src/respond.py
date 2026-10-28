@@ -3,8 +3,8 @@ import json
 import os
 from datetime import datetime
 
-from JSON_logger import log_json_event
-from llm_client import chat_with_model
+from src.JSON_logger import log_json_event
+from src.llm_client import chat_with_model
 
 
 LOG_PATH = os.path.abspath("logs/failed_responselog.json")

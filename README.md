@@ -10,6 +10,8 @@
 - Phase 5 - Deployment + polish
 
 ## Setup
+Use **Python 3.12** for this project.
+
 **Note:** You run setup.bat once to create the virtual environment, download the necessary requirements, and create & populate the database.
 1. Run `setup.bat`.
 2. This creates a local `.env` if needed.
@@ -25,6 +27,16 @@ LLM_BACKEND=groq
 ```
 
 > Warning: this setup was validated with the tested model above. Other models may require different configuration, tuning, or prompt adjustments and are not guaranteed to work correctly.
+
+## Run the ticket workflow
+
+From the project root, using the Python environment created during setup, run:
+
+```powershell
+python -m src.graph
+```
+
+Run this as a module so Python can resolve the `src.*` imports. Running `python src/graph.py` directly can cause `ModuleNotFoundError: No module named 'src'`.
 
 ## Optional: run locally with llama.cpp
 

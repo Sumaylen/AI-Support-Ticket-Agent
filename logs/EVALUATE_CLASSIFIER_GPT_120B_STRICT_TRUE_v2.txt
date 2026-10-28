@@ -1,0 +1,3492 @@
+
+Evaluating message 1 .....
+
+
+Response: CONTACT
+
+Expected response: CONTACT
+
+PASS
+
+==================================================================
+
+PASSED: 1 FAILED: 0
+
+Evaluating message 2 .....
+
+
+Response: INVOICE
+
+Expected response: INVOICE
+
+PASS
+
+==================================================================
+
+PASSED: 2 FAILED: 0
+
+Evaluating message 3 .....
+
+
+Response: PAYMENT
+
+Expected response: PAYMENT
+
+PASS
+
+==================================================================
+
+PASSED: 3 FAILED: 0
+
+Evaluating message 4 .....
+
+
+Response: CONTACT
+
+Expected response: CONTACT
+
+PASS
+
+==================================================================
+
+PASSED: 4 FAILED: 0
+
+Evaluating message 5 .....
+
+
+Response: PAYMENT
+
+Expected response: PAYMENT
+
+PASS
+
+==================================================================
+
+PASSED: 5 FAILED: 0
+
+Evaluating message 6 .....
+
+
+Response: SUBSCRIPTION
+
+Expected response: SUBSCRIPTION
+
+PASS
+
+==================================================================
+
+PASSED: 6 FAILED: 0
+
+Evaluating message 7 .....
+
+
+Response: PAYMENT
+
+Expected response: CANCEL
+FAIL
+
+==================================================================
+
+PASSED: 6 FAILED: 1
+
+Evaluating message 8 .....
+
+
+Response: CONTACT
+
+Expected response: CONTACT
+
+PASS
+
+==================================================================
+
+PASSED: 7 FAILED: 1
+
+Evaluating message 9 .....
+
+
+Response: INVOICE
+
+Expected response: INVOICE
+
+PASS
+
+==================================================================
+
+PASSED: 8 FAILED: 1
+
+Evaluating message 10 .....
+
+
+Response: INVOICE
+
+Expected response: INVOICE
+
+PASS
+
+==================================================================
+
+PASSED: 9 FAILED: 1
+
+Evaluating message 11 .....
+
+
+Response: ACCOUNT
+
+Expected response: ACCOUNT
+
+PASS
+
+==================================================================
+
+PASSED: 10 FAILED: 1
+
+Evaluating message 12 .....
+
+
+Response: REFUND
+
+Expected response: REFUND
+
+PASS
+
+==================================================================
+
+PASSED: 11 FAILED: 1
+
+Evaluating message 13 .....
+
+
+Response: INVOICE
+
+Expected response: INVOICE
+
+PASS
+
+==================================================================
+
+PASSED: 12 FAILED: 1
+
+Evaluating message 14 .....
+
+
+Response: FEEDBACK
+
+Expected response: FEEDBACK
+
+PASS
+
+==================================================================
+
+PASSED: 13 FAILED: 1
+
+Evaluating message 15 .....
+
+
+Response: CONTACT
+
+Expected response: CONTACT
+
+PASS
+
+==================================================================
+
+PASSED: 14 FAILED: 1
+
+Evaluating message 16 .....
+
+
+Response: SUBSCRIPTION
+
+Expected response: CANCEL
+FAIL
+
+==================================================================
+
+PASSED: 14 FAILED: 2
+
+Evaluating message 17 .....
+
+
+Response: SUBSCRIPTION
+
+Expected response: SUBSCRIPTION
+
+PASS
+
+==================================================================
+
+PASSED: 15 FAILED: 2
+
+Evaluating message 18 .....
+
+
+Response: ACCOUNT
+
+Expected response: ACCOUNT
+
+PASS
+
+==================================================================
+
+PASSED: 16 FAILED: 2
+
+Evaluating message 19 .....
+
+
+Response: INVOICE
+
+Expected response: INVOICE
+
+PASS
+
+==================================================================
+
+PASSED: 17 FAILED: 2
+
+Evaluating message 20 .....
+
+
+Response: REFUND
+
+Expected response: REFUND
+
+PASS
+
+==================================================================
+
+PASSED: 18 FAILED: 2
+
+Evaluating message 21 .....
+
+
+Response: SUBSCRIPTION
+
+Expected response: ACCOUNT
+FAIL
+
+==================================================================
+
+PASSED: 18 FAILED: 3
+
+Evaluating message 22 .....
+
+
+Response: SUBSCRIPTION
+
+Expected response: SUBSCRIPTION
+
+PASS
+
+==================================================================
+
+PASSED: 19 FAILED: 3
+
+Evaluating message 23 .....
+
+
+Response: CANCEL
+
+Expected response: ACCOUNT
+FAIL
+
+==================================================================
+
+PASSED: 19 FAILED: 4
+
+Evaluating message 24 .....
+
+
+Response: SUBSCRIPTION
+
+Expected response: SUBSCRIPTION
+
+PASS
+
+==================================================================
+
+PASSED: 20 FAILED: 4
+
+Evaluating message 25 .....
+
+
+Response: CONTACT
+
+Expected response: CONTACT
+
+PASS
+
+==================================================================
+
+PASSED: 21 FAILED: 4
+
+Evaluating message 26 .....
+
+
+Response: CONTACT
+
+Expected response: CONTACT
+
+PASS
+
+==================================================================
+
+PASSED: 22 FAILED: 4
+
+Evaluating message 27 .....
+
+
+Response: PAYMENT
+
+Expected response: CANCEL
+FAIL
+
+==================================================================
+
+PASSED: 22 FAILED: 5
+
+Evaluating message 28 .....
+
+
+Response: DELIVERY
+
+Expected response: DELIVERY
+
+PASS
+
+==================================================================
+
+PASSED: 23 FAILED: 5
+
+Evaluating message 29 .....
+
+
+Response: SHIPPING
+
+Expected response: SHIPPING
+
+PASS
+
+==================================================================
+
+PASSED: 24 FAILED: 5
+
+Evaluating message 30 .....
+
+
+Response: CANCEL
+
+Expected response: CANCEL
+
+PASS
+
+==================================================================
+
+PASSED: 25 FAILED: 5
+
+Evaluating message 31 .....
+
+
+Response: CONTACT
+
+Expected response: CONTACT
+
+PASS
+
+==================================================================
+
+PASSED: 26 FAILED: 5
+
+Evaluating message 32 .....
+
+
+Response: ACCOUNT
+
+Expected response: ACCOUNT
+
+PASS
+
+==================================================================
+
+PASSED: 27 FAILED: 5
+
+Evaluating message 33 .....
+
+
+Response: REFUND
+
+Expected response: REFUND
+
+PASS
+
+==================================================================
+
+PASSED: 28 FAILED: 5
+
+Evaluating message 34 .....
+
+
+Response: INVOICE
+
+Expected response: INVOICE
+
+PASS
+
+==================================================================
+
+PASSED: 29 FAILED: 5
+
+Evaluating message 35 .....
+
+
+Response: CANCEL
+
+Expected response: ORDER
+FAIL
+
+==================================================================
+
+PASSED: 29 FAILED: 6
+
+Evaluating message 36 .....
+
+
+Response: CONTACT
+
+Expected response: CONTACT
+
+PASS
+
+==================================================================
+
+PASSED: 30 FAILED: 6
+
+Evaluating message 37 .....
+
+
+Response: ORDER
+
+Expected response: ORDER
+
+PASS
+
+==================================================================
+
+PASSED: 31 FAILED: 6
+
+Evaluating message 38 .....
+
+
+Response: SUBSCRIPTION
+
+Expected response: SUBSCRIPTION
+
+PASS
+
+==================================================================
+
+PASSED: 32 FAILED: 6
+
+Evaluating message 39 .....
+
+
+Response: CONTACT
+
+Expected response: CONTACT
+
+PASS
+
+==================================================================
+
+PASSED: 33 FAILED: 6
+
+Evaluating message 40 .....
+
+
+Response: CONTACT
+
+Expected response: CONTACT
+
+PASS
+
+==================================================================
+
+PASSED: 34 FAILED: 6
+
+Evaluating message 41 .....
+
+
+Response: REFUND
+
+Expected response: REFUND
+
+PASS
+
+==================================================================
+
+PASSED: 35 FAILED: 6
+
+Evaluating message 42 .....
+
+
+Response: SHIPPING
+
+Expected response: SHIPPING
+
+PASS
+
+==================================================================
+
+PASSED: 36 FAILED: 6
+
+Evaluating message 43 .....
+
+
+Response: INVOICE
+
+Expected response: INVOICE
+
+PASS
+
+==================================================================
+
+PASSED: 37 FAILED: 6
+
+Evaluating message 44 .....
+
+
+Response: DELIVERY
+
+Expected response: DELIVERY
+
+PASS
+
+==================================================================
+
+PASSED: 38 FAILED: 6
+
+Evaluating message 45 .....
+
+
+Response: PAYMENT
+
+Expected response: PAYMENT
+
+PASS
+
+==================================================================
+
+PASSED: 39 FAILED: 6
+
+Evaluating message 46 .....
+
+
+Response: CONTACT
+
+Expected response: CONTACT
+
+PASS
+
+==================================================================
+
+PASSED: 40 FAILED: 6
+
+Evaluating message 47 .....
+
+
+Response: ACCOUNT
+
+Expected response: ACCOUNT
+
+PASS
+
+==================================================================
+
+PASSED: 41 FAILED: 6
+
+Evaluating message 48 .....
+
+
+Response: INVOICE
+
+Expected response: INVOICE
+
+PASS
+
+==================================================================
+
+PASSED: 42 FAILED: 6
+
+Evaluating message 49 .....
+
+
+Response: ACCOUNT
+
+Expected response: ACCOUNT
+
+PASS
+
+==================================================================
+
+PASSED: 43 FAILED: 6
+
+Evaluating message 50 .....
+
+
+Response: CONTACT
+
+Expected response: CONTACT
+
+PASS
+
+==================================================================
+
+PASSED: 44 FAILED: 6
+
+Evaluating message 51 .....
+
+
+Response: FEEDBACK
+
+Expected response: FEEDBACK
+
+PASS
+
+==================================================================
+
+PASSED: 45 FAILED: 6
+
+Evaluating message 52 .....
+
+
+Response: PAYMENT
+
+Expected response: CANCEL
+FAIL
+
+==================================================================
+
+PASSED: 45 FAILED: 7
+
+Evaluating message 53 .....
+
+
+Response: REFUND
+
+Expected response: REFUND
+
+PASS
+
+==================================================================
+
+PASSED: 46 FAILED: 7
+
+Evaluating message 54 .....
+
+
+Response: ORDER
+
+Expected response: ORDER
+
+PASS
+
+==================================================================
+
+PASSED: 47 FAILED: 7
+
+Evaluating message 55 .....
+
+
+Response: DELIVERY
+
+Expected response: ORDER
+FAIL
+
+==================================================================
+
+PASSED: 47 FAILED: 8
+
+Evaluating message 56 .....
+
+
+Response: ACCOUNT
+
+Expected response: ACCOUNT
+
+PASS
+
+==================================================================
+
+PASSED: 48 FAILED: 8
+
+Evaluating message 57 .....
+
+
+Response: ACCOUNT
+
+Expected response: ACCOUNT
+
+PASS
+
+==================================================================
+
+PASSED: 49 FAILED: 8
+
+Evaluating message 58 .....
+
+
+Response: CONTACT
+
+Expected response: CONTACT
+
+PASS
+
+==================================================================
+
+PASSED: 50 FAILED: 8
+
+Evaluating message 59 .....
+
+
+Response: CANCEL
+
+Expected response: CANCEL
+
+PASS
+
+==================================================================
+
+PASSED: 51 FAILED: 8
+
+Evaluating message 60 .....
+
+
+Response: ACCOUNT
+
+Expected response: ACCOUNT
+
+PASS
+
+==================================================================
+
+PASSED: 52 FAILED: 8
+
+Evaluating message 61 .....
+
+
+Response: INVOICE
+
+Expected response: INVOICE
+
+PASS
+
+==================================================================
+
+PASSED: 53 FAILED: 8
+
+Evaluating message 62 .....
+
+
+Response: ACCOUNT
+
+Expected response: ACCOUNT
+
+PASS
+
+==================================================================
+
+PASSED: 54 FAILED: 8
+
+Evaluating message 63 .....
+
+
+Response: INVOICE
+
+Expected response: INVOICE
+
+PASS
+
+==================================================================
+
+PASSED: 55 FAILED: 8
+
+Evaluating message 64 .....
+
+
+Response: SHIPPING
+
+Expected response: SHIPPING
+
+PASS
+
+==================================================================
+
+PASSED: 56 FAILED: 8
+
+Evaluating message 65 .....
+
+
+Response: ACCOUNT
+
+Expected response: SHIPPING
+FAIL
+
+==================================================================
+
+PASSED: 56 FAILED: 9
+
+Evaluating message 66 .....
+
+
+Response: INVOICE
+
+Expected response: INVOICE
+
+PASS
+
+==================================================================
+
+PASSED: 57 FAILED: 9
+
+Evaluating message 67 .....
+
+
+Response: ACCOUNT
+
+Expected response: ACCOUNT
+
+PASS
+
+==================================================================
+
+PASSED: 58 FAILED: 9
+
+Evaluating message 68 .....
+
+
+Response: ACCOUNT
+
+Expected response: ACCOUNT
+
+PASS
+
+==================================================================
+
+PASSED: 59 FAILED: 9
+
+Evaluating message 69 .....
+
+
+Response: ACCOUNT
+
+Expected response: ACCOUNT
+
+PASS
+
+==================================================================
+
+PASSED: 60 FAILED: 9
+
+Evaluating message 70 .....
+
+
+Response: CONTACT
+
+Expected response: CONTACT
+
+PASS
+
+==================================================================
+
+PASSED: 61 FAILED: 9
+
+Evaluating message 71 .....
+
+
+Response: PAYMENT
+
+Expected response: PAYMENT
+
+PASS
+
+==================================================================
+
+PASSED: 62 FAILED: 9
+
+Evaluating message 72 .....
+
+
+Response: CONTACT
+
+Expected response: CONTACT
+
+PASS
+
+==================================================================
+
+PASSED: 63 FAILED: 9
+
+Evaluating message 73 .....
+
+
+Response: SHIPPING
+
+Expected response: DELIVERY
+FAIL
+
+==================================================================
+
+PASSED: 63 FAILED: 10
+
+Evaluating message 74 .....
+
+
+Response: FEEDBACK
+
+Expected response: FEEDBACK
+
+PASS
+
+==================================================================
+
+PASSED: 64 FAILED: 10
+
+Evaluating message 75 .....
+
+
+Response: REFUND
+
+Expected response: REFUND
+
+PASS
+
+==================================================================
+
+PASSED: 65 FAILED: 10
+
+Evaluating message 76 .....
+
+
+Response: REFUND
+
+Expected response: REFUND
+
+PASS
+
+==================================================================
+
+PASSED: 66 FAILED: 10
+
+Evaluating message 77 .....
+
+
+Response: REFUND
+
+Expected response: REFUND
+
+PASS
+
+==================================================================
+
+PASSED: 67 FAILED: 10
+
+Evaluating message 78 .....
+
+
+Response: CONTACT
+
+Expected response: CONTACT
+
+PASS
+
+==================================================================
+
+PASSED: 68 FAILED: 10
+
+Evaluating message 79 .....
+
+
+Response: PAYMENT
+
+Expected response: PAYMENT
+
+PASS
+
+==================================================================
+
+PASSED: 69 FAILED: 10
+
+Evaluating message 80 .....
+
+
+Response: SHIPPING
+
+Expected response: SHIPPING
+
+PASS
+
+==================================================================
+
+PASSED: 70 FAILED: 10
+
+Evaluating message 81 .....
+
+
+Response: ACCOUNT
+
+Expected response: ACCOUNT
+
+PASS
+
+==================================================================
+
+PASSED: 71 FAILED: 10
+
+Evaluating message 82 .....
+
+
+Response: ORDER
+
+Expected response: DELIVERY
+FAIL
+
+==================================================================
+
+PASSED: 71 FAILED: 11
+
+Evaluating message 83 .....
+
+
+Response: REFUND
+
+Expected response: REFUND
+
+PASS
+
+==================================================================
+
+PASSED: 72 FAILED: 11
+
+Evaluating message 84 .....
+
+
+Response: REFUND
+
+Expected response: REFUND
+
+PASS
+
+==================================================================
+
+PASSED: 73 FAILED: 11
+
+Evaluating message 85 .....
+
+
+Response: SUBSCRIPTION
+
+Expected response: SUBSCRIPTION
+
+PASS
+
+==================================================================
+
+PASSED: 74 FAILED: 11
+
+Evaluating message 86 .....
+
+
+Response: INVOICE
+
+Expected response: INVOICE
+
+PASS
+
+==================================================================
+
+PASSED: 75 FAILED: 11
+
+Evaluating message 87 .....
+
+
+Response: PAYMENT
+
+Expected response: PAYMENT
+
+PASS
+
+==================================================================
+
+PASSED: 76 FAILED: 11
+
+Evaluating message 88 .....
+
+
+Response: CONTACT
+
+Expected response: CONTACT
+
+PASS
+
+==================================================================
+
+PASSED: 77 FAILED: 11
+
+Evaluating message 89 .....
+
+
+Response: ACCOUNT
+
+Expected response: ACCOUNT
+
+PASS
+
+==================================================================
+
+PASSED: 78 FAILED: 11
+
+Evaluating message 90 .....
+
+
+Response: CONTACT
+
+Expected response: CONTACT
+
+PASS
+
+==================================================================
+
+PASSED: 79 FAILED: 11
+
+Evaluating message 91 .....
+
+
+Response: ACCOUNT
+
+Expected response: ACCOUNT
+
+PASS
+
+==================================================================
+
+PASSED: 80 FAILED: 11
+
+Evaluating message 92 .....
+
+
+Response: ORDER
+
+Expected response: ORDER
+
+PASS
+
+==================================================================
+
+PASSED: 81 FAILED: 11
+
+Evaluating message 93 .....
+
+
+Response: FEEDBACK
+
+Expected response: FEEDBACK
+
+PASS
+
+==================================================================
+
+PASSED: 82 FAILED: 11
+
+Evaluating message 94 .....
+
+
+Response: CONTACT
+
+Expected response: CONTACT
+
+PASS
+
+==================================================================
+
+PASSED: 83 FAILED: 11
+
+Evaluating message 95 .....
+
+
+Response: REFUND
+
+Expected response: REFUND
+
+PASS
+
+==================================================================
+
+PASSED: 84 FAILED: 11
+
+Evaluating message 96 .....
+
+
+Response: CONTACT
+
+Expected response: CONTACT
+
+PASS
+
+==================================================================
+
+PASSED: 85 FAILED: 11
+
+Evaluating message 97 .....
+
+
+Response: ACCOUNT
+
+Expected response: ACCOUNT
+
+PASS
+
+==================================================================
+
+PASSED: 86 FAILED: 11
+
+Evaluating message 98 .....
+
+
+Response: ACCOUNT
+
+Expected response: ACCOUNT
+
+PASS
+
+==================================================================
+
+PASSED: 87 FAILED: 11
+
+Evaluating message 99 .....
+
+
+Response: CANCEL
+
+Expected response: ORDER
+FAIL
+
+==================================================================
+
+PASSED: 87 FAILED: 12
+
+Evaluating message 100 .....
+
+
+Response: ORDER
+
+Expected response: ORDER
+
+PASS
+
+==================================================================
+
+PASSED: 88 FAILED: 12
+
+Evaluating message 101 .....
+
+
+Response: FEEDBACK
+
+Expected response: FEEDBACK
+
+PASS
+
+==================================================================
+
+PASSED: 89 FAILED: 12
+
+Evaluating message 102 .....
+
+
+Response: SHIPPING
+
+Expected response: SHIPPING
+
+PASS
+
+==================================================================
+
+PASSED: 90 FAILED: 12
+
+Evaluating message 103 .....
+
+
+Response: ACCOUNT
+
+Expected response: ACCOUNT
+
+PASS
+
+==================================================================
+
+PASSED: 91 FAILED: 12
+
+Evaluating message 104 .....
+
+
+Response: INVOICE
+
+Expected response: INVOICE
+
+PASS
+
+==================================================================
+
+PASSED: 92 FAILED: 12
+
+Evaluating message 105 .....
+
+
+Response: REFUND
+
+Expected response: REFUND
+
+PASS
+
+==================================================================
+
+PASSED: 93 FAILED: 12
+
+Evaluating message 106 .....
+
+
+Response: ORDER
+
+Expected response: ORDER
+
+PASS
+
+==================================================================
+
+PASSED: 94 FAILED: 12
+
+Evaluating message 107 .....
+
+
+Response: ACCOUNT
+
+Expected response: ACCOUNT
+
+PASS
+
+==================================================================
+
+PASSED: 95 FAILED: 12
+
+Evaluating message 108 .....
+
+
+Response: CANCEL
+
+Expected response: ACCOUNT
+FAIL
+
+==================================================================
+
+PASSED: 95 FAILED: 13
+
+Evaluating message 109 .....
+
+
+Response: ACCOUNT
+
+Expected response: ACCOUNT
+
+PASS
+
+==================================================================
+
+PASSED: 96 FAILED: 13
+
+Evaluating message 110 .....
+
+
+Response: ACCOUNT
+
+Expected response: ACCOUNT
+
+PASS
+
+==================================================================
+
+PASSED: 97 FAILED: 13
+
+Evaluating message 111 .....
+
+
+Response: PAYMENT
+
+Expected response: PAYMENT
+
+PASS
+
+==================================================================
+
+PASSED: 98 FAILED: 13
+
+Evaluating message 112 .....
+
+
+Response: SHIPPING
+
+Expected response: SHIPPING
+
+PASS
+
+==================================================================
+
+PASSED: 99 FAILED: 13
+
+Evaluating message 113 .....
+
+
+Response: ACCOUNT
+
+Expected response: ACCOUNT
+
+PASS
+
+==================================================================
+
+PASSED: 100 FAILED: 13
+
+Evaluating message 114 .....
+
+
+Response: SHIPPING
+
+Expected response: SHIPPING
+
+PASS
+
+==================================================================
+
+PASSED: 101 FAILED: 13
+
+Evaluating message 115 .....
+
+
+Response: INVOICE
+
+Expected response: INVOICE
+
+PASS
+
+==================================================================
+
+PASSED: 102 FAILED: 13
+
+Evaluating message 116 .....
+
+
+Response: REFUND
+
+Expected response: REFUND
+
+PASS
+
+==================================================================
+
+PASSED: 103 FAILED: 13
+
+Evaluating message 117 .....
+
+
+Response: REFUND
+
+Expected response: REFUND
+
+PASS
+
+==================================================================
+
+PASSED: 104 FAILED: 13
+
+Evaluating message 118 .....
+
+
+Response: FEEDBACK
+
+Expected response: FEEDBACK
+
+PASS
+
+==================================================================
+
+PASSED: 105 FAILED: 13
+
+Evaluating message 119 .....
+
+
+Response: SHIPPING
+
+Expected response: SHIPPING
+
+PASS
+
+==================================================================
+
+PASSED: 106 FAILED: 13
+
+Evaluating message 120 .....
+
+
+Response: CONTACT
+
+Expected response: CONTACT
+
+PASS
+
+==================================================================
+
+PASSED: 107 FAILED: 13
+
+Evaluating message 121 .....
+
+
+Response: SHIPPING
+
+Expected response: SHIPPING
+
+PASS
+
+==================================================================
+
+PASSED: 108 FAILED: 13
+
+Evaluating message 122 .....
+
+
+Response: ACCOUNT
+
+Expected response: ACCOUNT
+
+PASS
+
+==================================================================
+
+PASSED: 109 FAILED: 13
+
+Evaluating message 123 .....
+
+
+Response: SHIPPING
+
+Expected response: DELIVERY
+FAIL
+
+==================================================================
+
+PASSED: 109 FAILED: 14
+
+Evaluating message 124 .....
+
+
+Response: INVOICE
+
+Expected response: INVOICE
+
+PASS
+
+==================================================================
+
+PASSED: 110 FAILED: 14
+
+Evaluating message 125 .....
+
+
+Response: CANCEL
+
+Expected response: ORDER
+FAIL
+
+==================================================================
+
+PASSED: 110 FAILED: 15
+
+Evaluating message 126 .....
+
+
+Response: ORDER
+
+Expected response: ORDER
+
+PASS
+
+==================================================================
+
+PASSED: 111 FAILED: 15
+
+Evaluating message 127 .....
+
+
+Response: SUBSCRIPTION
+
+Expected response: SUBSCRIPTION
+
+PASS
+
+==================================================================
+
+PASSED: 112 FAILED: 15
+
+Evaluating message 128 .....
+
+
+Response: INVOICE
+
+Expected response: INVOICE
+
+PASS
+
+==================================================================
+
+PASSED: 113 FAILED: 15
+
+Evaluating message 129 .....
+
+
+Response: ACCOUNT
+
+Expected response: ACCOUNT
+
+PASS
+
+==================================================================
+
+PASSED: 114 FAILED: 15
+
+Evaluating message 130 .....
+
+
+Response: SHIPPING
+
+Expected response: SHIPPING
+
+PASS
+
+==================================================================
+
+PASSED: 115 FAILED: 15
+
+Evaluating message 131 .....
+
+
+Response: REFUND
+
+Expected response: REFUND
+
+PASS
+
+==================================================================
+
+PASSED: 116 FAILED: 15
+
+Evaluating message 132 .....
+
+
+Response: SHIPPING
+
+Expected response: SHIPPING
+
+PASS
+
+==================================================================
+
+PASSED: 117 FAILED: 15
+
+Evaluating message 133 .....
+
+
+Response: SUBSCRIPTION
+
+Expected response: SUBSCRIPTION
+
+PASS
+
+==================================================================
+
+PASSED: 118 FAILED: 15
+
+Evaluating message 134 .....
+
+
+Response: FEEDBACK
+
+Expected response: FEEDBACK
+
+PASS
+
+==================================================================
+
+PASSED: 119 FAILED: 15
+
+Evaluating message 135 .....
+
+
+Response: PAYMENT
+
+Expected response: PAYMENT
+
+PASS
+
+==================================================================
+
+PASSED: 120 FAILED: 15
+
+Evaluating message 136 .....
+
+
+Response: SHIPPING
+
+Expected response: DELIVERY
+FAIL
+
+==================================================================
+
+PASSED: 120 FAILED: 16
+
+Evaluating message 137 .....
+
+
+Response: PAYMENT
+
+Expected response: PAYMENT
+
+PASS
+
+==================================================================
+
+PASSED: 121 FAILED: 16
+
+Evaluating message 138 .....
+
+
+Response: CONTACT
+
+Expected response: CONTACT
+
+PASS
+
+==================================================================
+
+PASSED: 122 FAILED: 16
+
+Evaluating message 139 .....
+
+
+Response: PAYMENT
+
+Expected response: PAYMENT
+
+PASS
+
+==================================================================
+
+PASSED: 123 FAILED: 16
+
+Evaluating message 140 .....
+
+
+Response: SHIPPING
+
+Expected response: DELIVERY
+FAIL
+
+==================================================================
+
+PASSED: 123 FAILED: 17
+
+Evaluating message 141 .....
+
+
+Response: INVOICE
+
+Expected response: INVOICE
+
+PASS
+
+==================================================================
+
+PASSED: 124 FAILED: 17
+
+Evaluating message 142 .....
+
+
+Response: CONTACT
+
+Expected response: CONTACT
+
+PASS
+
+==================================================================
+
+PASSED: 125 FAILED: 17
+
+Evaluating message 143 .....
+
+
+Response: INVOICE
+
+Expected response: INVOICE
+
+PASS
+
+==================================================================
+
+PASSED: 126 FAILED: 17
+
+Evaluating message 144 .....
+
+
+Response: INVOICE
+
+Expected response: INVOICE
+
+PASS
+
+==================================================================
+
+PASSED: 127 FAILED: 17
+
+Evaluating message 145 .....
+
+
+Response: OFF_TOPIC
+
+Expected response: FEEDBACK
+FAIL
+
+==================================================================
+
+PASSED: 127 FAILED: 18
+
+Evaluating message 146 .....
+
+
+Response: PAYMENT
+
+Expected response: PAYMENT
+
+PASS
+
+==================================================================
+
+PASSED: 128 FAILED: 18
+
+Evaluating message 147 .....
+
+
+Response: INVOICE
+
+Expected response: INVOICE
+
+PASS
+
+==================================================================
+
+PASSED: 129 FAILED: 18
+
+Evaluating message 148 .....
+
+
+Response: ACCOUNT
+
+Expected response: ACCOUNT
+
+PASS
+
+==================================================================
+
+PASSED: 130 FAILED: 18
+
+Evaluating message 149 .....
+
+
+Response: ACCOUNT
+
+Expected response: ACCOUNT
+
+PASS
+
+==================================================================
+
+PASSED: 131 FAILED: 18
+
+Evaluating message 150 .....
+
+
+Response: CONTACT
+
+Expected response: CONTACT
+
+PASS
+
+==================================================================
+
+PASSED: 132 FAILED: 18
+
+Evaluating message 151 .....
+
+
+Response: CONTACT
+
+Expected response: CONTACT
+
+PASS
+
+==================================================================
+
+PASSED: 133 FAILED: 18
+
+Evaluating message 152 .....
+
+
+Response: PAYMENT
+
+Expected response: PAYMENT
+
+PASS
+
+==================================================================
+
+PASSED: 134 FAILED: 18
+
+Evaluating message 153 .....
+
+
+Response: CANCEL
+
+Expected response: ORDER
+FAIL
+
+==================================================================
+
+PASSED: 134 FAILED: 19
+
+Evaluating message 154 .....
+
+
+Response: ACCOUNT
+
+Expected response: ACCOUNT
+
+PASS
+
+==================================================================
+
+PASSED: 135 FAILED: 19
+
+Evaluating message 155 .....
+
+
+Response: SHIPPING
+
+Expected response: DELIVERY
+FAIL
+
+==================================================================
+
+PASSED: 135 FAILED: 20
+
+Evaluating message 156 .....
+
+
+Response: INVOICE
+
+Expected response: INVOICE
+
+PASS
+
+==================================================================
+
+PASSED: 136 FAILED: 20
+
+Evaluating message 157 .....
+
+
+Response: ORDER
+
+Expected response: ORDER
+
+PASS
+
+==================================================================
+
+PASSED: 137 FAILED: 20
+
+Evaluating message 158 .....
+
+
+Response: DELIVERY
+
+Expected response: DELIVERY
+
+PASS
+
+==================================================================
+
+PASSED: 138 FAILED: 20
+
+Evaluating message 159 .....
+
+
+Response: PAYMENT
+
+Expected response: PAYMENT
+
+PASS
+
+==================================================================
+
+PASSED: 139 FAILED: 20
+
+Evaluating message 160 .....
+
+
+Response: CANCEL
+
+Expected response: ORDER
+FAIL
+
+==================================================================
+
+PASSED: 139 FAILED: 21
+
+Evaluating message 161 .....
+
+
+Response: CANCEL
+
+Expected response: ORDER
+FAIL
+
+==================================================================
+
+PASSED: 139 FAILED: 22
+
+Evaluating message 162 .....
+
+
+Response: PAYMENT
+
+Expected response: CANCEL
+FAIL
+
+==================================================================
+
+PASSED: 139 FAILED: 23
+
+Evaluating message 163 .....
+
+
+Response: ACCOUNT
+
+Expected response: ACCOUNT
+
+PASS
+
+==================================================================
+
+PASSED: 140 FAILED: 23
+
+Evaluating message 164 .....
+
+
+Response: ACCOUNT
+
+Expected response: ACCOUNT
+
+PASS
+
+==================================================================
+
+PASSED: 141 FAILED: 23
+
+Evaluating message 165 .....
+
+
+Response: CONTACT
+
+Expected response: CONTACT
+
+PASS
+
+==================================================================
+
+PASSED: 142 FAILED: 23
+
+Evaluating message 166 .....
+
+
+Response: PAYMENT
+
+Expected response: PAYMENT
+
+PASS
+
+==================================================================
+
+PASSED: 143 FAILED: 23
+
+Evaluating message 167 .....
+
+
+Response: ACCOUNT
+
+Expected response: SHIPPING
+FAIL
+
+==================================================================
+
+PASSED: 143 FAILED: 24
+
+Evaluating message 168 .....
+
+
+Response: OFF_TOPIC
+
+Expected response: CONTACT
+FAIL
+
+==================================================================
+
+PASSED: 143 FAILED: 25
+
+Evaluating message 169 .....
+
+
+Response: DELIVERY
+
+Expected response: DELIVERY
+
+PASS
+
+==================================================================
+
+PASSED: 144 FAILED: 25
+
+Evaluating message 170 .....
+
+
+Response: SUBSCRIPTION
+
+Expected response: ACCOUNT
+FAIL
+
+==================================================================
+
+PASSED: 144 FAILED: 26
+
+Evaluating message 171 .....
+
+
+Response: PAYMENT
+
+Expected response: PAYMENT
+
+PASS
+
+==================================================================
+
+PASSED: 145 FAILED: 26
+
+Evaluating message 172 .....
+
+
+Response: ORDER
+
+Expected response: ORDER
+
+PASS
+
+==================================================================
+
+PASSED: 146 FAILED: 26
+
+Evaluating message 173 .....
+
+
+Response: ACCOUNT
+
+Expected response: ACCOUNT
+
+PASS
+
+==================================================================
+
+PASSED: 147 FAILED: 26
+
+Evaluating message 174 .....
+
+
+Response: SHIPPING
+
+Expected response: DELIVERY
+FAIL
+
+==================================================================
+
+PASSED: 147 FAILED: 27
+
+Evaluating message 175 .....
+
+
+Response: REFUND
+
+Expected response: REFUND
+
+PASS
+
+==================================================================
+
+PASSED: 148 FAILED: 27
+
+Evaluating message 176 .....
+
+
+Response: SHIPPING
+
+Expected response: DELIVERY
+FAIL
+
+==================================================================
+
+PASSED: 148 FAILED: 28
+
+Evaluating message 177 .....
+
+
+Response: REFUND
+
+Expected response: REFUND
+
+PASS
+
+==================================================================
+
+PASSED: 149 FAILED: 28
+
+Evaluating message 178 .....
+
+
+Response: ACCOUNT
+
+Expected response: ACCOUNT
+
+PASS
+
+==================================================================
+
+PASSED: 150 FAILED: 28
+
+Evaluating message 179 .....
+
+
+Response: CONTACT
+
+Expected response: CONTACT
+
+PASS
+
+==================================================================
+
+PASSED: 151 FAILED: 28
+
+Evaluating message 180 .....
+
+
+Response: FEEDBACK
+
+Expected response: FEEDBACK
+
+PASS
+
+==================================================================
+
+PASSED: 152 FAILED: 28
+
+Evaluating message 181 .....
+
+
+Response: REFUND
+
+Expected response: REFUND
+
+PASS
+
+==================================================================
+
+PASSED: 153 FAILED: 28
+
+Evaluating message 182 .....
+
+
+Response: INVOICE
+
+Expected response: INVOICE
+
+PASS
+
+==================================================================
+
+PASSED: 154 FAILED: 28
+
+Evaluating message 183 .....
+
+
+Response: ACCOUNT
+
+Expected response: SHIPPING
+FAIL
+
+==================================================================
+
+PASSED: 154 FAILED: 29
+
+Evaluating message 184 .....
+
+
+Response: REFUND
+
+Expected response: REFUND
+
+PASS
+
+==================================================================
+
+PASSED: 155 FAILED: 29
+
+Evaluating message 185 .....
+
+
+Response: FEEDBACK
+
+Expected response: FEEDBACK
+
+PASS
+
+==================================================================
+
+PASSED: 156 FAILED: 29
+
+Evaluating message 186 .....
+
+
+Response: CONTACT
+
+Expected response: CONTACT
+
+PASS
+
+==================================================================
+
+PASSED: 157 FAILED: 29
+
+Evaluating message 187 .....
+
+
+Response: ORDER
+
+Expected response: ORDER
+
+PASS
+
+==================================================================
+
+PASSED: 158 FAILED: 29
+
+Evaluating message 188 .....
+
+
+Response: CONTACT
+
+Expected response: CONTACT
+
+PASS
+
+==================================================================
+
+PASSED: 159 FAILED: 29
+
+Evaluating message 189 .....
+
+
+Response: CANCEL
+
+Expected response: ORDER
+FAIL
+
+==================================================================
+
+PASSED: 159 FAILED: 30
+
+Evaluating message 190 .....
+
+
+Response: ACCOUNT
+
+Expected response: ACCOUNT
+
+PASS
+
+==================================================================
+
+PASSED: 160 FAILED: 30
+
+Evaluating message 191 .....
+
+
+Response: SUBSCRIPTION
+
+Expected response: SUBSCRIPTION
+
+PASS
+
+==================================================================
+
+PASSED: 161 FAILED: 30
+
+Evaluating message 192 .....
+
+
+Response: FEEDBACK
+
+Expected response: FEEDBACK
+
+PASS
+
+==================================================================
+
+PASSED: 162 FAILED: 30
+
+Evaluating message 193 .....
+
+
+Response: PAYMENT
+
+Expected response: PAYMENT
+
+PASS
+
+==================================================================
+
+PASSED: 163 FAILED: 30
+
+Evaluating message 194 .....
+
+
+Response: ORDER
+
+Expected response: ORDER
+
+PASS
+
+==================================================================
+
+PASSED: 164 FAILED: 30
+
+Evaluating message 195 .....
+
+
+Response: SHIPPING
+
+Expected response: DELIVERY
+FAIL
+
+==================================================================
+
+PASSED: 164 FAILED: 31
+
+Evaluating message 196 .....
+
+
+Response: FEEDBACK
+
+Expected response: FEEDBACK
+
+PASS
+
+==================================================================
+
+PASSED: 165 FAILED: 31
+
+Evaluating message 197 .....
+
+
+Response: INVOICE
+
+Expected response: INVOICE
+
+PASS
+
+==================================================================
+
+PASSED: 166 FAILED: 31
+
+Evaluating message 198 .....
+
+
+Response: INVOICE
+
+Expected response: INVOICE
+
+PASS
+
+==================================================================
+
+PASSED: 167 FAILED: 31
+
+Evaluating message 199 .....
+
+
+Response: SHIPPING
+
+Expected response: SHIPPING
+
+PASS
+
+==================================================================
+
+PASSED: 168 FAILED: 31
+
+Evaluating message 200 .....
+
+
+Response: SHIPPING
+
+Expected response: DELIVERY
+FAIL
+
+==================================================================
+
+PASSED: 168 FAILED: 32
+
+Evaluating message 201 .....
+
+
+Response: ORDER
+
+Expected response: ORDER
+
+PASS
+
+==================================================================
+
+PASSED: 169 FAILED: 32
+
+Evaluating message 202 .....
+
+
+Response: SUBSCRIPTION
+
+Expected response: ACCOUNT
+FAIL
+
+==================================================================
+
+PASSED: 169 FAILED: 33
+
+Evaluating message 203 .....
+
+
+Response: ACCOUNT
+
+Expected response: ACCOUNT
+
+PASS
+
+==================================================================
+
+PASSED: 170 FAILED: 33
+
+Evaluating message 204 .....
+
+
+Response: SUBSCRIPTION
+
+Expected response: ACCOUNT
+FAIL
+
+==================================================================
+
+PASSED: 170 FAILED: 34
+
+Evaluating message 205 .....
+
+
+Response: REFUND
+
+Expected response: REFUND
+
+PASS
+
+==================================================================
+
+PASSED: 171 FAILED: 34
+
+Evaluating message 206 .....
+
+
+Response: ORDER
+
+Expected response: ORDER
+
+PASS
+
+==================================================================
+
+PASSED: 172 FAILED: 34
+
+Evaluating message 207 .....
+
+
+Response: SHIPPING
+
+Expected response: SHIPPING
+
+PASS
+
+==================================================================
+
+PASSED: 173 FAILED: 34
+
+Evaluating message 208 .....
+
+
+Response: FEEDBACK
+
+Expected response: FEEDBACK
+
+PASS
+
+==================================================================
+
+PASSED: 174 FAILED: 34
+
+Evaluating message 209 .....
+
+
+Response: SHIPPING
+
+Expected response: DELIVERY
+FAIL
+
+==================================================================
+
+PASSED: 174 FAILED: 35
+
+Evaluating message 210 .....
+
+
+Response: SHIPPING
+
+Expected response: DELIVERY
+FAIL
+
+==================================================================
+
+PASSED: 174 FAILED: 36
+
+Evaluating message 211 .....
+
+
+Response: CONTACT
+
+Expected response: CONTACT
+
+PASS
+
+==================================================================
+
+PASSED: 175 FAILED: 36
+
+Evaluating message 212 .....
+
+
+Response: FEEDBACK
+
+Expected response: FEEDBACK
+
+PASS
+
+==================================================================
+
+PASSED: 176 FAILED: 36
+
+Evaluating message 213 .....
+
+
+Response: ACCOUNT
+
+Expected response: ACCOUNT
+
+PASS
+
+==================================================================
+
+PASSED: 177 FAILED: 36
+
+Evaluating message 214 .....
+
+
+Response: ACCOUNT
+
+Expected response: ACCOUNT
+
+PASS
+
+==================================================================
+
+PASSED: 178 FAILED: 36
+
+Evaluating message 215 .....
+
+
+Response: PAYMENT
+
+Expected response: PAYMENT
+
+PASS
+
+==================================================================
+
+PASSED: 179 FAILED: 36
+
+Evaluating message 216 .....
+
+
+Response: REFUND
+
+Expected response: REFUND
+
+PASS
+
+==================================================================
+
+PASSED: 180 FAILED: 36
+
+Evaluating message 217 .....
+
+
+Response: CANCEL
+
+Expected response: ORDER
+FAIL
+
+==================================================================
+
+PASSED: 180 FAILED: 37
+
+Evaluating message 218 .....
+
+
+Response: FEEDBACK
+
+Expected response: FEEDBACK
+
+PASS
+
+==================================================================
+
+PASSED: 181 FAILED: 37
+
+Evaluating message 219 .....
+
+
+Response: PAYMENT
+
+Expected response: PAYMENT
+
+PASS
+
+==================================================================
+
+PASSED: 182 FAILED: 37
+
+Evaluating message 220 .....
+
+
+Response: REFUND
+
+Expected response: REFUND
+
+PASS
+
+==================================================================
+
+PASSED: 183 FAILED: 37
+
+Evaluating message 221 .....
+
+
+Response: OFF_TOPIC
+
+Expected response: CONTACT
+FAIL
+
+==================================================================
+
+PASSED: 183 FAILED: 38
+
+Evaluating message 222 .....
+
+
+Response: PAYMENT
+
+Expected response: PAYMENT
+
+PASS
+
+==================================================================
+
+PASSED: 184 FAILED: 38
+
+Evaluating message 223 .....
+
+
+Response: ORDER
+
+Expected response: ORDER
+
+PASS
+
+==================================================================
+
+PASSED: 185 FAILED: 38
+
+Evaluating message 224 .....
+
+
+Response: PAYMENT
+
+Expected response: PAYMENT
+
+PASS
+
+==================================================================
+
+PASSED: 186 FAILED: 38
+
+Evaluating message 225 .....
+
+
+Response: REFUND
+
+Expected response: REFUND
+
+PASS
+
+==================================================================
+
+PASSED: 187 FAILED: 38
+
+Evaluating message 226 .....
+
+
+Response: ORDER
+
+Expected response: ORDER
+
+PASS
+
+==================================================================
+
+PASSED: 188 FAILED: 38
+
+Evaluating message 227 .....
+
+
+Response: PAYMENT
+
+Expected response: PAYMENT
+
+PASS
+
+==================================================================
+
+PASSED: 189 FAILED: 38
+
+Evaluating message 228 .....
+
+
+Response: SHIPPING
+
+Expected response: SHIPPING
+
+PASS
+
+==================================================================
+
+PASSED: 190 FAILED: 38
+
+Evaluating message 229 .....
+
+
+Response: PAYMENT
+
+Expected response: PAYMENT
+
+PASS
+
+==================================================================
+
+PASSED: 191 FAILED: 38
+
+Evaluating message 230 .....
+
+
+Response: FEEDBACK
+
+Expected response: FEEDBACK
+
+PASS
+
+==================================================================
+
+PASSED: 192 FAILED: 38
+
+Evaluating message 231 .....
+
+
+Response: ORDER
+
+Expected response: ORDER
+
+PASS
+
+==================================================================
+
+PASSED: 193 FAILED: 38
+
+Evaluating message 232 .....
+
+
+Response: ACCOUNT
+
+Expected response: ACCOUNT
+
+PASS
+
+==================================================================
+
+PASSED: 194 FAILED: 38
+
+Evaluating message 233 .....
+
+
+Response: SHIPPING
+
+Expected response: SHIPPING
+
+PASS
+
+==================================================================
+
+PASSED: 195 FAILED: 38
+
+Evaluating message 234 .....
+
+
+Response: ORDER
+
+Expected response: ORDER
+
+PASS
+
+==================================================================
+
+PASSED: 196 FAILED: 38
+
+Evaluating message 235 .....
+
+
+Response: SUBSCRIPTION
+
+Expected response: ACCOUNT
+FAIL
+
+==================================================================
+
+PASSED: 196 FAILED: 39
+
+Evaluating message 236 .....
+
+
+Response: SHIPPING
+
+Expected response: SHIPPING
+
+PASS
+
+==================================================================
+
+PASSED: 197 FAILED: 39
+
+Evaluating message 237 .....
+
+
+Response: ACCOUNT
+
+Expected response: ACCOUNT
+
+PASS
+
+==================================================================
+
+PASSED: 198 FAILED: 39
+
+Evaluating message 238 .....
+
+
+Response: ORDER
+
+Expected response: ORDER
+
+PASS
+
+==================================================================
+
+PASSED: 199 FAILED: 39
+
+Evaluating message 239 .....
+
+
+Response: SUBSCRIPTION
+
+Expected response: ACCOUNT
+FAIL
+
+==================================================================
+
+PASSED: 199 FAILED: 40
+
+Evaluating message 240 .....
+
+
+Response: FEEDBACK
+
+Expected response: FEEDBACK
+
+PASS
+
+==================================================================
+
+PASSED: 200 FAILED: 40
+
+Evaluating message 241 .....
+
+
+Response: SHIPPING
+
+Expected response: DELIVERY
+FAIL
+
+==================================================================
+
+PASSED: 200 FAILED: 41
+
+Evaluating message 242 .....
+
+
+Response: FEEDBACK
+
+Expected response: FEEDBACK
+
+PASS
+
+==================================================================
+
+PASSED: 201 FAILED: 41
+
+Evaluating message 243 .....
+
+
+Response: INVOICE
+
+Expected response: INVOICE
+
+PASS
+
+==================================================================
+
+PASSED: 202 FAILED: 41
+
+Evaluating message 244 .....
+
+
+Response: INVOICE
+
+Expected response: INVOICE
+
+PASS
+
+==================================================================
+
+PASSED: 203 FAILED: 41
+
+Evaluating message 245 .....
+
+
+Response: CONTACT
+
+Expected response: CONTACT
+
+PASS
+
+==================================================================
+
+PASSED: 204 FAILED: 41
+
+Evaluating message 246 .....
+
+
+Response: ORDER
+
+Expected response: ORDER
+
+PASS
+
+==================================================================
+
+PASSED: 205 FAILED: 41
+
+Evaluating message 247 .....
+
+
+Response: ACCOUNT
+
+Expected response: ACCOUNT
+
+PASS
+
+==================================================================
+
+PASSED: 206 FAILED: 41
+
+Evaluating message 248 .....
+
+
+Response: CANCEL
+
+Expected response: ORDER
+FAIL
+
+==================================================================
+
+PASSED: 206 FAILED: 42
+
+Evaluating message 249 .....
+
+
+Response: SHIPPING
+
+Expected response: SHIPPING
+
+PASS
+
+==================================================================
+
+PASSED: 207 FAILED: 42
+
+Evaluating message 250 .....
+
+
+Response: ACCOUNT
+
+Expected response: ACCOUNT
+
+PASS
+
+==================================================================
+
+PASSED: 208 FAILED: 42
+
+Evaluating message 251 .....
+
+
+Response: SHIPPING
+
+Expected response: SHIPPING
+
+PASS
+
+==================================================================
+
+PASSED: 209 FAILED: 42
+
+Evaluating message 252 .....
+
+
+Response: FEEDBACK
+
+Expected response: FEEDBACK
+
+PASS
+
+==================================================================
+
+PASSED: 210 FAILED: 42
+
+Evaluating message 253 .....
+
+
+Response: CONTACT
+
+Expected response: CONTACT
+
+PASS
+
+==================================================================
+
+PASSED: 211 FAILED: 42
+
+Evaluating message 254 .....
+
+
+Response: PAYMENT
+
+Expected response: CANCEL
+FAIL
+
+==================================================================
+
+PASSED: 211 FAILED: 43
+
+Evaluating message 255 .....
+
+
+Response: CONTACT
+
+Expected response: CONTACT
+
+PASS
+
+==================================================================
+
+PASSED: 212 FAILED: 43
+
+Evaluating message 256 .....
+
+
+Response: INVOICE
+
+Expected response: INVOICE
+
+PASS
+
+==================================================================
+
+PASSED: 213 FAILED: 43
+
+Evaluating message 257 .....
+
+
+Response: CANCEL
+
+Expected response: ORDER
+FAIL
+
+==================================================================
+
+PASSED: 213 FAILED: 44
+
+Evaluating message 258 .....
+
+
+Response: ACCOUNT
+
+Expected response: ACCOUNT
+
+PASS
+
+==================================================================
+
+PASSED: 214 FAILED: 44
+
+Evaluating message 259 .....
+
+
+Response: ACCOUNT
+
+Expected response: ACCOUNT
+
+PASS
+
+==================================================================
+
+PASSED: 215 FAILED: 44
+
+Evaluating message 260 .....
+
+
+Response: DELIVERY
+
+Expected response: DELIVERY
+
+PASS
+
+==================================================================
+
+PASSED: 216 FAILED: 44
+
+Evaluating message 261 .....
+
+
+Response: FEEDBACK
+
+Expected response: FEEDBACK
+
+PASS
+
+==================================================================
+
+PASSED: 217 FAILED: 44
+
+Evaluating message 262 .....
+
+
+Response: ACCOUNT
+
+Expected response: ACCOUNT
+
+PASS
+
+==================================================================
+
+PASSED: 218 FAILED: 44
+
+Evaluating message 263 .....
+
+
+Response: ACCOUNT
+
+Expected response: SHIPPING
+FAIL
+
+==================================================================
+
+PASSED: 218 FAILED: 45
+
+Evaluating message 264 .....
+
+
+Response: SHIPPING
+
+Expected response: DELIVERY
+FAIL
+
+==================================================================
+
+PASSED: 218 FAILED: 46
+
+Evaluating message 265 .....
+
+
+Response: ACCOUNT
+
+Expected response: ACCOUNT
+
+PASS
+
+==================================================================
+
+PASSED: 219 FAILED: 46
+
+Evaluating message 266 .....
+
+
+Response: ACCOUNT
+
+Expected response: ACCOUNT
+
+PASS
+
+==================================================================
+
+PASSED: 220 FAILED: 46
+
+Evaluating message 267 .....
+
+
+Response: ACCOUNT
+
+Expected response: ACCOUNT
+
+PASS
+
+==================================================================
+
+PASSED: 221 FAILED: 46
+
+Evaluating message 268 .....
+
+
+Response: PAYMENT
+
+Expected response: PAYMENT
+
+PASS
+
+==================================================================
+
+PASSED: 222 FAILED: 46
+
+Evaluating message 269 .....
+
+
+Response: ACCOUNT
+
+Expected response: ACCOUNT
+
+PASS
+
+==================================================================
+
+PASSED: 223 FAILED: 46
+
+Classification report:
+
+              precision    recall  f1-score   support
+
+     ACCOUNT       0.92      0.85      0.88        54
+      CANCEL       0.14      0.25      0.18         8
+     CONTACT       1.00      0.94      0.97        35
+    DELIVERY       0.83      0.26      0.40        19
+    FEEDBACK       1.00      0.95      0.97        20
+     INVOICE       1.00      1.00      1.00        27
+   OFF_TOPIC       0.00      0.00      0.00         0
+       ORDER       0.95      0.62      0.75        29
+     PAYMENT       0.82      1.00      0.90        23
+      REFUND       1.00      1.00      1.00        23
+    SHIPPING       0.58      0.82      0.68        22
+SUBSCRIPTION       0.56      1.00      0.72         9
+
+    accuracy                           0.83       269
+   macro avg       0.73      0.72      0.71       269
+weighted avg       0.88      0.83      0.83       269
+
+
+Confusion matrix:
+
+[[46  2  0  0  0  0  0  0  0  0  0  6]
+ [ 0  2  0  0  0  0  0  0  5  0  0  1]
+ [ 0  0 33  0  0  0  2  0  0  0  0  0]
+ [ 0  0  0  5  0  0  0  1  0  0 13  0]
+ [ 0  0  0  0 19  0  1  0  0  0  0  0]
+ [ 0  0  0  0  0 27  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0  0]
+ [ 0 10  0  1  0  0  0 18  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0 23  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0 23  0  0]
+ [ 4  0  0  0  0  0  0  0  0  0 18  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0  9]]
+
+==================================================================
+
+Accuracy: 82.90%

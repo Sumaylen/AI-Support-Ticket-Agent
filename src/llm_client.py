@@ -29,7 +29,7 @@ def get_llm_client():
             base_url = "https://api.groq.com/openai/v1",
             api_key = os.environ.get("GROQ_API_KEY")
         )
-        primary_model="qwen/qwen3.8-27b"
+        primary_model="openai/gpt-oss-120b"
         guardrail_model="meta-llama/llama-prompt-guard-2-86m"
     else:
         raise ValueError(f"Unsupported backend: {backend}")

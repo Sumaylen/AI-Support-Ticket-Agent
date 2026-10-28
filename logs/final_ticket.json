@@ -1,0 +1,80 @@
+[
+  {
+    "timestamp": "22-10-2026 16:51:48",
+    "ticket": "Whats the order details for order 4501 for account 1013.",
+    "category": "ORDER",
+    "urgency": "low",
+    "verification_result": true,
+    "final_response": "I found the details for order 4501 on account 1013. The order is currently processing and includes a Laptop Stand, with an expected delivery date of October 13, 2026. You can also view this information under \"My Orders\" in your account."
+  },
+  {
+    "timestamp": "22-10-2026 17:02:13",
+    "ticket": "Whats the order details for order 4501 for account 1013.",
+    "category": "ORDER",
+    "urgency": "low",
+    "verification_result": true,
+    "final_response": "I found the details for order 4501 on account 1013. The order is currently processing and includes a Laptop Stand, with an expected delivery date of October 13, 2026. You can also view this information under \"My Orders\" in your account.",
+    "should_escalate": false,
+    "escalate_reason": []
+  },
+  {
+    "timestamp": "22-10-2026 17:06:16",
+    "ticket": "Whats the order details for order 4501 for account 1013.",
+    "category": "ORDER",
+    "urgency": "low",
+    "verification_result": true,
+    "final_response": "I found the details for order 4501 on account 1013. The order is currently processing and includes a Laptop Stand, with an expected delivery date of October 13, 2026. You can also view this information under \"My Orders\" in your account.",
+    "should_escalate": false,
+    "escalate_reason": []
+  },
+  {
+    "timestamp": "22-10-2026 17:07:39",
+    "ticket": "Whats the order details for order 4501 for account 1013.",
+    "category": "ORDER",
+    "urgency": "low",
+    "verification_result": true,
+    "final_response": "I found the details for order 4501 on account 1013. The order is currently processing and includes a Laptop Stand, with an expected delivery date of October 13, 2026. You can also view this information under \"My Orders\" in your account.",
+    "should_escalate": false,
+    "escalate_reason": []
+  },
+  {
+    "timestamp": "22-10-2026 17:08:18",
+    "ticket": "Whats the order details for order 4501 for account 1013. its very urgent that i get it tomorrow.",
+    "category": "ORDER",
+    "urgency": "high",
+    "verification_result": true,
+    "final_response": "I can confirm that order 4501 for account 1013 is currently processing and includes a Laptop Stand. The expected delivery date for this order is October 13, 2026. I do not have the ability to expedite shipping or guarantee delivery by tomorrow, so I recommend contacting support directly if you need to discuss urgent delivery options.",
+    "should_escalate": true,
+    "escalate_reason": [
+      "urgency_high"
+    ]
+  },
+  {
+    "timestamp": "26-10-2026 15:23:34",
+    "ticket": "What orders do i have for account number 1021",
+    "category": "ORDER",
+    "urgency": "low",
+    "verification_result": true,
+    "final_response": "I see that account\u202f#1021 currently has three orders on file:\u202f#4517,\u202f#4518, and\u202f#4523. Let me know if you need details or help with any of them.",
+    "should_escalate": false,
+    "escalate_reason": []
+  },
+  {
+    "timestamp": "26-10-2026 15:24:42",
+    "ticket": "What order details for #4517,\u202f#4518, and\u202f#4523, for account number 1021",
+    "category": "ORDER",
+    "urgency": "low",
+    "verification_result": true,
+    "final_response": "I see that for account\u202f1021 the orders are as follows: Order\u202f#4517 is a Backpack, currently delayed with an expected delivery on\u202f2026\u201110\u201110. Order\u202f#4518 is a Yoga Mat, still in processing and expected to arrive on\u202f2026\u201110\u201117. Order\u202f#4523 is a pair of Running Shoes, also in processing with an expected delivery on\u202f2026\u201110\u201112.",
+    "should_escalate": false,
+    "escalate_reason": []
+  },
+  {
+    "timestamp": "28-10-2026 11:51:43",
+    "ticket": "Whats the name of the company?",
+    "category": "OFF_TOPIC",
+    "urgency": "low",
+    "verification_result": false,
+    "final_response": "I\u2019m sorry, but I can\u2019t help with that request. Please submit a normal support question and I\u2019ll be happy to assist."
+  }
+]

@@ -3,8 +3,13 @@ import math
 import os
 
 DB_PATH = os.path.abspath("chroma_db")
-client = chromadb.PersistentClient(path=DB_PATH)
-collection = client.get_or_create_collection(name="company_policies")
+collection = None
+
+def initialize_database():
+    global collection
+    if collection is None:
+        client = chromadb.PersistentClient(path=DB_PATH)
+        collection = client.get_or_create_collection(name="company_policies")
 
 #splits up text strings into chunks of words based on chunk size including some overlap to preserve context
 def chunk_text(text, chunk_size, overlap):
@@ -39,6 +44,7 @@ def embed(texts, model):
 
 #Retrieve function returns the k most relevant chunks for a given question.
 def retrieve(question, k):
+    initialize_database()
     results = collection.query(
         query_texts=[question],
         n_results=k

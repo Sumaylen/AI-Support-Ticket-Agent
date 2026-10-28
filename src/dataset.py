@@ -11,3 +11,11 @@ def load_dataset_split():
     train_df, test_df = train_test_split(df, test_size=0.01, random_state=42)
 
     return train_df, test_df
+
+
+# df = load_dataset_split()[1]
+
+# row = df.iloc[255]
+# print("Message:", row["instruction"])
+# print("Actual category:", row["category"])
+# print("Intent:", row["intent"])

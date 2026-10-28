@@ -1,0 +1,238 @@
+
+Evaluating message 1 .....
+
+Question: My card got declined at checkout, what happens to my order?
+
+Good reply: I'm sorry your payment didn't go through. Your order is held in Payment Pending status for 24 hours, so you can update your payment method to complete it. If no valid payment is provided in that time, the order is cancelled automatically.
+
+Response: true
+All claims supported.
+
+Expected response: true
+
+PASS
+
+
+Bad reply: I'm sorry your payment didn't go through. Your order is held in Payment Pending status for 72 hours so you can update your payment method. Our support team can also see the exact reason the bank declined it.
+
+Response: false
+Claims about a 72‑hour pending period and support seeing the exact decline reason contradict the policy (the hold is 24 hours and the reason is not provided).
+
+Expected response: false
+
+PASS
+
+PASSED: 2 FAILED: 0
+
+==================================================================
+
+
+Evaluating message 2 .....
+
+Question: Can I pay with bitcoin or a bank transfer?
+
+Good reply: Thanks for asking! We don't currently support bank transfers or cryptocurrency. You can pay with Visa, Mastercard, American Express, Discover, PayPal or Apple Pay.
+
+Response: true
+All claims supported.
+
+Expected response: true
+
+PASS
+
+
+Bad reply: Thanks for asking! We accept bitcoin as well as Visa, Mastercard, American Express and Discover cards. Bank transfers are not supported.
+
+Response: false
+The draft incorrectly claims bitcoin is accepted, while the policy states cryptocurrency is not supported.
+
+Expected response: false
+
+PASS
+
+PASSED: 4 FAILED: 0
+
+==================================================================
+
+
+Evaluating message 3 .....
+
+Question: How long until a refund shows up on my card?
+
+Good reply: Once your returned item is received and inspected, the refund is processed within 3 business days. After that it usually takes another 5-10 business days to appear on your statement, depending on your bank.
+
+Response: true
+All claims supported.
+
+Expected response: true
+
+PASS
+
+
+Bad reply: Refunds are processed within 24 hours of you requesting the return, and they appear on your statement instantly after that.
+
+Response: false
+The reply incorrectly states that refunds are processed within 24 hours of the return request and appear instantly on the statement, which contradicts the policy that refunds take up to 3 business days to process and 5‑10 business days to appear (or up to 24 hours only for store‑credit refunds).
+
+Expected response: false
+
+PASS
+
+PASSED: 6 FAILED: 0
+
+==================================================================
+
+
+Evaluating message 4 .....
+
+Question: Can I get my money back for a sale item?
+
+Good reply: Sale and clearance items are eligible for store credit only, not a refund to your original payment method, unless the item arrived damaged or defective.
+
+Response: true
+All claims supported.
+
+Expected response: true
+
+PASS
+
+
+Bad reply: Sale items can be refunded to your original payment method within 60 days of purchase as long as they're unused.
+
+Response: false
+The draft incorrectly states that sale items can be refunded to the original payment method and that refunds are allowed within 60 days, which contradicts the policy that sale items are only eligible for store credit and refunds must be requested within 30 days.
+
+Expected response: false
+
+PASS
+
+PASSED: 8 FAILED: 0
+
+==================================================================
+
+
+Evaluating message 5 .....
+
+Question: Can I cancel my order? It already says shipped.
+
+Good reply: I'm sorry, but once an order has moved to Shipped it can no longer be cancelled. Instead, you can return it after delivery by following the standard return process.
+
+Response: true
+All claims supported.
+
+Expected response: true
+
+PASS
+
+
+Bad reply: Shipped orders can still be cancelled for a full refund if you contact us within 24 hours. I've gone ahead and cancelled it for you.
+
+Response: false
+The draft incorrectly claims shipped orders can be cancelled for a full refund and asserts the order was cancelled, which contradicts the policy stating shipped orders cannot be cancelled.
+
+Expected response: false
+
+PASS
+
+PASSED: 10 FAILED: 0
+
+==================================================================
+
+
+Evaluating message 6 .....
+
+Question: Why was my account locked after a few wrong password attempts?
+
+Good reply: That's frustrating, sorry. After three failed login attempts within 15 minutes, an account is temporarily locked for 30 minutes as a security measure, and unfortunately that lock can't be lifted early, even by our support team.
+
+Response: true
+All claims supported.
+
+Expected response: true
+
+PASS
+
+
+Bad reply: That's frustrating, sorry. After three failed login attempts the account is locked for 2 hours, but our support team can unlock it right away once you verify your identity.
+
+Response: false
+Lock duration and unlock ability contradict policy (should be 30 minutes and cannot be lifted early).
+
+Expected response: false
+
+PASS
+
+PASSED: 12 FAILED: 0
+
+==================================================================
+
+
+Evaluating message 7 .....
+
+Question: Do you ship to Australia and how long does it take?
+
+Good reply: Yes, we ship to Australia. International orders take 10-20 business days depending on customs processing, and import duties or customs fees are the customer's responsibility. Expedited and Overnight shipping aren't available for international orders.
+
+Response: true
+All claims supported.
+
+Expected response: true
+
+PASS
+
+
+Bad reply: Yes, we ship to Australia and orders usually arrive in 3-5 business days. Duties and customs fees are included in your order total, and Overnight shipping is available.
+
+Response: false
+The claim that orders arrive in 3‑5 business days, that duties/customs fees are included, and that Overnight shipping is available contradicts the policy stating international deliveries take 10‑20 business days, duties are the customer’s responsibility, and Overnight shipping is not offered for international orders.
+
+Expected response: false
+
+PASS
+
+PASSED: 14 FAILED: 0
+
+==================================================================
+
+
+Evaluating message 8 .....
+
+Question: I need an invoice with my company name and tax ID.
+
+Good reply: Thanks for reaching out. A basic receipt is emailed at purchase, but for a formal invoice with your business name and tax ID, contact support with your order number and billing details. Formal invoices are typically issued within 2 business days.
+
+Response: true
+All claims supported.
+
+Expected response: true
+
+PASS
+
+
+Bad reply: We can issue that invoice immediately, and we can also change the purchase date to the start of the month if that helps your expense report.
+
+Response: false
+Claims that an invoice can be issued immediately and that the purchase date can be changed are unsupported and contradict the policy.
+
+Expected response: false
+
+PASS
+
+PASSED: 16 FAILED: 0
+
+==================================================================
+
+
+PASSED: 16 FAILED: 0
+
+Failed good replies:
+
+None
+
+Failed bad replies:
+
+None
+
+==================================================================
+
+Accuracy: 100.00%

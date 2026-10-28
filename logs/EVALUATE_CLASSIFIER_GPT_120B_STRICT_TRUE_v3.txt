@@ -67,26 +67,27 @@ PASSED: 5 FAILED: 0
 Evaluating message 6 .....
 
 
-Response: CONTACT
+Response: SUBSCRIPTION
 
 Expected response: SUBSCRIPTION
-FAIL
+
+PASS
 
 ==================================================================
 
-PASSED: 5 FAILED: 1
+PASSED: 6 FAILED: 0
 
 Evaluating message 7 .....
 
 
-Response: ACCOUNT
+Response: PAYMENT
 
 Expected response: CANCEL
 FAIL
 
 ==================================================================
 
-PASSED: 5 FAILED: 2
+PASSED: 6 FAILED: 1
 
 Evaluating message 8 .....
 
@@ -99,7 +100,7 @@ PASS
 
 ==================================================================
 
-PASSED: 6 FAILED: 2
+PASSED: 7 FAILED: 1
 
 Evaluating message 9 .....
 
@@ -112,7 +113,7 @@ PASS
 
 ==================================================================
 
-PASSED: 7 FAILED: 2
+PASSED: 8 FAILED: 1
 
 Evaluating message 10 .....
 
@@ -125,7 +126,7 @@ PASS
 
 ==================================================================
 
-PASSED: 8 FAILED: 2
+PASSED: 9 FAILED: 1
 
 Evaluating message 11 .....
 
@@ -138,7 +139,7 @@ PASS
 
 ==================================================================
 
-PASSED: 9 FAILED: 2
+PASSED: 10 FAILED: 1
 
 Evaluating message 12 .....
 
@@ -151,7 +152,7 @@ PASS
 
 ==================================================================
 
-PASSED: 10 FAILED: 2
+PASSED: 11 FAILED: 1
 
 Evaluating message 13 .....
 
@@ -164,16 +165,15 @@ PASS
 
 ==================================================================
 
-PASSED: 11 FAILED: 2
+PASSED: 12 FAILED: 1
 
 Evaluating message 14 .....
 
 
-Response: FEEDBACK
+Response: OFF_TOPIC
 
 Expected response: FEEDBACK
-
-PASS
+FAIL
 
 ==================================================================
 
@@ -195,14 +195,15 @@ PASSED: 13 FAILED: 2
 Evaluating message 16 .....
 
 
-Response: SUBSCRIPTION
+Response: CANCEL
 
 Expected response: CANCEL
-FAIL
+
+PASS
 
 ==================================================================
 
-PASSED: 13 FAILED: 3
+PASSED: 14 FAILED: 2
 
 Evaluating message 17 .....
 
@@ -215,7 +216,7 @@ PASS
 
 ==================================================================
 
-PASSED: 14 FAILED: 3
+PASSED: 15 FAILED: 2
 
 Evaluating message 18 .....
 
@@ -228,7 +229,7 @@ PASS
 
 ==================================================================
 
-PASSED: 15 FAILED: 3
+PASSED: 16 FAILED: 2
 
 Evaluating message 19 .....
 
@@ -241,7 +242,7 @@ PASS
 
 ==================================================================
 
-PASSED: 16 FAILED: 3
+PASSED: 17 FAILED: 2
 
 Evaluating message 20 .....
 
@@ -254,16 +255,15 @@ PASS
 
 ==================================================================
 
-PASSED: 17 FAILED: 3
+PASSED: 18 FAILED: 2
 
 Evaluating message 21 .....
 
 
-Response: ACCOUNT
+Response: SUBSCRIPTION
 
 Expected response: ACCOUNT
-
-PASS
+FAIL
 
 ==================================================================
 
@@ -285,26 +285,28 @@ PASSED: 19 FAILED: 3
 Evaluating message 23 .....
 
 
-Response: CANCEL
+Response: ACCOUNT
 
 Expected response: ACCOUNT
-FAIL
+
+PASS
 
 ==================================================================
 
-PASSED: 19 FAILED: 4
+PASSED: 20 FAILED: 3
 
 Evaluating message 24 .....
 
 
-Response: CANCEL
+Response: SUBSCRIPTION
 
 Expected response: SUBSCRIPTION
-FAIL
+
+PASS
 
 ==================================================================
 
-PASSED: 19 FAILED: 5
+PASSED: 21 FAILED: 3
 
 Evaluating message 25 .....
 
@@ -317,7 +319,7 @@ PASS
 
 ==================================================================
 
-PASSED: 20 FAILED: 5
+PASSED: 22 FAILED: 3
 
 Evaluating message 26 .....
 
@@ -330,7 +332,7 @@ PASS
 
 ==================================================================
 
-PASSED: 21 FAILED: 5
+PASSED: 23 FAILED: 3
 
 Evaluating message 27 .....
 
@@ -342,7 +344,7 @@ FAIL
 
 ==================================================================
 
-PASSED: 21 FAILED: 6
+PASSED: 23 FAILED: 4
 
 Evaluating message 28 .....
 
@@ -355,7 +357,7 @@ PASS
 
 ==================================================================
 
-PASSED: 22 FAILED: 6
+PASSED: 24 FAILED: 4
 
 Evaluating message 29 .....
 
@@ -368,7 +370,7 @@ PASS
 
 ==================================================================
 
-PASSED: 23 FAILED: 6
+PASSED: 25 FAILED: 4
 
 Evaluating message 30 .....
 
@@ -381,7 +383,7 @@ PASS
 
 ==================================================================
 
-PASSED: 24 FAILED: 6
+PASSED: 26 FAILED: 4
 
 Evaluating message 31 .....
 
@@ -394,7 +396,7 @@ PASS
 
 ==================================================================
 
-PASSED: 25 FAILED: 6
+PASSED: 27 FAILED: 4
 
 Evaluating message 32 .....
 
@@ -407,7 +409,7 @@ PASS
 
 ==================================================================
 
-PASSED: 26 FAILED: 6
+PASSED: 28 FAILED: 4
 
 Evaluating message 33 .....
 
@@ -420,7 +422,7 @@ PASS
 
 ==================================================================
 
-PASSED: 27 FAILED: 6
+PASSED: 29 FAILED: 4
 
 Evaluating message 34 .....
 
@@ -433,7 +435,7 @@ PASS
 
 ==================================================================
 
-PASSED: 28 FAILED: 6
+PASSED: 30 FAILED: 4
 
 Evaluating message 35 .....
 
@@ -445,7 +447,7 @@ FAIL
 
 ==================================================================
 
-PASSED: 28 FAILED: 7
+PASSED: 30 FAILED: 5
 
 Evaluating message 36 .....
 
@@ -458,7 +460,7 @@ PASS
 
 ==================================================================
 
-PASSED: 29 FAILED: 7
+PASSED: 31 FAILED: 5
 
 Evaluating message 37 .....
 
@@ -471,7 +473,7 @@ PASS
 
 ==================================================================
 
-PASSED: 30 FAILED: 7
+PASSED: 32 FAILED: 5
 
 Evaluating message 38 .....
 
@@ -484,7 +486,7 @@ PASS
 
 ==================================================================
 
-PASSED: 31 FAILED: 7
+PASSED: 33 FAILED: 5
 
 Evaluating message 39 .....
 
@@ -497,7 +499,7 @@ PASS
 
 ==================================================================
 
-PASSED: 32 FAILED: 7
+PASSED: 34 FAILED: 5
 
 Evaluating message 40 .....
 
@@ -510,7 +512,7 @@ PASS
 
 ==================================================================
 
-PASSED: 33 FAILED: 7
+PASSED: 35 FAILED: 5
 
 Evaluating message 41 .....
 
@@ -523,19 +525,20 @@ PASS
 
 ==================================================================
 
-PASSED: 34 FAILED: 7
+PASSED: 36 FAILED: 5
 
 Evaluating message 42 .....
 
 
-Response: DELIVERY
+Response: SHIPPING
 
 Expected response: SHIPPING
-FAIL
+
+PASS
 
 ==================================================================
 
-PASSED: 34 FAILED: 8
+PASSED: 37 FAILED: 5
 
 Evaluating message 43 .....
 
@@ -548,7 +551,7 @@ PASS
 
 ==================================================================
 
-PASSED: 35 FAILED: 8
+PASSED: 38 FAILED: 5
 
 Evaluating message 44 .....
 
@@ -561,7 +564,7 @@ PASS
 
 ==================================================================
 
-PASSED: 36 FAILED: 8
+PASSED: 39 FAILED: 5
 
 Evaluating message 45 .....
 
@@ -574,7 +577,7 @@ PASS
 
 ==================================================================
 
-PASSED: 37 FAILED: 8
+PASSED: 40 FAILED: 5
 
 Evaluating message 46 .....
 
@@ -587,7 +590,7 @@ PASS
 
 ==================================================================
 
-PASSED: 38 FAILED: 8
+PASSED: 41 FAILED: 5
 
 Evaluating message 47 .....
 
@@ -600,7 +603,7 @@ PASS
 
 ==================================================================
 
-PASSED: 39 FAILED: 8
+PASSED: 42 FAILED: 5
 
 Evaluating message 48 .....
 
@@ -613,7 +616,7 @@ PASS
 
 ==================================================================
 
-PASSED: 40 FAILED: 8
+PASSED: 43 FAILED: 5
 
 Evaluating message 49 .....
 
@@ -626,7 +629,7 @@ PASS
 
 ==================================================================
 
-PASSED: 41 FAILED: 8
+PASSED: 44 FAILED: 5
 
 Evaluating message 50 .....
 
@@ -639,7 +642,7 @@ PASS
 
 ==================================================================
 
-PASSED: 42 FAILED: 8
+PASSED: 45 FAILED: 5
 
 Evaluating message 51 .....
 
@@ -652,19 +655,19 @@ PASS
 
 ==================================================================
 
-PASSED: 43 FAILED: 8
+PASSED: 46 FAILED: 5
 
 Evaluating message 52 .....
 
 
-Response: ACCOUNT
+Response: PAYMENT
 
 Expected response: CANCEL
 FAIL
 
 ==================================================================
 
-PASSED: 43 FAILED: 9
+PASSED: 46 FAILED: 6
 
 Evaluating message 53 .....
 
@@ -677,7 +680,7 @@ PASS
 
 ==================================================================
 
-PASSED: 44 FAILED: 9
+PASSED: 47 FAILED: 6
 
 Evaluating message 54 .....
 
@@ -690,7 +693,7 @@ PASS
 
 ==================================================================
 
-PASSED: 45 FAILED: 9
+PASSED: 48 FAILED: 6
 
 Evaluating message 55 .....
 
@@ -702,7 +705,7 @@ FAIL
 
 ==================================================================
 
-PASSED: 45 FAILED: 10
+PASSED: 48 FAILED: 7
 
 Evaluating message 56 .....
 
@@ -715,7 +718,7 @@ PASS
 
 ==================================================================
 
-PASSED: 46 FAILED: 10
+PASSED: 49 FAILED: 7
 
 Evaluating message 57 .....
 
@@ -728,7 +731,7 @@ PASS
 
 ==================================================================
 
-PASSED: 47 FAILED: 10
+PASSED: 50 FAILED: 7
 
 Evaluating message 58 .....
 
@@ -741,7 +744,7 @@ PASS
 
 ==================================================================
 
-PASSED: 48 FAILED: 10
+PASSED: 51 FAILED: 7
 
 Evaluating message 59 .....
 
@@ -754,7 +757,7 @@ PASS
 
 ==================================================================
 
-PASSED: 49 FAILED: 10
+PASSED: 52 FAILED: 7
 
 Evaluating message 60 .....
 
@@ -767,7 +770,7 @@ PASS
 
 ==================================================================
 
-PASSED: 50 FAILED: 10
+PASSED: 53 FAILED: 7
 
 Evaluating message 61 .....
 
@@ -780,7 +783,7 @@ PASS
 
 ==================================================================
 
-PASSED: 51 FAILED: 10
+PASSED: 54 FAILED: 7
 
 Evaluating message 62 .....
 
@@ -793,7 +796,7 @@ PASS
 
 ==================================================================
 
-PASSED: 52 FAILED: 10
+PASSED: 55 FAILED: 7
 
 Evaluating message 63 .....
 
@@ -806,7 +809,7 @@ PASS
 
 ==================================================================
 
-PASSED: 53 FAILED: 10
+PASSED: 56 FAILED: 7
 
 Evaluating message 64 .....
 
@@ -819,7 +822,7 @@ PASS
 
 ==================================================================
 
-PASSED: 54 FAILED: 10
+PASSED: 57 FAILED: 7
 
 Evaluating message 65 .....
 
@@ -832,7 +835,7 @@ PASS
 
 ==================================================================
 
-PASSED: 55 FAILED: 10
+PASSED: 58 FAILED: 7
 
 Evaluating message 66 .....
 
@@ -845,7 +848,7 @@ PASS
 
 ==================================================================
 
-PASSED: 56 FAILED: 10
+PASSED: 59 FAILED: 7
 
 Evaluating message 67 .....
 
@@ -858,7 +861,7 @@ PASS
 
 ==================================================================
 
-PASSED: 57 FAILED: 10
+PASSED: 60 FAILED: 7
 
 Evaluating message 68 .....
 
@@ -871,7 +874,7 @@ PASS
 
 ==================================================================
 
-PASSED: 58 FAILED: 10
+PASSED: 61 FAILED: 7
 
 Evaluating message 69 .....
 
@@ -884,7 +887,7 @@ PASS
 
 ==================================================================
 
-PASSED: 59 FAILED: 10
+PASSED: 62 FAILED: 7
 
 Evaluating message 70 .....
 
@@ -897,7 +900,7 @@ PASS
 
 ==================================================================
 
-PASSED: 60 FAILED: 10
+PASSED: 63 FAILED: 7
 
 Evaluating message 71 .....
 
@@ -910,7 +913,7 @@ PASS
 
 ==================================================================
 
-PASSED: 61 FAILED: 10
+PASSED: 64 FAILED: 7
 
 Evaluating message 72 .....
 
@@ -923,19 +926,20 @@ PASS
 
 ==================================================================
 
-PASSED: 62 FAILED: 10
+PASSED: 65 FAILED: 7
 
 Evaluating message 73 .....
 
 
-Response: SHIPPING
+Response: DELIVERY
 
 Expected response: DELIVERY
-FAIL
+
+PASS
 
 ==================================================================
 
-PASSED: 62 FAILED: 11
+PASSED: 66 FAILED: 7
 
 Evaluating message 74 .....
 
@@ -948,7 +952,7 @@ PASS
 
 ==================================================================
 
-PASSED: 63 FAILED: 11
+PASSED: 67 FAILED: 7
 
 Evaluating message 75 .....
 
@@ -961,7 +965,7 @@ PASS
 
 ==================================================================
 
-PASSED: 64 FAILED: 11
+PASSED: 68 FAILED: 7
 
 Evaluating message 76 .....
 
@@ -974,7 +978,7 @@ PASS
 
 ==================================================================
 
-PASSED: 65 FAILED: 11
+PASSED: 69 FAILED: 7
 
 Evaluating message 77 .....
 
@@ -987,7 +991,7 @@ PASS
 
 ==================================================================
 
-PASSED: 66 FAILED: 11
+PASSED: 70 FAILED: 7
 
 Evaluating message 78 .....
 
@@ -1000,7 +1004,7 @@ PASS
 
 ==================================================================
 
-PASSED: 67 FAILED: 11
+PASSED: 71 FAILED: 7
 
 Evaluating message 79 .....
 
@@ -1013,19 +1017,20 @@ PASS
 
 ==================================================================
 
-PASSED: 68 FAILED: 11
+PASSED: 72 FAILED: 7
 
 Evaluating message 80 .....
 
 
-Response: DELIVERY
+Response: SHIPPING
 
 Expected response: SHIPPING
-FAIL
+
+PASS
 
 ==================================================================
 
-PASSED: 68 FAILED: 12
+PASSED: 73 FAILED: 7
 
 Evaluating message 81 .....
 
@@ -1038,20 +1043,19 @@ PASS
 
 ==================================================================
 
-PASSED: 69 FAILED: 12
+PASSED: 74 FAILED: 7
 
 Evaluating message 82 .....
 
 
-Response: DELIVERY
+Response: ORDER
 
 Expected response: DELIVERY
-
-PASS
+FAIL
 
 ==================================================================
 
-PASSED: 70 FAILED: 12
+PASSED: 74 FAILED: 8
 
 Evaluating message 83 .....
 
@@ -1064,7 +1068,7 @@ PASS
 
 ==================================================================
 
-PASSED: 71 FAILED: 12
+PASSED: 75 FAILED: 8
 
 Evaluating message 84 .....
 
@@ -1077,7 +1081,7 @@ PASS
 
 ==================================================================
 
-PASSED: 72 FAILED: 12
+PASSED: 76 FAILED: 8
 
 Evaluating message 85 .....
 
@@ -1090,7 +1094,7 @@ PASS
 
 ==================================================================
 
-PASSED: 73 FAILED: 12
+PASSED: 77 FAILED: 8
 
 Evaluating message 86 .....
 
@@ -1103,7 +1107,7 @@ PASS
 
 ==================================================================
 
-PASSED: 74 FAILED: 12
+PASSED: 78 FAILED: 8
 
 Evaluating message 87 .....
 
@@ -1116,7 +1120,7 @@ PASS
 
 ==================================================================
 
-PASSED: 75 FAILED: 12
+PASSED: 79 FAILED: 8
 
 Evaluating message 88 .....
 
@@ -1129,32 +1133,32 @@ PASS
 
 ==================================================================
 
-PASSED: 76 FAILED: 12
+PASSED: 80 FAILED: 8
 
 Evaluating message 89 .....
 
 
-Response: FEEDBACK
+Response: ACCOUNT
 
 Expected response: ACCOUNT
-FAIL
-
-==================================================================
-
-PASSED: 76 FAILED: 13
-
-Evaluating message 90 .....
-
-
-Response: CONTACT
-
-Expected response: CONTACT
 
 PASS
 
 ==================================================================
 
-PASSED: 77 FAILED: 13
+PASSED: 81 FAILED: 8
+
+Evaluating message 90 .....
+
+
+Response: OFF_TOPIC
+
+Expected response: CONTACT
+FAIL
+
+==================================================================
+
+PASSED: 81 FAILED: 9
 
 Evaluating message 91 .....
 
@@ -1167,7 +1171,7 @@ PASS
 
 ==================================================================
 
-PASSED: 78 FAILED: 13
+PASSED: 82 FAILED: 9
 
 Evaluating message 92 .....
 
@@ -1180,7 +1184,7 @@ PASS
 
 ==================================================================
 
-PASSED: 79 FAILED: 13
+PASSED: 83 FAILED: 9
 
 Evaluating message 93 .....
 
@@ -1193,7 +1197,7 @@ PASS
 
 ==================================================================
 
-PASSED: 80 FAILED: 13
+PASSED: 84 FAILED: 9
 
 Evaluating message 94 .....
 
@@ -1206,7 +1210,7 @@ PASS
 
 ==================================================================
 
-PASSED: 81 FAILED: 13
+PASSED: 85 FAILED: 9
 
 Evaluating message 95 .....
 
@@ -1219,7 +1223,7 @@ PASS
 
 ==================================================================
 
-PASSED: 82 FAILED: 13
+PASSED: 86 FAILED: 9
 
 Evaluating message 96 .....
 
@@ -1232,7 +1236,7 @@ PASS
 
 ==================================================================
 
-PASSED: 83 FAILED: 13
+PASSED: 87 FAILED: 9
 
 Evaluating message 97 .....
 
@@ -1245,7 +1249,7 @@ PASS
 
 ==================================================================
 
-PASSED: 84 FAILED: 13
+PASSED: 88 FAILED: 9
 
 Evaluating message 98 .....
 
@@ -1258,7 +1262,7 @@ PASS
 
 ==================================================================
 
-PASSED: 85 FAILED: 13
+PASSED: 89 FAILED: 9
 
 Evaluating message 99 .....
 
@@ -1270,7 +1274,7 @@ FAIL
 
 ==================================================================
 
-PASSED: 85 FAILED: 14
+PASSED: 89 FAILED: 10
 
 Evaluating message 100 .....
 
@@ -1283,7 +1287,7 @@ PASS
 
 ==================================================================
 
-PASSED: 86 FAILED: 14
+PASSED: 90 FAILED: 10
 
 Evaluating message 101 .....
 
@@ -1296,19 +1300,20 @@ PASS
 
 ==================================================================
 
-PASSED: 87 FAILED: 14
+PASSED: 91 FAILED: 10
 
 Evaluating message 102 .....
 
 
-Response: DELIVERY
+Response: SHIPPING
 
 Expected response: SHIPPING
-FAIL
+
+PASS
 
 ==================================================================
 
-PASSED: 87 FAILED: 15
+PASSED: 92 FAILED: 10
 
 Evaluating message 103 .....
 
@@ -1321,7 +1326,7 @@ PASS
 
 ==================================================================
 
-PASSED: 88 FAILED: 15
+PASSED: 93 FAILED: 10
 
 Evaluating message 104 .....
 
@@ -1334,7 +1339,7 @@ PASS
 
 ==================================================================
 
-PASSED: 89 FAILED: 15
+PASSED: 94 FAILED: 10
 
 Evaluating message 105 .....
 
@@ -1347,7 +1352,7 @@ PASS
 
 ==================================================================
 
-PASSED: 90 FAILED: 15
+PASSED: 95 FAILED: 10
 
 Evaluating message 106 .....
 
@@ -1360,7 +1365,7 @@ PASS
 
 ==================================================================
 
-PASSED: 91 FAILED: 15
+PASSED: 96 FAILED: 10
 
 Evaluating message 107 .....
 
@@ -1373,19 +1378,20 @@ PASS
 
 ==================================================================
 
-PASSED: 92 FAILED: 15
+PASSED: 97 FAILED: 10
 
 Evaluating message 108 .....
 
 
-Response: CANCEL
+Response: ACCOUNT
 
 Expected response: ACCOUNT
-FAIL
+
+PASS
 
 ==================================================================
 
-PASSED: 92 FAILED: 16
+PASSED: 98 FAILED: 10
 
 Evaluating message 109 .....
 
@@ -1398,7 +1404,7 @@ PASS
 
 ==================================================================
 
-PASSED: 93 FAILED: 16
+PASSED: 99 FAILED: 10
 
 Evaluating message 110 .....
 
@@ -1411,7 +1417,7 @@ PASS
 
 ==================================================================
 
-PASSED: 94 FAILED: 16
+PASSED: 100 FAILED: 10
 
 Evaluating message 111 .....
 
@@ -1424,19 +1430,20 @@ PASS
 
 ==================================================================
 
-PASSED: 95 FAILED: 16
+PASSED: 101 FAILED: 10
 
 Evaluating message 112 .....
 
 
-Response: DELIVERY
+Response: SHIPPING
 
 Expected response: SHIPPING
-FAIL
+
+PASS
 
 ==================================================================
 
-PASSED: 95 FAILED: 17
+PASSED: 102 FAILED: 10
 
 Evaluating message 113 .....
 
@@ -1449,7 +1456,7 @@ PASS
 
 ==================================================================
 
-PASSED: 96 FAILED: 17
+PASSED: 103 FAILED: 10
 
 Evaluating message 114 .....
 
@@ -1462,7 +1469,7 @@ PASS
 
 ==================================================================
 
-PASSED: 97 FAILED: 17
+PASSED: 104 FAILED: 10
 
 Evaluating message 115 .....
 
@@ -1475,7 +1482,7 @@ PASS
 
 ==================================================================
 
-PASSED: 98 FAILED: 17
+PASSED: 105 FAILED: 10
 
 Evaluating message 116 .....
 
@@ -1488,7 +1495,7 @@ PASS
 
 ==================================================================
 
-PASSED: 99 FAILED: 17
+PASSED: 106 FAILED: 10
 
 Evaluating message 117 .....
 
@@ -1501,7 +1508,7 @@ PASS
 
 ==================================================================
 
-PASSED: 100 FAILED: 17
+PASSED: 107 FAILED: 10
 
 Evaluating message 118 .....
 
@@ -1514,7 +1521,7 @@ PASS
 
 ==================================================================
 
-PASSED: 101 FAILED: 17
+PASSED: 108 FAILED: 10
 
 Evaluating message 119 .....
 
@@ -1527,7 +1534,7 @@ PASS
 
 ==================================================================
 
-PASSED: 102 FAILED: 17
+PASSED: 109 FAILED: 10
 
 Evaluating message 120 .....
 
@@ -1540,7 +1547,7 @@ PASS
 
 ==================================================================
 
-PASSED: 103 FAILED: 17
+PASSED: 110 FAILED: 10
 
 Evaluating message 121 .....
 
@@ -1553,7 +1560,7 @@ PASS
 
 ==================================================================
 
-PASSED: 104 FAILED: 17
+PASSED: 111 FAILED: 10
 
 Evaluating message 122 .....
 
@@ -1566,7 +1573,7 @@ PASS
 
 ==================================================================
 
-PASSED: 105 FAILED: 17
+PASSED: 112 FAILED: 10
 
 Evaluating message 123 .....
 
@@ -1578,7 +1585,7 @@ FAIL
 
 ==================================================================
 
-PASSED: 105 FAILED: 18
+PASSED: 112 FAILED: 11
 
 Evaluating message 124 .....
 
@@ -1591,7 +1598,7 @@ PASS
 
 ==================================================================
 
-PASSED: 106 FAILED: 18
+PASSED: 113 FAILED: 11
 
 Evaluating message 125 .....
 
@@ -1603,7 +1610,7 @@ FAIL
 
 ==================================================================
 
-PASSED: 106 FAILED: 19
+PASSED: 113 FAILED: 12
 
 Evaluating message 126 .....
 
@@ -1616,7 +1623,7 @@ PASS
 
 ==================================================================
 
-PASSED: 107 FAILED: 19
+PASSED: 114 FAILED: 12
 
 Evaluating message 127 .....
 
@@ -1629,7 +1636,7 @@ PASS
 
 ==================================================================
 
-PASSED: 108 FAILED: 19
+PASSED: 115 FAILED: 12
 
 Evaluating message 128 .....
 
@@ -1642,7 +1649,7 @@ PASS
 
 ==================================================================
 
-PASSED: 109 FAILED: 19
+PASSED: 116 FAILED: 12
 
 Evaluating message 129 .....
 
@@ -1655,7 +1662,7 @@ PASS
 
 ==================================================================
 
-PASSED: 110 FAILED: 19
+PASSED: 117 FAILED: 12
 
 Evaluating message 130 .....
 
@@ -1668,7 +1675,7 @@ PASS
 
 ==================================================================
 
-PASSED: 111 FAILED: 19
+PASSED: 118 FAILED: 12
 
 Evaluating message 131 .....
 
@@ -1681,7 +1688,7 @@ PASS
 
 ==================================================================
 
-PASSED: 112 FAILED: 19
+PASSED: 119 FAILED: 12
 
 Evaluating message 132 .....
 
@@ -1694,7 +1701,7 @@ PASS
 
 ==================================================================
 
-PASSED: 113 FAILED: 19
+PASSED: 120 FAILED: 12
 
 Evaluating message 133 .....
 
@@ -1707,7 +1714,7 @@ PASS
 
 ==================================================================
 
-PASSED: 114 FAILED: 19
+PASSED: 121 FAILED: 12
 
 Evaluating message 134 .....
 
@@ -1720,19 +1727,20 @@ PASS
 
 ==================================================================
 
-PASSED: 115 FAILED: 19
+PASSED: 122 FAILED: 12
 
 Evaluating message 135 .....
 
 
-Response: CONTACT
+Response: PAYMENT
 
 Expected response: PAYMENT
-FAIL
+
+PASS
 
 ==================================================================
 
-PASSED: 115 FAILED: 20
+PASSED: 123 FAILED: 12
 
 Evaluating message 136 .....
 
@@ -1745,7 +1753,7 @@ PASS
 
 ==================================================================
 
-PASSED: 116 FAILED: 20
+PASSED: 124 FAILED: 12
 
 Evaluating message 137 .....
 
@@ -1758,7 +1766,7 @@ PASS
 
 ==================================================================
 
-PASSED: 117 FAILED: 20
+PASSED: 125 FAILED: 12
 
 Evaluating message 138 .....
 
@@ -1771,7 +1779,7 @@ PASS
 
 ==================================================================
 
-PASSED: 118 FAILED: 20
+PASSED: 126 FAILED: 12
 
 Evaluating message 139 .....
 
@@ -1784,7 +1792,7 @@ PASS
 
 ==================================================================
 
-PASSED: 119 FAILED: 20
+PASSED: 127 FAILED: 12
 
 Evaluating message 140 .....
 
@@ -1797,7 +1805,7 @@ PASS
 
 ==================================================================
 
-PASSED: 120 FAILED: 20
+PASSED: 128 FAILED: 12
 
 Evaluating message 141 .....
 
@@ -1810,7 +1818,7 @@ PASS
 
 ==================================================================
 
-PASSED: 121 FAILED: 20
+PASSED: 129 FAILED: 12
 
 Evaluating message 142 .....
 
@@ -1823,7 +1831,7 @@ PASS
 
 ==================================================================
 
-PASSED: 122 FAILED: 20
+PASSED: 130 FAILED: 12
 
 Evaluating message 143 .....
 
@@ -1836,7 +1844,7 @@ PASS
 
 ==================================================================
 
-PASSED: 123 FAILED: 20
+PASSED: 131 FAILED: 12
 
 Evaluating message 144 .....
 
@@ -1849,20 +1857,19 @@ PASS
 
 ==================================================================
 
-PASSED: 124 FAILED: 20
+PASSED: 132 FAILED: 12
 
 Evaluating message 145 .....
 
 
-Response: FEEDBACK
+Response: OFF_TOPIC
 
 Expected response: FEEDBACK
-
-PASS
+FAIL
 
 ==================================================================
 
-PASSED: 125 FAILED: 20
+PASSED: 132 FAILED: 13
 
 Evaluating message 146 .....
 
@@ -1875,7 +1882,7 @@ PASS
 
 ==================================================================
 
-PASSED: 126 FAILED: 20
+PASSED: 133 FAILED: 13
 
 Evaluating message 147 .....
 
@@ -1888,7 +1895,7 @@ PASS
 
 ==================================================================
 
-PASSED: 127 FAILED: 20
+PASSED: 134 FAILED: 13
 
 Evaluating message 148 .....
 
@@ -1901,7 +1908,7 @@ PASS
 
 ==================================================================
 
-PASSED: 128 FAILED: 20
+PASSED: 135 FAILED: 13
 
 Evaluating message 149 .....
 
@@ -1914,7 +1921,7 @@ PASS
 
 ==================================================================
 
-PASSED: 129 FAILED: 20
+PASSED: 136 FAILED: 13
 
 Evaluating message 150 .....
 
@@ -1927,7 +1934,7 @@ PASS
 
 ==================================================================
 
-PASSED: 130 FAILED: 20
+PASSED: 137 FAILED: 13
 
 Evaluating message 151 .....
 
@@ -1940,7 +1947,7 @@ PASS
 
 ==================================================================
 
-PASSED: 131 FAILED: 20
+PASSED: 138 FAILED: 13
 
 Evaluating message 152 .....
 
@@ -1953,7 +1960,7 @@ PASS
 
 ==================================================================
 
-PASSED: 132 FAILED: 20
+PASSED: 139 FAILED: 13
 
 Evaluating message 153 .....
 
@@ -1965,7 +1972,7 @@ FAIL
 
 ==================================================================
 
-PASSED: 132 FAILED: 21
+PASSED: 139 FAILED: 14
 
 Evaluating message 154 .....
 
@@ -1978,19 +1985,20 @@ PASS
 
 ==================================================================
 
-PASSED: 133 FAILED: 21
+PASSED: 140 FAILED: 14
 
 Evaluating message 155 .....
 
 
-Response: SHIPPING
+Response: DELIVERY
 
 Expected response: DELIVERY
-FAIL
+
+PASS
 
 ==================================================================
 
-PASSED: 133 FAILED: 22
+PASSED: 141 FAILED: 14
 
 Evaluating message 156 .....
 
@@ -2003,7 +2011,7 @@ PASS
 
 ==================================================================
 
-PASSED: 134 FAILED: 22
+PASSED: 142 FAILED: 14
 
 Evaluating message 157 .....
 
@@ -2016,7 +2024,7 @@ PASS
 
 ==================================================================
 
-PASSED: 135 FAILED: 22
+PASSED: 143 FAILED: 14
 
 Evaluating message 158 .....
 
@@ -2029,7 +2037,7 @@ PASS
 
 ==================================================================
 
-PASSED: 136 FAILED: 22
+PASSED: 144 FAILED: 14
 
 Evaluating message 159 .....
 
@@ -2042,7 +2050,7 @@ PASS
 
 ==================================================================
 
-PASSED: 137 FAILED: 22
+PASSED: 145 FAILED: 14
 
 Evaluating message 160 .....
 
@@ -2054,7 +2062,7 @@ FAIL
 
 ==================================================================
 
-PASSED: 137 FAILED: 23
+PASSED: 145 FAILED: 15
 
 Evaluating message 161 .....
 
@@ -2066,7 +2074,7 @@ FAIL
 
 ==================================================================
 
-PASSED: 137 FAILED: 24
+PASSED: 145 FAILED: 16
 
 Evaluating message 162 .....
 
@@ -2078,7 +2086,7 @@ FAIL
 
 ==================================================================
 
-PASSED: 137 FAILED: 25
+PASSED: 145 FAILED: 17
 
 Evaluating message 163 .....
 
@@ -2091,7 +2099,7 @@ PASS
 
 ==================================================================
 
-PASSED: 138 FAILED: 25
+PASSED: 146 FAILED: 17
 
 Evaluating message 164 .....
 
@@ -2104,7 +2112,7 @@ PASS
 
 ==================================================================
 
-PASSED: 139 FAILED: 25
+PASSED: 147 FAILED: 17
 
 Evaluating message 165 .....
 
@@ -2117,7 +2125,7 @@ PASS
 
 ==================================================================
 
-PASSED: 140 FAILED: 25
+PASSED: 148 FAILED: 17
 
 Evaluating message 166 .....
 
@@ -2130,32 +2138,32 @@ PASS
 
 ==================================================================
 
-PASSED: 141 FAILED: 25
+PASSED: 149 FAILED: 17
 
 Evaluating message 167 .....
 
 
-Response: ACCOUNT
+Response: SHIPPING
 
 Expected response: SHIPPING
-FAIL
-
-==================================================================
-
-PASSED: 141 FAILED: 26
-
-Evaluating message 168 .....
-
-
-Response: CONTACT
-
-Expected response: CONTACT
 
 PASS
 
 ==================================================================
 
-PASSED: 142 FAILED: 26
+PASSED: 150 FAILED: 17
+
+Evaluating message 168 .....
+
+
+Response: OFF_TOPIC
+
+Expected response: CONTACT
+FAIL
+
+==================================================================
+
+PASSED: 150 FAILED: 18
 
 Evaluating message 169 .....
 
@@ -2168,7 +2176,7 @@ PASS
 
 ==================================================================
 
-PASSED: 143 FAILED: 26
+PASSED: 151 FAILED: 18
 
 Evaluating message 170 .....
 
@@ -2180,7 +2188,7 @@ FAIL
 
 ==================================================================
 
-PASSED: 143 FAILED: 27
+PASSED: 151 FAILED: 19
 
 Evaluating message 171 .....
 
@@ -2193,7 +2201,7 @@ PASS
 
 ==================================================================
 
-PASSED: 144 FAILED: 27
+PASSED: 152 FAILED: 19
 
 Evaluating message 172 .....
 
@@ -2206,7 +2214,7 @@ PASS
 
 ==================================================================
 
-PASSED: 145 FAILED: 27
+PASSED: 153 FAILED: 19
 
 Evaluating message 173 .....
 
@@ -2219,7 +2227,7 @@ PASS
 
 ==================================================================
 
-PASSED: 146 FAILED: 27
+PASSED: 154 FAILED: 19
 
 Evaluating message 174 .....
 
@@ -2231,7 +2239,7 @@ FAIL
 
 ==================================================================
 
-PASSED: 146 FAILED: 28
+PASSED: 154 FAILED: 20
 
 Evaluating message 175 .....
 
@@ -2244,19 +2252,20 @@ PASS
 
 ==================================================================
 
-PASSED: 147 FAILED: 28
+PASSED: 155 FAILED: 20
 
 Evaluating message 176 .....
 
 
-Response: SHIPPING
+Response: DELIVERY
 
 Expected response: DELIVERY
-FAIL
+
+PASS
 
 ==================================================================
 
-PASSED: 147 FAILED: 29
+PASSED: 156 FAILED: 20
 
 Evaluating message 177 .....
 
@@ -2269,7 +2278,7 @@ PASS
 
 ==================================================================
 
-PASSED: 148 FAILED: 29
+PASSED: 157 FAILED: 20
 
 Evaluating message 178 .....
 
@@ -2282,7 +2291,7 @@ PASS
 
 ==================================================================
 
-PASSED: 149 FAILED: 29
+PASSED: 158 FAILED: 20
 
 Evaluating message 179 .....
 
@@ -2295,7 +2304,7 @@ PASS
 
 ==================================================================
 
-PASSED: 150 FAILED: 29
+PASSED: 159 FAILED: 20
 
 Evaluating message 180 .....
 
@@ -2308,7 +2317,7 @@ PASS
 
 ==================================================================
 
-PASSED: 151 FAILED: 29
+PASSED: 160 FAILED: 20
 
 Evaluating message 181 .....
 
@@ -2321,7 +2330,7 @@ PASS
 
 ==================================================================
 
-PASSED: 152 FAILED: 29
+PASSED: 161 FAILED: 20
 
 Evaluating message 182 .....
 
@@ -2334,19 +2343,20 @@ PASS
 
 ==================================================================
 
-PASSED: 153 FAILED: 29
+PASSED: 162 FAILED: 20
 
 Evaluating message 183 .....
 
 
-Response: ACCOUNT
+Response: SHIPPING
 
 Expected response: SHIPPING
-FAIL
+
+PASS
 
 ==================================================================
 
-PASSED: 153 FAILED: 30
+PASSED: 163 FAILED: 20
 
 Evaluating message 184 .....
 
@@ -2359,7 +2369,7 @@ PASS
 
 ==================================================================
 
-PASSED: 154 FAILED: 30
+PASSED: 164 FAILED: 20
 
 Evaluating message 185 .....
 
@@ -2372,7 +2382,7 @@ PASS
 
 ==================================================================
 
-PASSED: 155 FAILED: 30
+PASSED: 165 FAILED: 20
 
 Evaluating message 186 .....
 
@@ -2385,7 +2395,7 @@ PASS
 
 ==================================================================
 
-PASSED: 156 FAILED: 30
+PASSED: 166 FAILED: 20
 
 Evaluating message 187 .....
 
@@ -2398,7 +2408,7 @@ PASS
 
 ==================================================================
 
-PASSED: 157 FAILED: 30
+PASSED: 167 FAILED: 20
 
 Evaluating message 188 .....
 
@@ -2411,7 +2421,7 @@ PASS
 
 ==================================================================
 
-PASSED: 158 FAILED: 30
+PASSED: 168 FAILED: 20
 
 Evaluating message 189 .....
 
@@ -2424,7 +2434,7 @@ PASS
 
 ==================================================================
 
-PASSED: 159 FAILED: 30
+PASSED: 169 FAILED: 20
 
 Evaluating message 190 .....
 
@@ -2437,7 +2447,7 @@ PASS
 
 ==================================================================
 
-PASSED: 160 FAILED: 30
+PASSED: 170 FAILED: 20
 
 Evaluating message 191 .....
 
@@ -2450,7 +2460,7 @@ PASS
 
 ==================================================================
 
-PASSED: 161 FAILED: 30
+PASSED: 171 FAILED: 20
 
 Evaluating message 192 .....
 
@@ -2463,7 +2473,7 @@ PASS
 
 ==================================================================
 
-PASSED: 162 FAILED: 30
+PASSED: 172 FAILED: 20
 
 Evaluating message 193 .....
 
@@ -2476,7 +2486,7 @@ PASS
 
 ==================================================================
 
-PASSED: 163 FAILED: 30
+PASSED: 173 FAILED: 20
 
 Evaluating message 194 .....
 
@@ -2489,32 +2499,32 @@ PASS
 
 ==================================================================
 
-PASSED: 164 FAILED: 30
+PASSED: 174 FAILED: 20
 
 Evaluating message 195 .....
 
 
-Response: SHIPPING
+Response: DELIVERY
 
 Expected response: DELIVERY
-FAIL
-
-==================================================================
-
-PASSED: 164 FAILED: 31
-
-Evaluating message 196 .....
-
-
-Response: FEEDBACK
-
-Expected response: FEEDBACK
 
 PASS
 
 ==================================================================
 
-PASSED: 165 FAILED: 31
+PASSED: 175 FAILED: 20
+
+Evaluating message 196 .....
+
+
+Response: CONTACT
+
+Expected response: FEEDBACK
+FAIL
+
+==================================================================
+
+PASSED: 175 FAILED: 21
 
 Evaluating message 197 .....
 
@@ -2527,7 +2537,7 @@ PASS
 
 ==================================================================
 
-PASSED: 166 FAILED: 31
+PASSED: 176 FAILED: 21
 
 Evaluating message 198 .....
 
@@ -2540,7 +2550,7 @@ PASS
 
 ==================================================================
 
-PASSED: 167 FAILED: 31
+PASSED: 177 FAILED: 21
 
 Evaluating message 199 .....
 
@@ -2553,19 +2563,20 @@ PASS
 
 ==================================================================
 
-PASSED: 168 FAILED: 31
+PASSED: 178 FAILED: 21
 
 Evaluating message 200 .....
 
 
-Response: SHIPPING
+Response: DELIVERY
 
 Expected response: DELIVERY
-FAIL
+
+PASS
 
 ==================================================================
 
-PASSED: 168 FAILED: 32
+PASSED: 179 FAILED: 21
 
 Evaluating message 201 .....
 
@@ -2578,7 +2589,7 @@ PASS
 
 ==================================================================
 
-PASSED: 169 FAILED: 32
+PASSED: 180 FAILED: 21
 
 Evaluating message 202 .....
 
@@ -2591,7 +2602,7 @@ PASS
 
 ==================================================================
 
-PASSED: 170 FAILED: 32
+PASSED: 181 FAILED: 21
 
 Evaluating message 203 .....
 
@@ -2604,7 +2615,7 @@ PASS
 
 ==================================================================
 
-PASSED: 171 FAILED: 32
+PASSED: 182 FAILED: 21
 
 Evaluating message 204 .....
 
@@ -2617,7 +2628,7 @@ PASS
 
 ==================================================================
 
-PASSED: 172 FAILED: 32
+PASSED: 183 FAILED: 21
 
 Evaluating message 205 .....
 
@@ -2630,7 +2641,7 @@ PASS
 
 ==================================================================
 
-PASSED: 173 FAILED: 32
+PASSED: 184 FAILED: 21
 
 Evaluating message 206 .....
 
@@ -2643,19 +2654,20 @@ PASS
 
 ==================================================================
 
-PASSED: 174 FAILED: 32
+PASSED: 185 FAILED: 21
 
 Evaluating message 207 .....
 
 
-Response: DELIVERY
+Response: SHIPPING
 
 Expected response: SHIPPING
-FAIL
+
+PASS
 
 ==================================================================
 
-PASSED: 174 FAILED: 33
+PASSED: 186 FAILED: 21
 
 Evaluating message 208 .....
 
@@ -2668,31 +2680,33 @@ PASS
 
 ==================================================================
 
-PASSED: 175 FAILED: 33
+PASSED: 187 FAILED: 21
 
 Evaluating message 209 .....
 
 
-Response: SHIPPING
+Response: DELIVERY
 
 Expected response: DELIVERY
-FAIL
+
+PASS
 
 ==================================================================
 
-PASSED: 175 FAILED: 34
+PASSED: 188 FAILED: 21
 
 Evaluating message 210 .....
 
 
-Response: SHIPPING
+Response: DELIVERY
 
 Expected response: DELIVERY
-FAIL
+
+PASS
 
 ==================================================================
 
-PASSED: 175 FAILED: 35
+PASSED: 189 FAILED: 21
 
 Evaluating message 211 .....
 
@@ -2705,20 +2719,19 @@ PASS
 
 ==================================================================
 
-PASSED: 176 FAILED: 35
+PASSED: 190 FAILED: 21
 
 Evaluating message 212 .....
 
 
-Response: FEEDBACK
+Response: CONTACT
 
 Expected response: FEEDBACK
-
-PASS
+FAIL
 
 ==================================================================
 
-PASSED: 177 FAILED: 35
+PASSED: 190 FAILED: 22
 
 Evaluating message 213 .....
 
@@ -2731,7 +2744,7 @@ PASS
 
 ==================================================================
 
-PASSED: 178 FAILED: 35
+PASSED: 191 FAILED: 22
 
 Evaluating message 214 .....
 
@@ -2744,7 +2757,7 @@ PASS
 
 ==================================================================
 
-PASSED: 179 FAILED: 35
+PASSED: 192 FAILED: 22
 
 Evaluating message 215 .....
 
@@ -2757,7 +2770,7 @@ PASS
 
 ==================================================================
 
-PASSED: 180 FAILED: 35
+PASSED: 193 FAILED: 22
 
 Evaluating message 216 .....
 
@@ -2770,7 +2783,7 @@ PASS
 
 ==================================================================
 
-PASSED: 181 FAILED: 35
+PASSED: 194 FAILED: 22
 
 Evaluating message 217 .....
 
@@ -2782,7 +2795,7 @@ FAIL
 
 ==================================================================
 
-PASSED: 181 FAILED: 36
+PASSED: 194 FAILED: 23
 
 Evaluating message 218 .....
 
@@ -2795,7 +2808,7 @@ PASS
 
 ==================================================================
 
-PASSED: 182 FAILED: 36
+PASSED: 195 FAILED: 23
 
 Evaluating message 219 .....
 
@@ -2808,7 +2821,7 @@ PASS
 
 ==================================================================
 
-PASSED: 183 FAILED: 36
+PASSED: 196 FAILED: 23
 
 Evaluating message 220 .....
 
@@ -2821,20 +2834,19 @@ PASS
 
 ==================================================================
 
-PASSED: 184 FAILED: 36
+PASSED: 197 FAILED: 23
 
 Evaluating message 221 .....
 
 
-Response: CONTACT
+Response: OFF_TOPIC
 
 Expected response: CONTACT
-
-PASS
+FAIL
 
 ==================================================================
 
-PASSED: 185 FAILED: 36
+PASSED: 197 FAILED: 24
 
 Evaluating message 222 .....
 
@@ -2847,7 +2859,7 @@ PASS
 
 ==================================================================
 
-PASSED: 186 FAILED: 36
+PASSED: 198 FAILED: 24
 
 Evaluating message 223 .....
 
@@ -2860,7 +2872,7 @@ PASS
 
 ==================================================================
 
-PASSED: 187 FAILED: 36
+PASSED: 199 FAILED: 24
 
 Evaluating message 224 .....
 
@@ -2873,7 +2885,7 @@ PASS
 
 ==================================================================
 
-PASSED: 188 FAILED: 36
+PASSED: 200 FAILED: 24
 
 Evaluating message 225 .....
 
@@ -2886,19 +2898,20 @@ PASS
 
 ==================================================================
 
-PASSED: 189 FAILED: 36
+PASSED: 201 FAILED: 24
 
 Evaluating message 226 .....
 
 
-Response: CONTACT
+Response: ORDER
 
 Expected response: ORDER
-FAIL
+
+PASS
 
 ==================================================================
 
-PASSED: 189 FAILED: 37
+PASSED: 202 FAILED: 24
 
 Evaluating message 227 .....
 
@@ -2911,7 +2924,7 @@ PASS
 
 ==================================================================
 
-PASSED: 190 FAILED: 37
+PASSED: 203 FAILED: 24
 
 Evaluating message 228 .....
 
@@ -2924,7 +2937,7 @@ PASS
 
 ==================================================================
 
-PASSED: 191 FAILED: 37
+PASSED: 204 FAILED: 24
 
 Evaluating message 229 .....
 
@@ -2937,7 +2950,7 @@ PASS
 
 ==================================================================
 
-PASSED: 192 FAILED: 37
+PASSED: 205 FAILED: 24
 
 Evaluating message 230 .....
 
@@ -2950,19 +2963,20 @@ PASS
 
 ==================================================================
 
-PASSED: 193 FAILED: 37
+PASSED: 206 FAILED: 24
 
 Evaluating message 231 .....
 
 
-Response: INVOICE
+Response: ORDER
 
 Expected response: ORDER
-FAIL
+
+PASS
 
 ==================================================================
 
-PASSED: 193 FAILED: 38
+PASSED: 207 FAILED: 24
 
 Evaluating message 232 .....
 
@@ -2975,19 +2989,20 @@ PASS
 
 ==================================================================
 
-PASSED: 194 FAILED: 38
+PASSED: 208 FAILED: 24
 
 Evaluating message 233 .....
 
 
-Response: DELIVERY
+Response: SHIPPING
 
 Expected response: SHIPPING
-FAIL
+
+PASS
 
 ==================================================================
 
-PASSED: 194 FAILED: 39
+PASSED: 209 FAILED: 24
 
 Evaluating message 234 .....
 
@@ -3000,7 +3015,7 @@ PASS
 
 ==================================================================
 
-PASSED: 195 FAILED: 39
+PASSED: 210 FAILED: 24
 
 Evaluating message 235 .....
 
@@ -3013,7 +3028,7 @@ PASS
 
 ==================================================================
 
-PASSED: 196 FAILED: 39
+PASSED: 211 FAILED: 24
 
 Evaluating message 236 .....
 
@@ -3026,19 +3041,20 @@ PASS
 
 ==================================================================
 
-PASSED: 197 FAILED: 39
+PASSED: 212 FAILED: 24
 
 Evaluating message 237 .....
 
 
-Response: CONTACT
+Response: ACCOUNT
 
 Expected response: ACCOUNT
-FAIL
+
+PASS
 
 ==================================================================
 
-PASSED: 197 FAILED: 40
+PASSED: 213 FAILED: 24
 
 Evaluating message 238 .....
 
@@ -3051,20 +3067,19 @@ PASS
 
 ==================================================================
 
-PASSED: 198 FAILED: 40
+PASSED: 214 FAILED: 24
 
 Evaluating message 239 .....
 
 
-Response: ACCOUNT
+Response: SUBSCRIPTION
 
 Expected response: ACCOUNT
-
-PASS
+FAIL
 
 ==================================================================
 
-PASSED: 199 FAILED: 40
+PASSED: 214 FAILED: 25
 
 Evaluating message 240 .....
 
@@ -3077,19 +3092,20 @@ PASS
 
 ==================================================================
 
-PASSED: 200 FAILED: 40
+PASSED: 215 FAILED: 25
 
 Evaluating message 241 .....
 
 
-Response: SHIPPING
+Response: DELIVERY
 
 Expected response: DELIVERY
-FAIL
+
+PASS
 
 ==================================================================
 
-PASSED: 200 FAILED: 41
+PASSED: 216 FAILED: 25
 
 Evaluating message 242 .....
 
@@ -3102,7 +3118,7 @@ PASS
 
 ==================================================================
 
-PASSED: 201 FAILED: 41
+PASSED: 217 FAILED: 25
 
 Evaluating message 243 .....
 
@@ -3115,19 +3131,20 @@ PASS
 
 ==================================================================
 
-PASSED: 202 FAILED: 41
+PASSED: 218 FAILED: 25
 
 Evaluating message 244 .....
 
 
-Response: ORDER
+Response: INVOICE
 
 Expected response: INVOICE
-FAIL
+
+PASS
 
 ==================================================================
 
-PASSED: 202 FAILED: 42
+PASSED: 219 FAILED: 25
 
 Evaluating message 245 .....
 
@@ -3140,7 +3157,7 @@ PASS
 
 ==================================================================
 
-PASSED: 203 FAILED: 42
+PASSED: 220 FAILED: 25
 
 Evaluating message 246 .....
 
@@ -3153,7 +3170,7 @@ PASS
 
 ==================================================================
 
-PASSED: 204 FAILED: 42
+PASSED: 221 FAILED: 25
 
 Evaluating message 247 .....
 
@@ -3166,7 +3183,7 @@ PASS
 
 ==================================================================
 
-PASSED: 205 FAILED: 42
+PASSED: 222 FAILED: 25
 
 Evaluating message 248 .....
 
@@ -3178,19 +3195,20 @@ FAIL
 
 ==================================================================
 
-PASSED: 205 FAILED: 43
+PASSED: 222 FAILED: 26
 
 Evaluating message 249 .....
 
 
-Response: DELIVERY
+Response: SHIPPING
 
 Expected response: SHIPPING
-FAIL
+
+PASS
 
 ==================================================================
 
-PASSED: 205 FAILED: 44
+PASSED: 223 FAILED: 26
 
 Evaluating message 250 .....
 
@@ -3203,19 +3221,20 @@ PASS
 
 ==================================================================
 
-PASSED: 206 FAILED: 44
+PASSED: 224 FAILED: 26
 
 Evaluating message 251 .....
 
 
-Response: DELIVERY
+Response: SHIPPING
 
 Expected response: SHIPPING
-FAIL
+
+PASS
 
 ==================================================================
 
-PASSED: 206 FAILED: 45
+PASSED: 225 FAILED: 26
 
 Evaluating message 252 .....
 
@@ -3228,7 +3247,7 @@ PASS
 
 ==================================================================
 
-PASSED: 207 FAILED: 45
+PASSED: 226 FAILED: 26
 
 Evaluating message 253 .....
 
@@ -3241,19 +3260,19 @@ PASS
 
 ==================================================================
 
-PASSED: 208 FAILED: 45
+PASSED: 227 FAILED: 26
 
 Evaluating message 254 .....
 
 
-Response: ACCOUNT
+Response: PAYMENT
 
 Expected response: CANCEL
 FAIL
 
 ==================================================================
 
-PASSED: 208 FAILED: 46
+PASSED: 227 FAILED: 27
 
 Evaluating message 255 .....
 
@@ -3266,7 +3285,7 @@ PASS
 
 ==================================================================
 
-PASSED: 209 FAILED: 46
+PASSED: 228 FAILED: 27
 
 Evaluating message 256 .....
 
@@ -3279,7 +3298,7 @@ PASS
 
 ==================================================================
 
-PASSED: 210 FAILED: 46
+PASSED: 229 FAILED: 27
 
 Evaluating message 257 .....
 
@@ -3291,7 +3310,7 @@ FAIL
 
 ==================================================================
 
-PASSED: 210 FAILED: 47
+PASSED: 229 FAILED: 28
 
 Evaluating message 258 .....
 
@@ -3304,7 +3323,7 @@ PASS
 
 ==================================================================
 
-PASSED: 211 FAILED: 47
+PASSED: 230 FAILED: 28
 
 Evaluating message 259 .....
 
@@ -3317,19 +3336,20 @@ PASS
 
 ==================================================================
 
-PASSED: 212 FAILED: 47
+PASSED: 231 FAILED: 28
 
 Evaluating message 260 .....
 
 
-Response: SHIPPING
+Response: DELIVERY
 
 Expected response: DELIVERY
-FAIL
+
+PASS
 
 ==================================================================
 
-PASSED: 212 FAILED: 48
+PASSED: 232 FAILED: 28
 
 Evaluating message 261 .....
 
@@ -3342,7 +3362,7 @@ PASS
 
 ==================================================================
 
-PASSED: 213 FAILED: 48
+PASSED: 233 FAILED: 28
 
 Evaluating message 262 .....
 
@@ -3355,31 +3375,33 @@ PASS
 
 ==================================================================
 
-PASSED: 214 FAILED: 48
+PASSED: 234 FAILED: 28
 
 Evaluating message 263 .....
 
 
-Response: ACCOUNT
+Response: SHIPPING
 
 Expected response: SHIPPING
-FAIL
+
+PASS
 
 ==================================================================
 
-PASSED: 214 FAILED: 49
+PASSED: 235 FAILED: 28
 
 Evaluating message 264 .....
 
 
-Response: SHIPPING
+Response: DELIVERY
 
 Expected response: DELIVERY
-FAIL
+
+PASS
 
 ==================================================================
 
-PASSED: 214 FAILED: 50
+PASSED: 236 FAILED: 28
 
 Evaluating message 265 .....
 
@@ -3392,7 +3414,7 @@ PASS
 
 ==================================================================
 
-PASSED: 215 FAILED: 50
+PASSED: 237 FAILED: 28
 
 Evaluating message 266 .....
 
@@ -3405,19 +3427,20 @@ PASS
 
 ==================================================================
 
-PASSED: 216 FAILED: 50
+PASSED: 238 FAILED: 28
 
 Evaluating message 267 .....
 
 
-Response: FEEDBACK
+Response: ACCOUNT
 
 Expected response: ACCOUNT
-FAIL
+
+PASS
 
 ==================================================================
 
-PASSED: 216 FAILED: 51
+PASSED: 239 FAILED: 28
 
 Evaluating message 268 .....
 
@@ -3430,7 +3453,7 @@ PASS
 
 ==================================================================
 
-PASSED: 217 FAILED: 51
+PASSED: 240 FAILED: 28
 
 Evaluating message 269 .....
 
@@ -3443,8 +3466,45 @@ PASS
 
 ==================================================================
 
-PASSED: 218 FAILED: 51
+PASSED: 241 FAILED: 28
+
+Classification report:
+
+              precision    recall  f1-score   support
+
+     ACCOUNT       1.00      0.94      0.97        54
+      CANCEL       0.25      0.38      0.30         8
+     CONTACT       0.94      0.91      0.93        35
+    DELIVERY       0.94      0.84      0.89        19
+    FEEDBACK       1.00      0.80      0.89        20
+     INVOICE       1.00      1.00      1.00        27
+   OFF_TOPIC       0.00      0.00      0.00         0
+       ORDER       0.95      0.66      0.78        29
+     PAYMENT       0.82      1.00      0.90        23
+      REFUND       1.00      1.00      1.00        23
+    SHIPPING       0.92      1.00      0.96        22
+SUBSCRIPTION       0.75      1.00      0.86         9
+
+    accuracy                           0.90       269
+   macro avg       0.80      0.79      0.79       269
+weighted avg       0.93      0.90      0.91       269
+
+
+Confusion matrix:
+
+[[51  0  0  0  0  0  0  0  0  0  0  3]
+ [ 0  3  0  0  0  0  0  0  5  0  0  0]
+ [ 0  0 32  0  0  0  3  0  0  0  0  0]
+ [ 0  0  0 16  0  0  0  1  0  0  2  0]
+ [ 0  0  2  0 16  0  2  0  0  0  0  0]
+ [ 0  0  0  0  0 27  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0  0]
+ [ 0  9  0  1  0  0  0 19  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0 23  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0 23  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0 22  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0  9]]
 
 ==================================================================
 
-Accuracy: 81.04%
+Accuracy: 89.59%

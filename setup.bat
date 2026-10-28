@@ -13,13 +13,29 @@ if errorlevel 1 (
 if not exist ".venv" (
     echo Creating virtual environment...
     py -3 -m venv .venv
+    if errorlevel 1 (
+        echo Virtual environment creation failed.
+        exit /b 1
+    )
 )
 
 call ".venv\Scripts\activate.bat"
+if errorlevel 1 (
+    echo Virtual environment activation failed.
+    exit /b 1
+)
 
 echo Installing Python requirements...
 python -m pip install --upgrade pip
+if errorlevel 1 (
+    echo pip upgrade failed.
+    exit /b 1
+)
 python -m pip install -r requirements.txt
+if errorlevel 1 (
+    echo Dependency installation failed.
+    exit /b 1
+)
 
 if not exist ".env" if exist ".env.example" (
     copy ".env.example" ".env"

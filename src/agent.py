@@ -1,9 +1,10 @@
 import json
 import os
-from tools import get_order_status
-from tools import get_account_info
-from llm_client import chat_with_model
-from tools import TOOLS
+from src.tools import get_order_status
+from src.tools import get_account_info
+from src.tools import get_order_id
+from src.llm_client import chat_with_model
+from src.tools import TOOLS
 from datetime import datetime
 
 
@@ -13,6 +14,7 @@ AGENT_SYSTEM_PROMPT = (
     "If the request is not about an order, account, payment, refund, subscription, tracking, or invoice lookup, refuse and say you can only look up order and account details. "
     "Use get_order_status when the customer asks about a specific order, and it needs both an order ID and an account ID. "
     "Use get_account_info when the customer asks about their account. "
+    "Use get_order_id when the customer asks about orders for their account. "
     "Only call a tool with IDs that appear in the customer's message. Never guess or invent an ID. "
     "If a required ID is missing, do not call the tool. State which ID is missing. "
     "If a tool returns an error or no result, report that plainly. Do not fill in details yourself. "
@@ -32,6 +34,10 @@ def run_tool_call(tool_call):
         )
     elif tool_call.function.name == "get_account_info":
         return get_account_info(
+            account_id=args["account_id"]
+        )
+    elif tool_call.function.name == "get_order_id":
+        return get_order_id(
             account_id=args["account_id"]
         )
     else:
