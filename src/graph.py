@@ -209,6 +209,7 @@ graph.add_edge("escalate", END)
 
 app = graph.compile()
 
+
 def main(ticket):
     
     try:
@@ -246,5 +247,4 @@ def main(ticket):
 
     return draft["response"]
 
-if __name__ == "__main__":
-    main()
+

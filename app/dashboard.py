@@ -3,6 +3,8 @@ from app.ticket import render as ticket_page
 from app.policies import render as policies_page
 from app.database import render as database_page
 from app.history import render as history_page
+from app.evaluation import render as evaluation_page
+from app.about import render as about_page
 from app.notice import require_demo_acceptance
 
 st.set_page_config(page_title="Support desk", page_icon="💬", layout="centered")
@@ -51,5 +53,7 @@ page = st.navigation([
     st.Page(policies_page, title="Company policies", icon=":material/menu_book:", url_path="policies"),
     st.Page(database_page, title="Demo data", icon=":material/table_view:", url_path="data"),
     st.Page(history_page, title="Ticket history", icon=":material/history:", url_path="history"),
+    st.Page(evaluation_page, title="Evaluation", icon=":material/monitoring:", url_path="evaluation"),
+    st.Page(about_page, title="About the demo", icon=":material/info:", url_path="about"),
 ])
 page.run()

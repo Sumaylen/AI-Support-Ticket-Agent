@@ -12,8 +12,6 @@ def render():
     st.markdown('<div class="desk-label">MERIDIAN GOODS</div>', unsafe_allow_html=True)
     st.title("How can we help?")
     st.write("Tell us what's going on and we'll help you find the next step.")
-    st.space("small")
-    
     with st.form("my_form"):
         st.subheader("Your support ticket")
         st.caption("Include the details we need to understand your issue.")
@@ -54,6 +52,7 @@ def render():
         with st.container(border=True):
             st.subheader("Response")
             st.write(st.session_state["support_response"])
+            st.warning("Responses are AI-generated and may contain errors.")
             with st.expander("View your ticket"):
                 st.write(st.session_state["submitted_ticket"])
     else:

@@ -44,24 +44,11 @@ def render():
         st.info("No ticket history yet. Submit a ticket at the support desk to get started.")
         return
 
-    query = st.text_input(
-        "Search ticket history", placeholder="Search ticket text, responses or categories"
-    ).strip().casefold()
-    matches = [
-        index for index in reversed(range(len(tickets)))
-        if not query or query in " ".join(
-            str(tickets[index].get(field, ""))
-            for field in ("ticket", "final_response", "category")
-        ).casefold()
-    ]
-    st.caption(f"{len(matches)} matching tickets · Most recently saved first")
-    if not matches:
-        st.info("No tickets match your search. Try another search or clear the field.")
-        return
+    st.caption(f"{len(tickets)} tickets · Most recently saved first")
 
     index = st.selectbox(
         "Choose a ticket",
-        options=matches,
+        options=list(reversed(range(len(tickets)))),
         format_func=lambda index: (
             f"#{index + 1} · {tickets[index].get('timestamp', 'Time not recorded')} · "
             f"{str(tickets[index].get('ticket', 'Ticket text not recorded'))[:80]}"

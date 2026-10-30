@@ -34,8 +34,8 @@ def main():
         #Read each file in folder and call chunk_text from retrieval.py for each
         f = open(os.path.join(DATA_DIR,file))
         text = f.read()
-        #chunk_text(text, word count , overlap)
-        chunk = chunk_text(text, 32 , 8)
+     
+        chunk = chunk_text(text)
 
         FILE_PATH = os.path.join(DATA_DIR, file)
         stats = os.stat(FILE_PATH)

@@ -13,7 +13,7 @@ def show_demo_notice():
         "by anyone in Ticket history."
     )
     st.write(
-        "Do not enter any personal or sensative information."
+        "Do not enter any personal or sensitive information."
     )
     if st.button("I understand", type="primary", width="stretch"):
         st.session_state["demo_notice_accepted"] = True

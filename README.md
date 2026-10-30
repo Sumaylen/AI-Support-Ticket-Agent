@@ -36,7 +36,7 @@ From the project root, using the Python environment created during setup, run:
 python -m streamlit run app/dashboard.py
 ```
 
-The `app` folder contains the dashboard, support ticket page, company policies page and a read-only demo data page for browsing accounts and orders. Ticket history displays saved records from `logs/final_ticket.json`, including responses, verification and escalation results.
+The `app` folder contains the dashboard, support ticket page, company policies page and a read-only demo data page for browsing accounts and orders. Ticket history displays saved records from `logs/final_ticket.json`, including responses, verification and escalation results. The About the demo page displays the Mermaid workflow diagram from this README, explains the workflow and describes the demo's limitations and how submitted messages are saved.
 
 ## Run the ticket workflow
 
@@ -70,26 +70,25 @@ run.bat
 
 ## Evaluation
 
-This section records the baseline performance of the classifier evaluation runs using the two model backends.
+The Evaluation page charts classification accuracy across three saved runs, each containing 269 tickets. It appears between Ticket history and About the demo in the dashboard navigation.
 
-### Baseline results
+### Classification results
 
-- Groq API model: `qwen/qwen3.8-27b`
-  - Result: `PASSED: 218 FAILED: 51`
-  - Accuracy: `81.04%`
-
-- Local model: `Qwen_Qwen3.5-4B-Q4_K_M`
-  - Result: `PASSED: 205 FAILED: 64`
-  - Accuracy: `76.21%`
+| Version | Change | Passed | Failed | Accuracy |
+| --- | --- | ---: | ---: | ---: |
+| v1 | Qwen 27B baseline; strict JSON schema output disabled | 201 | 68 | 74.72% |
+| v2 | GPT-OSS 120B; strict JSON schema output enabled | 223 | 46 | 82.90% |
+| v3 | GPT-OSS 120B with classifier prompt adjustments | 241 | 28 | 89.59% |
 
 ### Summary
 
-The Groq API model performed better during the evaluation of ticket classification, achieving an overall accuracy of 81.04%, compared with 76.21% for the local model. These values serve as the initial benchmark for future improvements.
+The model and output configuration change in v2 increased accuracy by 8.18 percentage points. Prompt adjustments in v3 clarified commonly confused categories and increased accuracy by a further 6.69 percentage points. These runs measure category classification, not end-to-end response accuracy.
 
 ### Raw evaluation logs
 
-- Groq API model log: [logs/myfile163734.txt](logs/myfile163734.txt)
-- Local model log: [logs/myfile174823.txt](logs/myfile174823.txt)
+- [v1: Qwen 27B baseline](logs/EVALUATE_CLASSIFIER_QWEN_27B_STRICT_FALSE_v1.txt)
+- [v2: GPT-OSS 120B with strict output](logs/EVALUATE_CLASSIFIER_GPT_120B_STRICT_TRUE_v2.txt)
+- [v3: GPT-OSS 120B with prompt adjustments](logs/EVALUATE_CLASSIFIER_GPT_120B_STRICT_TRUE_v3.txt)
 
 ```mermaid
 %%{init: {
@@ -115,7 +114,7 @@ The Groq API model performed better during the evaluation of ticket classificati
     'padding': 18
   }
 }}%%
-flowchart TD;
+graph TD;
         __start__([<p>__start__</p>]):::first
         prompt_guard(prompt_guard)
         llm_prompt_guard(llm_prompt_guard)
@@ -132,6 +131,7 @@ flowchart TD;
         __start__ --> prompt_guard;
         classify -. &nbsp;blocked_route&nbsp; .-> blocked;
         classify -. &nbsp;continue_route&nbsp; .-> requires_lookup;
+        invalid_lookup --> should_escalate;
         llm_prompt_guard -. &nbsp;blocked_route&nbsp; .-> blocked;
         llm_prompt_guard -. &nbsp;continue_route&nbsp; .-> classify;
         lookup -. &nbsp;invalid_route&nbsp; .-> invalid_lookup;
@@ -147,7 +147,6 @@ flowchart TD;
         should_escalate -. &nbsp;escalate_route&nbsp; .-> escalate;
         blocked --> __end__;
         escalate --> __end__;
-        invalid_lookup --> __end__;
 
         classDef default fill:#1f2937,stroke:#c4b5fd,stroke-width:2.5px,color:#f8fafc,rx:12,ry:12;
         classDef first fill:#0f172a,stroke:#c4b5fd,stroke-width:2.5px,color:#f8fafc;

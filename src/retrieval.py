@@ -11,31 +11,64 @@ def initialize_database():
         client = chromadb.PersistentClient(path=DB_PATH)
         collection = client.get_or_create_collection(name="company_policies")
 
-#splits up text strings into chunks of words based on chunk size including some overlap to preserve context
-def chunk_text(text, chunk_size, overlap):
-    # Error Handling
-    if chunk_size <= 0:
-        raise ValueError("chunk_size must be greater than 0")
-    if overlap < 0 or overlap >= chunk_size:
-        raise ValueError("overlap must be >= 0 and < chunk_size")
+# #splits up text strings into chunks of words based on chunk size including some overlap to preserve context
+# def chunk_text(text, chunk_size, overlap):
+#     # Error Handling
+#     if chunk_size <= 0:
+#         raise ValueError("chunk_size must be greater than 0")
+#     if overlap < 0 or overlap >= chunk_size:
+#         raise ValueError("overlap must be >= 0 and < chunk_size")
     
-    chunks = text.split()
-    chunksSelected = []
-    start = 0
+#     chunks = text.split()
+#     chunksSelected = []
+#     start = 0
         
-    while start < len(chunks):
-        end = start + chunk_size
-        #IF only a few words remain, read to the end to avoid small chunks
-        if (len(chunks[start:end])) < chunk_size:
-            chunksSelected.append(" ".join(chunks[start:]))
-            break
+#     while start < len(chunks):
+#         end = start + chunk_size
+#         #IF only a few words remain, read to the end to avoid small chunks
+#         if (len(chunks[start:end])) < chunk_size:
+#             chunksSelected.append(" ".join(chunks[start:]))
+#             break
        
-        chunksSelected.append(" ".join(chunks[start:end]))
-        start = (start + chunk_size) - overlap
+#         chunksSelected.append(" ".join(chunks[start:end]))
+#         start = (start + chunk_size) - overlap
 
 
-    return chunksSelected
+#     return chunksSelected
     
+
+#splits up text strings into chunks of sentences
+def chunk_text(text):
+    finalChunks = []
+    splitSen = text.split()
+    index = 0
+    while index < len(text):
+        newSen = []
+        if index >= len(splitSen):
+            break
+        for words in splitSen[index: ]:
+            if words.endswith(".") == True:
+                index += 1
+                newSen.append(words)
+                break
+            elif words.endswith("?") == True:
+                index += 1
+                newSen.append(words)
+                break
+            elif words.endswith("!") == True:
+                index += 1
+                newSen.append(words)
+                break
+            else:
+                index += 1
+                newSen.append(words)
+    
+        joinSen = " ".join(newSen)
+        finalChunks.append(joinSen)
+
+    return finalChunks
+    
+
 
 #Create embed vectors to store in chromaDB
 def embed(texts, model):
@@ -65,3 +98,5 @@ def retrieve(question, k):
         combined.append(entry)
 
     return combined
+
+

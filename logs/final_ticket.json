@@ -418,5 +418,85 @@
     "final_response": "We accept Visa, Mastercard, American\u202fExpress, and Discover credit or debit cards, as well as PayPal and Apple\u202fPay. Bank transfers and cryptocurrency aren\u2019t supported. You can also use a Meridian\u202fGoods gift card together with one other payment method on the same order.",
     "should_escalate": false,
     "escalate_reason": []
+  },
+  {
+    "timestamp": "30-10-2026 13:36:52",
+    "ticket": "what are the refund options?",
+    "category": "REFUND",
+    "urgency": "low",
+    "verification_result": true,
+    "final_response": "We can refund your purchase by returning it in its original, unused condition within\u202f30\u202fdays. The refund will be sent back to the same payment method you used at checkout\u2014cash refunds or transfers to a different card aren\u2019t offered. If you paid with store credit or a gift card, the refund will be returned as store credit on your account, which you can use just like any other purchase.",
+    "should_escalate": false,
+    "escalate_reason": []
+  },
+  {
+    "timestamp": "30-10-2026 13:47:22",
+    "ticket": "what are the refund options?",
+    "category": "REFUND",
+    "urgency": "low",
+    "verification_result": true,
+    "final_response": "Refunds are returned to the same payment method you used at checkout\u2014you won\u2019t receive cash or a refund to a different card. If the purchase was made with store credit or a gift card, the refund is issued as store credit, which you can use just like any other credit on your account.",
+    "should_escalate": false,
+    "escalate_reason": []
+  },
+  {
+    "timestamp": "30-10-2026 13:57:10",
+    "ticket": "what are the refund options?",
+    "category": "REFUND",
+    "urgency": "low",
+    "verification_result": true,
+    "final_response": "Refunds are sent back to the same payment method you used at checkout\u2014Meridian Goods doesn\u2019t issue cash refunds or send money to a different card. If the purchase was made with store credit or a gift card, the refund is credited back to that balance and can be used just like any other payment. To qualify, the item must be unused, in its original packaging with all accessories, and returned within\u202f30\u202fdays of delivery. Let me know which order you\u2019d like to return, and I can walk you through the next steps.",
+    "should_escalate": false,
+    "escalate_reason": []
+  },
+  {
+    "timestamp": "30-10-2026 14:06:49",
+    "ticket": "what are the payment options?",
+    "category": "PAYMENT",
+    "urgency": "low",
+    "verification_result": true,
+    "final_response": "We accept Visa, Mastercard, American\u202fExpress, and Discover credit or debit cards, plus PayPal and Apple\u202fPay. Bank transfers and cryptocurrency aren\u2019t supported at this time.",
+    "should_escalate": false,
+    "escalate_reason": []
+  },
+  {
+    "timestamp": "30-10-2026 14:07:17",
+    "ticket": "what are the payment options?",
+    "category": "PAYMENT",
+    "urgency": "low",
+    "verification_result": true,
+    "final_response": "We accept Visa, Mastercard, American\u202fExpress, and Discover credit or debit cards, plus PayPal and Apple\u202fPay. Bank transfers and cryptocurrency aren\u2019t supported at this time.",
+    "should_escalate": false,
+    "escalate_reason": []
+  },
+  {
+    "timestamp": "30-10-2026 14:08:33",
+    "ticket": "what are the payment options?",
+    "category": "PAYMENT",
+    "urgency": "low",
+    "verification_result": true,
+    "final_response": "We accept Visa, Mastercard, American\u202fExpress, and Discover credit or debit cards, plus PayPal and Apple\u202fPay. Bank transfers and cryptocurrency aren\u2019t supported at this time.",
+    "should_escalate": false,
+    "escalate_reason": []
+  },
+  {
+    "timestamp": "30-10-2026 14:57:33",
+    "ticket": "what are the payment options",
+    "category": "PAYMENT",
+    "urgency": "low",
+    "verification_result": true,
+    "final_response": "We accept Visa, Mastercard, American\u202fExpress, and Discover credit or debit cards, plus PayPal and Apple\u202fPay. Bank transfers and cryptocurrency aren\u2019t supported as payment methods. If you have any other questions about paying, just let us know!",
+    "should_escalate": false,
+    "escalate_reason": []
+  },
+  {
+    "timestamp": "30-10-2026 14:58:36",
+    "ticket": "what are the payment options?",
+    "category": "PAYMENT",
+    "urgency": "low",
+    "verification_result": true,
+    "final_response": "We accept Visa, Mastercard, American\u202fExpress, and Discover credit or debit cards, plus PayPal and Apple\u202fPay. Bank transfers and cryptocurrency aren\u2019t supported at this time.",
+    "should_escalate": false,
+    "escalate_reason": []
   }
 ]
