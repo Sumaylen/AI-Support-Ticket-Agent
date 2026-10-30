@@ -27,7 +27,9 @@ def get_llm_client():
         thinking = "disabled"
         client = OpenAI(
             base_url = "https://api.groq.com/openai/v1",
-            api_key = os.environ.get("GROQ_API_KEY")
+            api_key = os.environ.get("GROQ_API_KEY"),
+            timeout=30.0,
+            max_retries=2,
         )
         primary_model="openai/gpt-oss-120b"
         guardrail_model="meta-llama/llama-prompt-guard-2-86m"
@@ -52,6 +54,8 @@ def chat_with_model(messages,model = "primary_model", response_format=None, tool
         "messages": messages,
         "temperature": 0,
     }
+    if model == "primary_model":
+        chat_params["max_completion_tokens"] = 4096
 
     if tools is not None:
         chat_params["tools"] = tools
@@ -68,9 +72,12 @@ def chat_with_model(messages,model = "primary_model", response_format=None, tool
     chat_completion = client.chat.completions.create(**chat_params)
 
 
-    msg = chat_completion.choices[0].message
+    choice = chat_completion.choices[0]
 
-    return msg
+    if choice.finish_reason == "length":
+        raise RuntimeError("Model response reached its output limit")
+
+    return choice.message
 
 
 def classify_json(message, schema_name, field, allowed_values, model = "primary_model"):
@@ -103,8 +110,15 @@ def classify_json(message, schema_name, field, allowed_values, model = "primary_
 
 
         formatted_response = json.loads(response.content)
-        return formatted_response[field]
-    except Exception:
+        value = formatted_response[field]
+
+        #ensures that output is part of allwoed values even if format is correct
+        if value not in allowed_values:
+            return "UNKNOWN"
+
+        return value
+
+    except (json.JSONDecodeError, KeyError, TypeError):
         return "UNKNOWN"
 
 

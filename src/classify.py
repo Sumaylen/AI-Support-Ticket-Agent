@@ -66,5 +66,3 @@ def classify_inquiry(message):
     return {"category": category, "urgency": urgency}
 
 
-# test = classify_ticket("I would like to downloasd bill #00108, can you help me?")
-# print(test)

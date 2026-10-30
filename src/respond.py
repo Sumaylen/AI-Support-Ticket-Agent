@@ -92,16 +92,26 @@ def format_chunks(retrieved_chunks):
     return chunks_text
 
 def create_ticket(message, retrieved_chunks, lookup_result):
-    ticket = message
     verification_passed = False
-   
-    response = draft_reply(ticket, retrieved_chunks, lookup_result)
-   
     max_attempts = 3
     attempt = 0
-    failure_reason="No Failure"
+    failure_reason = "No Failure"
+
     #check if response is accurate and re-prompt the model with extra details if not
     while attempt < max_attempts:
+        #if its the 1st attempt draft a reply
+        if attempt == 0:
+            response = draft_reply(message, retrieved_chunks,lookup_result)
+        #else draft a new reply with added context from self verification
+        else:
+            response = draft_reply(
+                message,
+                retrieved_chunks,
+                lookup_result,
+                extra_instruction=FIX_PROMPT,
+                failure_reason=failure_reason,
+            )
+
         verify = check_faithfulness(response.content, retrieved_chunks, lookup_result)
         # If passedself evaluation return
         if verify.content.strip().lower().startswith("true"):
@@ -116,29 +126,26 @@ def create_ticket(message, retrieved_chunks, lookup_result):
             failure_reason = verify.content
             print("\n I FAILED \n")
             # log to a JSON file when model responses are inaccurate
-            log_json_event(LOG_PATH, question=ticket, response=response.content, verify_result=verify.content, reason=verify.content, is_failed_response=True)
-            response = draft_reply(ticket, retrieved_chunks, lookup_result, extra_instruction=FIX_PROMPT, failure_reason=failure_reason,)
+            log_json_event(
+                LOG_PATH, 
+                question=message, 
+                response=response.content, 
+                verify_result=verify.content, 
+                reason=verify.content, 
+                is_failed_response=True
+                )
             attempt += 1
 
-    # check if verification passed in the final draft       
-    if verify.content.strip().lower().startswith("true"):
-                verification_passed = True
-                return {"response": response.content, 
-                            "verification_passed": verification_passed, 
-                            "verification_reason": verify.content, 
-                            "attempts": attempt + 1
-                            }
-                
-    else:
-        verification_passed = False
-        fallback_response = (
-            "Sorry I cant help with that."
-        )
-        return {"response": fallback_response, 
-                    "verification_passed": verification_passed, 
-                    "verification_reason": verify.content, 
-                    "attempts": attempt + 1
-                    }
+    # All attempts failed verification
+    fallback_response = (
+        "Sorry I cant help with that."
+    )
+    return {
+        "response": fallback_response,
+        "verification_passed": verification_passed,
+        "verification_reason": verify.content,
+        "attempts": attempt,
+    }
 
 
     

@@ -13,9 +13,3 @@ def load_dataset_split():
     return train_df, test_df
 
 
-# df = load_dataset_split()[1]
-
-# row = df.iloc[255]
-# print("Message:", row["instruction"])
-# print("Actual category:", row["category"])
-# print("Intent:", row["intent"])

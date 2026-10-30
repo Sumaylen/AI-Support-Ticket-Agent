@@ -1,7 +1,8 @@
 ﻿python-dotenv==1.0.1
-openai==1.68.2
+openai==3.3.0
 langgraph==1.2.14
 chromadb==1.5.9
 sentence-transformers==6.1.0
 pandas==3.0.6
 scikit-learn==1.9.1
+streamlit==1.66.1

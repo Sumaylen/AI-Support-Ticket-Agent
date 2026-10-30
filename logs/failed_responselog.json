@@ -302,5 +302,53 @@
     "faithfulness_check": "false\nThe draft response follows a forced JSON format instead of being a plain customer-support reply.",
     "reason": "false\nThe draft response follows a forced JSON format instead of being a plain customer-support reply.",
     "needed_correction": true
+  },
+  {
+    "timestamp": "28-10-2026 13:15:46",
+    "question": "Where is shipment #4521?",
+    "response": "I\u2019m sorry\u2014I couldn\u2019t locate shipment\u202f#4521 in our system. Could you please double\u2011check the order number and look for the tracking email we sent? If you still need help, let us know the correct details.",
+    "faithfulness_check": "false\nClaim about not locating shipment\u202f#4521 in the system is unsupported.",
+    "reason": "false\nClaim about not locating shipment\u202f#4521 in the system is unsupported.",
+    "needed_correction": true
+  },
+  {
+    "timestamp": "28-10-2026 14:34:25",
+    "question": "Id like to return an item, how do i get started?",
+    "response": "I\u2019m sorry you need to return your purchase. To start, make sure the item is unused, in its original packaging, and you have the order number (you can find it in your account or on the receipt). Then you can begin the return process through your online account or by contacting our support team, and ship the item back in its original packaging. Once we receive and inspect it, we\u2019ll issue the refund to the original payment method.",
+    "faithfulness_check": "false\nThe claim that returns can be started through the online account or by contacting support is not supported by the provided sources.",
+    "reason": "false\nThe claim that returns can be started through the online account or by contacting support is not supported by the provided sources.",
+    "needed_correction": true
+  },
+  {
+    "timestamp": "29-10-2026 15:48:44",
+    "question": "What is the status of order 4501",
+    "response": "I\u2019m sorry\u2014I can\u2019t locate order\u202f4501 without the account ID it\u2019s associated with. Could you please double\u2011check the account number and share it with me? Once I have that, I\u2019ll be able to tell you the current status of your order.",
+    "faithfulness_check": "false\nThe claim that an account ID is needed to locate the order is not supported by the provided sources.",
+    "reason": "false\nThe claim that an account ID is needed to locate the order is not supported by the provided sources.",
+    "needed_correction": true
+  },
+  {
+    "timestamp": "29-10-2026 17:10:28",
+    "question": "what are the refund options?",
+    "response": "I\u2019m happy to explain how refunds work.\u202fMeridian Goods issues refunds to the original payment method you used at checkout; cash refunds or refunds to a different card aren\u2019t offered.\u202fIf the item was a sale or clearance purchase, you\u2019ll receive store credit instead (unless the item arrived damaged or defective).\u202fFor tax\u2011only adjustments on orders that weren\u2019t otherwise returned or cancelled, a tax\u2011only refund can be processed.",
+    "faithfulness_check": "false\nThe claim that cash refunds or refunds to a different card aren\u2019t offered contradicts a source stating cash refunds or refunds to a different card are offered.",
+    "reason": "false\nThe claim that cash refunds or refunds to a different card aren\u2019t offered contradicts a source stating cash refunds or refunds to a different card are offered.",
+    "needed_correction": true
+  },
+  {
+    "timestamp": "29-10-2026 17:10:32",
+    "question": "what are the refund options?",
+    "response": "Refunds are usually issued to the original payment method you used at checkout, and cash refunds or refunds to a different card can also be provided. For sale or clearance items, the refund is offered as store credit only, unless the item arrived damaged. If you have any specific concerns, our support team can follow up with you.",
+    "faithfulness_check": "false\nThe claim that cash refunds or refunds to a different card can be provided contradicts the policy stating Meridian Goods does not offer cash refunds or refunds to a different card.",
+    "reason": "false\nThe claim that cash refunds or refunds to a different card can be provided contradicts the policy stating Meridian Goods does not offer cash refunds or refunds to a different card.",
+    "needed_correction": true
+  },
+  {
+    "timestamp": "29-10-2026 17:10:35",
+    "question": "what are the refund options?",
+    "response": "We usually refund purchases back to the same payment method you used at checkout. Sale and clearance items are only eligible for store\u2011credit refunds unless they arrive damaged or defective. Meridian Goods does not provide cash refunds or refunds to a different card. If you have a specific order in mind, the support team can help you with the next steps.",
+    "faithfulness_check": "false\nThe claim that sale and clearance items are eligible for store\u2011credit refunds \u201cunless they arrive damaged or defective\u201d adds a condition not supported by the provided policy text.",
+    "reason": "false\nThe claim that sale and clearance items are eligible for store\u2011credit refunds \u201cunless they arrive damaged or defective\u201d adds a condition not supported by the provided policy text.",
+    "needed_correction": true
   }
 ]

@@ -25,7 +25,6 @@ AGENT_SYSTEM_PROMPT = (
 def run_tool_call(tool_call):
     #get the correct paramaters from the tool
     args = json.loads(tool_call.function.arguments)
-
     #calls the appropriate tool function
     if tool_call.function.name == "get_order_status":
         return get_order_status(
@@ -60,7 +59,7 @@ def run_agent_loop(message, max_tries):
                 prompt_messages.append(msg)
 
         #model call with USER and SYSTEM information 
-        #also includes ASSISTANT and TOOL information after the loop runs once
+        #also includes ASSISTANT and TOOL information 
         response = chat_with_model(prompt_messages, tools=TOOLS)
 
         #if tool was not called return

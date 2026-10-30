@@ -76,5 +76,347 @@
     "urgency": "low",
     "verification_result": false,
     "final_response": "I\u2019m sorry, but I can\u2019t help with that request. Please submit a normal support question and I\u2019ll be happy to assist."
+  },
+  {
+    "timestamp": "28-10-2026 12:30:23",
+    "ticket": "Whats the name of the company?",
+    "category": "OFF_TOPIC",
+    "urgency": "low",
+    "verification_result": false,
+    "final_response": "I\u2019m sorry, but I can\u2019t help with that request. Please submit a normal support question and I\u2019ll be happy to assist."
+  },
+  {
+    "timestamp": "28-10-2026 12:31:14",
+    "ticket": "Whats are the payment options?",
+    "category": "PAYMENT",
+    "urgency": "low",
+    "verification_result": true,
+    "final_response": "We accept Visa, Mastercard, American\u202fExpress, and Discover credit or debit cards, as well as PayPal and Apple\u202fPay. Bank transfers and cryptocurrency aren\u2019t supported. Gift cards can be used together with one other payment method on the same order, but they can\u2019t be the sole payment. Let us know if you need any help choosing a method.",
+    "should_escalate": false,
+    "escalate_reason": []
+  },
+  {
+    "timestamp": "28-10-2026 13:15:48",
+    "ticket": "Where is shipment #4521?",
+    "category": "ORDER",
+    "urgency": "medium",
+    "verification_result": true,
+    "final_response": "I\u2019m sorry I don\u2019t have the current status of shipment\u202f#4521. You can view its tracking details in the \u201cMy Orders\u201d section of your account or in the shipping confirmation email you received. If you still can\u2019t locate the information, please reach out to our support team and they can follow up for you.",
+    "should_escalate": false,
+    "escalate_reason": []
+  },
+  {
+    "timestamp": "28-10-2026 13:57:21",
+    "ticket": "ticket",
+    "category": "OFF_TOPIC",
+    "urgency": "low",
+    "verification_result": false,
+    "final_response": "I\u2019m sorry, but I can\u2019t help with that request. Please submit a normal support question and I\u2019ll be happy to assist."
+  },
+  {
+    "timestamp": "28-10-2026 13:58:41",
+    "ticket": "ticket",
+    "category": "OFF_TOPIC",
+    "urgency": "low",
+    "verification_result": false,
+    "final_response": "I\u2019m sorry, but I can\u2019t help with that request. Please submit a normal support question and I\u2019ll be happy to assist."
+  },
+  {
+    "timestamp": "28-10-2026 13:59:16",
+    "ticket": "ticket",
+    "category": "OFF_TOPIC",
+    "urgency": "low",
+    "verification_result": false,
+    "final_response": "I\u2019m sorry, but I can\u2019t help with that request. Please submit a normal support question and I\u2019ll be happy to assist."
+  },
+  {
+    "timestamp": "28-10-2026 13:59:38",
+    "ticket": "ticket",
+    "category": "OFF_TOPIC",
+    "urgency": "low",
+    "verification_result": false,
+    "final_response": "I\u2019m sorry, but I can\u2019t help with that request. Please submit a normal support question and I\u2019ll be happy to assist."
+  },
+  {
+    "timestamp": "28-10-2026 13:59:57",
+    "ticket": "ticket",
+    "category": "OFF_TOPIC",
+    "urgency": "low",
+    "verification_result": false,
+    "final_response": "I\u2019m sorry, but I can\u2019t help with that request. Please submit a normal support question and I\u2019ll be happy to assist."
+  },
+  {
+    "timestamp": "28-10-2026 14:00:10",
+    "ticket": "ticket",
+    "category": "OFF_TOPIC",
+    "urgency": "low",
+    "verification_result": false,
+    "final_response": "I\u2019m sorry, but I can\u2019t help with that request. Please submit a normal support question and I\u2019ll be happy to assist."
+  },
+  {
+    "timestamp": "28-10-2026 14:01:43",
+    "ticket": "hi",
+    "category": "OFF_TOPIC",
+    "urgency": "low",
+    "verification_result": false,
+    "final_response": "I\u2019m sorry, but I can\u2019t help with that request. Please submit a normal support question and I\u2019ll be happy to assist."
+  },
+  {
+    "timestamp": "28-10-2026 14:01:55",
+    "ticket": "what are the payment options",
+    "category": "PAYMENT",
+    "urgency": "low",
+    "verification_result": true,
+    "final_response": "We accept Visa, Mastercard, American\u202fExpress, and Discover credit or debit cards, plus PayPal and Apple\u202fPay. Bank transfers and cryptocurrency aren\u2019t supported, and gift cards can be used together with one other payment method on the same order. Let us know if you need any help choosing the best option for your purchase.",
+    "should_escalate": false,
+    "escalate_reason": []
+  },
+  {
+    "timestamp": "28-10-2026 14:17:56",
+    "ticket": "what are the payment options?",
+    "category": "PAYMENT",
+    "urgency": "low",
+    "verification_result": true,
+    "final_response": "We accept Visa, Mastercard, American\u202fExpress, and Discover credit or debit cards, as well as PayPal and Apple\u202fPay. Bank transfers and cryptocurrency aren\u2019t supported, and gift cards can be used together with one other payment method on the same order.",
+    "should_escalate": false,
+    "escalate_reason": []
+  },
+  {
+    "timestamp": "28-10-2026 14:18:03",
+    "ticket": "hi",
+    "category": "OFF_TOPIC",
+    "urgency": "low",
+    "verification_result": false,
+    "final_response": "I\u2019m sorry, but I can\u2019t help with that request. Please submit a normal support question and I\u2019ll be happy to assist."
+  },
+  {
+    "timestamp": "28-10-2026 14:18:24",
+    "ticket": "what are the payment options?",
+    "category": "PAYMENT",
+    "urgency": "low",
+    "verification_result": true,
+    "final_response": "We accept Visa, Mastercard, American\u202fExpress, and Discover credit or debit cards, as well as PayPal and Apple\u202fPay. Bank transfers, cryptocurrency, and stand\u2011alone gift cards aren\u2019t supported as payment methods. Gift cards can be combined with one other accepted payment method on the same order.",
+    "should_escalate": false,
+    "escalate_reason": []
+  },
+  {
+    "timestamp": "28-10-2026 14:24:41",
+    "ticket": "what are the payment options?",
+    "category": "PAYMENT",
+    "urgency": "low",
+    "verification_result": true,
+    "final_response": "We accept Visa, Mastercard, American\u202fExpress, and Discover credit or debit cards, as well as PayPal and Apple\u202fPay. Bank transfers and cryptocurrency aren\u2019t supported, and gift cards can be used together with one other payment method on the same order.",
+    "should_escalate": false,
+    "escalate_reason": []
+  },
+  {
+    "timestamp": "28-10-2026 14:34:27",
+    "ticket": "Id like to return an item, how do i get started?",
+    "category": "REFUND",
+    "urgency": "low",
+    "verification_result": true,
+    "final_response": "I\u2019m sorry you need to return your item. To be eligible for a refund, the product must be unused, in resellable condition, and sent back within\u202f30\u202fdays of delivery in its original packaging with the order number included. Once we receive and inspect the return at our warehouse, the refund will be issued to the original payment method within\u202f3\u202fbusiness days. If you need further help, our support team can follow up.",
+    "should_escalate": false,
+    "escalate_reason": []
+  },
+  {
+    "timestamp": "28-10-2026 14:35:49",
+    "ticket": "what payment options do you offer?",
+    "category": "PAYMENT",
+    "urgency": "low",
+    "verification_result": true,
+    "final_response": "We accept Visa, Mastercard, American\u202fExpress, and Discover credit or debit cards, as well as PayPal and Apple\u202fPay. Bank transfers and cryptocurrency aren\u2019t supported, and gift cards can be combined with one other payment method on the same order. Let us know if you need any help choosing a payment option.",
+    "should_escalate": false,
+    "escalate_reason": []
+  },
+  {
+    "timestamp": "28-10-2026 14:47:30",
+    "ticket": "when is a package considered  lost",
+    "category": "DELIVERY",
+    "urgency": "low",
+    "verification_result": true,
+    "final_response": "A package is considered lost when the tracking shows no movement for more than\u202f7\u202fbusiness days for domestic orders, or more than\u202f15\u202fbusiness days for international orders. If you reach those timeframes, you can file a lost\u2011package claim with support.",
+    "should_escalate": false,
+    "escalate_reason": []
+  },
+  {
+    "timestamp": "28-10-2026 15:09:27",
+    "ticket": "what are the orders for account 1010",
+    "category": "ORDER",
+    "urgency": "low",
+    "verification_result": true,
+    "final_response": "I see that account\u202f1010 has the following order numbers: 4504, 4511, 4515, 4524, 4532, 4536, and 4538. Let me know if you need details about any specific order.",
+    "should_escalate": false,
+    "escalate_reason": []
+  },
+  {
+    "timestamp": "29-10-2026 15:11:09",
+    "ticket": "What is the status of order 4501 for account 1013?",
+    "category": "ORDER",
+    "urgency": "low",
+    "verification_result": true,
+    "final_response": "Your order\u202f#4501 for account\u202f1013 is currently in\u202fprocessing.",
+    "should_escalate": false,
+    "escalate_reason": []
+  },
+  {
+    "timestamp": "29-10-2026 15:11:39",
+    "ticket": "What is the status of order 4501 for account 1013?",
+    "category": "ORDER",
+    "urgency": "low",
+    "verification_result": true,
+    "final_response": "Your order\u202f#4501 for account\u202f1013 is currently in\u202fprocessing.",
+    "should_escalate": false,
+    "escalate_reason": []
+  },
+  {
+    "timestamp": "29-10-2026 15:12:08",
+    "ticket": "What is the status of order 4501 for account 1013?",
+    "category": "ORDER",
+    "urgency": "low",
+    "verification_result": true,
+    "final_response": "Your order\u202f#4501 for account\u202f1013 is currently in\u202fprocessing.",
+    "should_escalate": false,
+    "escalate_reason": []
+  },
+  {
+    "timestamp": "29-10-2026 15:12:52",
+    "ticket": "What is the status of order 4501 for account 1013?",
+    "category": "ORDER",
+    "urgency": "low",
+    "verification_result": true,
+    "final_response": "Your order\u202f#4501 for account\u202f1013 is currently in\u202fprocessing.",
+    "should_escalate": false,
+    "escalate_reason": []
+  },
+  {
+    "timestamp": "29-10-2026 15:13:30",
+    "ticket": "What is the status of order 4501 for account 9013?",
+    "category": "ORDER",
+    "urgency": "low",
+    "final_response": "The order or account details you provided are incorrect. Please check the information and try again."
+  },
+  {
+    "timestamp": "29-10-2026 15:15:39",
+    "ticket": "What is the status of order 4601 for account 1013?",
+    "category": "ORDER",
+    "urgency": "low",
+    "final_response": "The order or account details you provided are incorrect. Please check the information and try again."
+  },
+  {
+    "timestamp": "29-10-2026 15:16:30",
+    "ticket": "What is the status of order 4601 for account 1013?",
+    "category": "ORDER",
+    "urgency": "low",
+    "final_response": "The order or account details you provided are incorrect. Please check the information and try again."
+  },
+  {
+    "timestamp": "29-10-2026 15:16:45",
+    "ticket": "What is the status of order 4701 for account 1013?",
+    "category": "ORDER",
+    "urgency": "low",
+    "final_response": "The order or account details you provided are incorrect. Please check the information and try again."
+  },
+  {
+    "timestamp": "29-10-2026 15:17:20",
+    "ticket": "What is the status of order 4601 for account 1013?",
+    "category": "ORDER",
+    "urgency": "low",
+    "final_response": "The order or account details you provided are incorrect. Please check the information and try again."
+  },
+  {
+    "timestamp": "29-10-2026 15:27:35",
+    "ticket": "what payment options do you have?",
+    "category": "PAYMENT",
+    "urgency": "low",
+    "verification_result": true,
+    "final_response": "We accept Visa, Mastercard, American\u202fExpress, and Discover credit or debit cards, as well as PayPal and Apple\u202fPay. Bank transfers and cryptocurrency aren\u2019t supported, and gift cards can be used together with one other payment method on the same order. Let us know if you need any help choosing a payment method.",
+    "should_escalate": false,
+    "escalate_reason": []
+  },
+  {
+    "timestamp": "29-10-2026 15:28:43",
+    "ticket": "my account is 1001. what is my plan?",
+    "category": "ACCOUNT",
+    "urgency": "low",
+    "verification_result": true,
+    "final_response": "I see you\u2019re using account\u202f#1001. That account is currently on our premium plan. Let me know if you need any more details!",
+    "should_escalate": false,
+    "escalate_reason": []
+  },
+  {
+    "timestamp": "29-10-2026 15:48:46",
+    "ticket": "What is the status of order 4501",
+    "category": "ORDER",
+    "urgency": "low",
+    "verification_result": true,
+    "final_response": "I\u2019m sorry\u2014I can\u2019t locate order\u202f4501 without additional details. Could you please provide the account ID or the email address used for the purchase so I can check the order status for you?",
+    "should_escalate": false,
+    "escalate_reason": []
+  },
+  {
+    "timestamp": "29-10-2026 16:19:22",
+    "ticket": "my order was stolen during delivery , contacting my lawyer",
+    "category": "REFUND",
+    "urgency": "high",
+    "final_response": "I\u2019m sorry to hear your package was stolen. Since the tracking shows it was delivered, we recommend reporting the theft to your local authorities, and we can provide a copy of the delivery confirmation to help. Please open a support request so we can start an investigation with the carrier, which usually takes about 5\u20117 business days to resolve.",
+    "should_escalate": true,
+    "escalate_reason": [
+      "urgency_high"
+    ]
+  },
+  {
+    "timestamp": "29-10-2026 16:24:25",
+    "ticket": "my order was stolen during delivery , contacting my lawyer",
+    "category": "REFUND",
+    "urgency": "high",
+    "verification_result": true,
+    "final_response": "I\u2019m sorry to hear your package was stolen. Since the tracking shows it was delivered, we recommend reporting the theft to your local authorities, and we can provide a copy of the delivery confirmation to help. Please open a support request so we can start an investigation with the carrier, which usually takes about 5\u20117 business days to resolve.",
+    "should_escalate": true,
+    "escalate_reason": [
+      "urgency_high"
+    ]
+  },
+  {
+    "timestamp": "29-10-2026 16:49:16",
+    "ticket": "What is the status of order 4501 for account 1013?",
+    "category": "ORDER",
+    "urgency": "low",
+    "verification_result": true,
+    "final_response": "Your order\u202f#4501 for account\u202f1013 is currently in\u202fprocessing.",
+    "should_escalate": false,
+    "escalate_reason": []
+  },
+  {
+    "timestamp": "29-10-2026 17:10:02",
+    "ticket": "What are the payment options?",
+    "category": "PAYMENT",
+    "urgency": "low",
+    "verification_result": true,
+    "final_response": "We accept Visa, Mastercard, American\u202fExpress, and Discover credit or debit cards, as well as PayPal and Apple\u202fPay. Bank transfers and cryptocurrency aren\u2019t supported, and gift cards can be used together with one other payment method on the same order.",
+    "should_escalate": false,
+    "escalate_reason": []
+  },
+  {
+    "timestamp": "29-10-2026 17:10:35",
+    "ticket": "what are the refund options?",
+    "category": "REFUND",
+    "urgency": "low",
+    "verification_result": false,
+    "final_response": "Sorry I cant help with that.",
+    "should_escalate": true,
+    "escalate_reason": [
+      "verification_failed"
+    ]
+  },
+  {
+    "timestamp": "29-10-2026 20:31:26",
+    "ticket": "what are my payment options?",
+    "category": "PAYMENT",
+    "urgency": "low",
+    "verification_result": true,
+    "final_response": "We accept Visa, Mastercard, American\u202fExpress, and Discover credit or debit cards, as well as PayPal and Apple\u202fPay. Bank transfers and cryptocurrency aren\u2019t supported. You can also use a Meridian\u202fGoods gift card together with one other payment method on the same order.",
+    "should_escalate": false,
+    "escalate_reason": []
   }
 ]

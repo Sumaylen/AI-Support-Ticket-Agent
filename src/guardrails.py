@@ -41,6 +41,7 @@ def detect_prompt_injection(message):
 #==================================== SECOND LINE OF Defense ================================================
 
 # Guardrail model parses a message and returns a value from 0-1 with values closer to 1 being more likely to be a prompt injection attempt   
+# Wont work for local model
 def double_check_prompt_injection(message):
     response = chat_with_model(
         [
@@ -49,7 +50,6 @@ def double_check_prompt_injection(message):
         model="guardrail_model"
     )
     response_value = float(response.content)
-    print(response_value)
     if response_value <= 0.5:
         return False
     else:
