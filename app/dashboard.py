@@ -1,3 +1,11 @@
+import sys
+from pathlib import Path
+
+# Streamlit may add only app/ to the import path when running this entrypoint.
+PROJECT_ROOT = str(Path(__file__).resolve().parents[1])
+if PROJECT_ROOT not in sys.path:
+    sys.path.insert(0, PROJECT_ROOT)
+
 import streamlit as st
 from app.ticket import render as ticket_page
 from app.policies import render as policies_page
