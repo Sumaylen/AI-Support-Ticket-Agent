@@ -6,8 +6,8 @@
 - Phase 1 - Database setup ✅
 - Phase 2 - Retrieval + RAG pipeline ✅
 - Phase 3 - Ticket workflow + agent logic ✅
-- Phase 4 - UI/UX + testing
-- Phase 5 - Deployment + polish
+- Phase 4 - UI/UX + testing ✅
+- Phase 5 - Deployment + polish ✅
 
 ## Setup
 **Python 3.14.7** was used for this project.
