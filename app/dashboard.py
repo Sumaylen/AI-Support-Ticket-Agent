@@ -62,7 +62,7 @@ with st.sidebar:
         "**Examples**:\n\n"
         "- What are the payment options?\n"
         "- What plan is account 1013 on?\n"
-        "- What is the status of order 4501 for account 1013?\n"
+        "- What is the details of order 4501 for account 1013?\n"
         "- What are the orders for account 1010"
     )
 
