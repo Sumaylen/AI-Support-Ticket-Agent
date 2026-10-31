@@ -7,20 +7,16 @@ from src.retrieval import embed
 from sentence_transformers import SentenceTransformer
 
 def main():
-    model = SentenceTransformer('all-MiniLM-L6-v2')
-
-
-
+    
     client = chromadb.PersistentClient(path="./chroma_db")
-
-    # If company_policies exists then delete it
-    try:
-        client.delete_collection(name="company_policies")
-    except Exception:
-        pass
-
     collection = client.get_or_create_collection(name="company_policies")
 
+    # returns if the database already exists
+    if collection.count() > 0:
+        return
+
+    
+    model = SentenceTransformer('all-MiniLM-L6-v2')
     DATA_DIR = os.path.abspath("data/policies")
     files = os.listdir(DATA_DIR)
 

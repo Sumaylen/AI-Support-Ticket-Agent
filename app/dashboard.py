@@ -1,6 +1,7 @@
 import sys
 from pathlib import Path
 
+
 # Streamlit may add only app/ to the import path when running this entrypoint.
 PROJECT_ROOT = str(Path(__file__).resolve().parents[1])
 if PROJECT_ROOT not in sys.path:
@@ -18,6 +19,15 @@ from app.notice import require_demo_acceptance
 st.set_page_config(page_title="Support desk", page_icon="💬", layout="centered")
 
 require_demo_acceptance()
+
+#cache avoids repeatdly running the databse initialization
+@st.cache_resource(show_spinner="Preparing the policy database...")
+def ensure_knowledge_base():
+    from build_knowledge_base import main
+    main()
+
+
+ensure_knowledge_base()
 
 st.markdown(
     """
