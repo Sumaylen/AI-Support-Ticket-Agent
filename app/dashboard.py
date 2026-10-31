@@ -16,7 +16,7 @@ from app.evaluation import render as evaluation_page
 from app.about import render as about_page
 from app.notice import require_demo_acceptance
 
-st.set_page_config(page_title="Support desk", page_icon="💬", layout="centered")
+st.set_page_config(page_title="AI Ticket System", page_icon="🤖", layout="centered")
 
 require_demo_acceptance()
 
