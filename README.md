@@ -77,7 +77,7 @@ Tests how reliably the classifier categorizes support tickets. Each of the three
 | v2 | GPT-OSS 120B; strict JSON schema output enabled | 223 | 46 | 82.90% |
 | v3 | GPT-OSS 120B with classifier prompt adjustments | 241 | 28 | 89.59% |
 
-The model and output configuration change in v2 increased accuracy by 8.18 percent. Prompt adjustments in v3 further increased accuracy by  6.69 percenta.
+The model and output configuration change in v2 increased accuracy by 8.18%. Prompt adjustments in v3 further increased accuracy by  6.69%.
 
 ### Retrieval evaluation
 
