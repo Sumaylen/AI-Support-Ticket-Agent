@@ -1,7 +1,10 @@
 # AI Support Ticket Agent
-This project is an AI Ticketing System that can classify a ticket based on preset categories, determine the urgency of the ticket, autonmously make use of tools to get information from a database and finally draft and self verify a reply for a customer using Retrieval-Augmented Generation (RAG) to get information so the replies are grounded in company policies. It also invovles evluation scripts of various aspects of the ticket workflow and a notable incrimental improvement to the accuracy of certain aspects such as the ticket ctaegorizier.
+This project is an AI Ticketing System that can classify a ticket based on preset categories, determine the urgency of the ticket and autonmously make use of tools to get information from a database. It uses Retrieval-Augmented Generation (RAG)  to draft and self verify a reply for a customer ensuring that the replies are grounded in company policies. It also includes evaluation scripts for various aspects of the ticket workflow and demonstrates incremental improvements in accuracy, particularly in ticket classification.
 
-This project was built using **Python 3.14.7** and makes use of Groq to host the AI the model and Langraph for ochestrating the ticket workflow
+This project was built using **Python 3.14.7** and makes use of Groq to host the AI the model and Langraph for ochestrating the ticket workflow. Streamlit was used to host and deploy the application.
+
+[![Try the live demo](https://img.shields.io/badge/Try_the_live_demo-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://i-support-ticket-agent.streamlit.app/) 
+>The app may take a few minutes to start if it’s asleep.
 
 ## Progress
 - Phase 0 - Set up local LLM + Groq ✅
