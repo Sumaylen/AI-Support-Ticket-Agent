@@ -1,25 +1,21 @@
-# AI Support Ticket Agent (WIP)
-**This project involves an AI agent that classifies support tickets, retrieves relevant context using RAG and either drafts fact-checked responses or escalates to a human if necessary.**
+# AI Support Ticket Agent
+This project is an AI Ticketing System that can classify a ticket based on preset categories, determine the urgency of the ticket, autonmously make use of tools to get information from a database and finally draft and self verify a reply for a customer using Retrieval-Augmented Generation (RAG) to get information so the replies are grounded in company policies. It also invovles evluation scripts of various aspects of the ticket workflow and a notable incrimental improvement to the accuracy of certain aspects such as the ticket ctaegorizier.
+
+This project was built using **Python 3.14.7** and makes use of Groq to host the AI the model and Langraph for ochestrating the ticket workflow
 
 ## Progress
 - Phase 0 - Set up local LLM + Groq ✅
 - Phase 1 - Database setup ✅
-- Phase 2 - Retrieval + RAG pipeline ✅
+- Phase 2 - RAG pipeline ✅
 - Phase 3 - Ticket workflow + agent logic ✅
 - Phase 4 - UI/UX + testing ✅
 - Phase 5 - Deployment + polish ✅
 
 ## Setup
-**Python 3.14.7** was used for this project.
-
 **Note:** You run setup.bat once to create the virtual environment, download the necessary requirements, and create & populate the database.
 1. Run `setup.bat`.
 2. This creates a local `.env` if needed.
 3. Edit `.env` and set your API key. If you do not already have one, get one here: https://console.groq.com/
-
-### Use the Groq model
-
-Model: `qwen/qwen3.8-27b`
 
 ```env
 GROQ_API_KEY=your_key_here
@@ -28,29 +24,18 @@ LLM_BACKEND=groq
 
 > Warning: this setup was validated with the tested model above. Other models may require different configuration, tuning, or prompt adjustments and are not guaranteed to work correctly.
 
-## Run the dashboard
+### Launching
 
 From the project root, using the Python environment created during setup, run:
 
-```powershell
+```
 python -m streamlit run app/dashboard.py
 ```
 
-The `app` folder contains the dashboard, support ticket page, company policies page and a read-only demo data page for browsing accounts and orders. Ticket history displays saved records from `logs/final_ticket.json`, including responses, verification and escalation results. The About the demo page displays the Mermaid workflow diagram from this README, explains the workflow and describes the demo's limitations and how submitted messages are saved.
+## Optional: run locally with llama.cpp (UNSUPPORTED)
 
-## Run the ticket workflow
+> Warning: Groq was primarily used to for creating and testing the application. While the backend supports llama.cpp and local integration, it is not guranteed that the app will function without further tweaks.
 
-From the project root, using the Python environment created during setup, run:
-
-```powershell
-python -m src.graph
-```
-
-Run this as a module so Python can resolve the `src.*` imports. Running `python src/graph.py` directly can cause `ModuleNotFoundError: No module named 'src'`.
-
-## Optional: run locally with llama.cpp
-
-Model: `Qwen_Qwen3.5-4B-Q4_K_M`
 
 1. Install llama.cpp into the root directory from the official repo: https://github.com/ggml-org/llama.cpp/releases
 2. Put your GGUF model in `model\`.
@@ -66,13 +51,22 @@ LLM_BACKEND=local
 run.bat
 ```
 
-> Warning: this setup was validated with the tested model above. Other models may require different configuration, tuning, or prompt adjustments and are not guaranteed to work correctly.
+
+## How it works
+
+1. **Check the request.** The agent checks for attempts to override its instructions and rejects requests outside its support scope.
+2. **Understand the ticket.** It categorizes the ticket and determines its urgency.
+3. **Find relevant information.** It retrieves relevant company policy extracts and can look up information from a database if deemed necessary.
+4. **Draft and check a response.** It uses the retrieved information to draft an answer, then self evaluates whether the sources support it.
+5. **Record the outcome.** It saves the response and processing results, including whether the ticket requires human review.
 
 ## Evaluation
 
-The Evaluation page charts classification accuracy across three saved runs, each containing 269 tickets. It appears between Ticket history and About the demo in the dashboard navigation.
+A summary of some of the evaluations carried out. For full evaluation details, refer to the source logs.
 
-### Classification results
+### Classification accuracy
+
+Tests how reliably the classifier categorizes support tickets. Each of the three saved runs contains 269 tickets. Accuracy is the number of correct category predictions divided by the number of evaluated tickets.
 
 | Version | Change | Passed | Failed | Accuracy |
 | --- | --- | ---: | ---: | ---: |
@@ -80,15 +74,55 @@ The Evaluation page charts classification accuracy across three saved runs, each
 | v2 | GPT-OSS 120B; strict JSON schema output enabled | 223 | 46 | 82.90% |
 | v3 | GPT-OSS 120B with classifier prompt adjustments | 241 | 28 | 89.59% |
 
-### Summary
+The model and output configuration change in v2 increased accuracy by 8.18 percent. Prompt adjustments in v3 further increased accuracy by  6.69 percenta.
 
-The model and output configuration change in v2 increased accuracy by 8.18 percentage points. Prompt adjustments in v3 clarified commonly confused categories and increased accuracy by a further 6.69 percentage points. These runs measure category classification, not end-to-end response accuracy.
+### Retrieval evaluation
 
-### Raw evaluation logs
+Tests how reliably the policy search retrieves relevant source material for a support question. The evaluation uses 20 test questions, with scores averaged across the questions. Here, `k` is the number of policy chunks retrieved.
+
+| Top k chunks | Hit@k | Recall@k | Precision@k |
+| ---: | ---: | ---: | ---: |
+| 1 | 85% | 80% | 85% |
+| 3 | 100% | 95% | 77% |
+| 5 | 100% | 100% | 60% |
+| 10 | 100% | 100% | 42% |
+
+- **Hit@k — Did we find anything useful?** How often the first k results include at least one expected policy file.
+- **Recall@k — How much of what we needed did we find?** The share of expected policy files found in the first k results.
+- **Precision@k — How much of what we found was useful?** The share of the first k chunks that come from expected policy files.
+
+### Source logs
 
 - [v1: Qwen 27B baseline](logs/EVALUATE_CLASSIFIER_QWEN_27B_STRICT_FALSE_v1.txt)
 - [v2: GPT-OSS 120B with strict output](logs/EVALUATE_CLASSIFIER_GPT_120B_STRICT_TRUE_v2.txt)
 - [v3: GPT-OSS 120B with prompt adjustments](logs/EVALUATE_CLASSIFIER_GPT_120B_STRICT_TRUE_v3.txt)
+- [Retrieval evaluation](logs/EVALUATE_RETRIEVAL_GPT_120B.txt)
+
+## Limitations
+
+- Strict rate limits on the free groq plan mean that the demo is not suitable for multi-user use or high traffic usage.
+- Each submission is processed independently, so follow-up questions must include the relevant details again.
+- Escalation is recorded for demonstration purposes. It does not contact a real support team.
+- AI-generated answers and its self verification check can both make mistakes.
+- Support for local backend is limited
+
+## AI usage
+
+AI tools assisted with: 
+
+- Creating fictional company policies and demo data. 
+- Building the frontend. 
+- Drafting evaluation test cases. 
+- Generating system prompts. 
+- Reviewing human-written code. 
+
+I designed and implemented most of the backend, including the RAG system, agent tool-calling capabilities, Langgraph workflow and the evaluation tests.
+
+## Acknowledgments
+
+This project uses [Bitext's Customer Support Training Dataset](https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset) for ticket categorization and in evaluation.
+
+## Workflow diagram
 
 ```mermaid
 %%{init: {
